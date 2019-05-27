@@ -1,1 +1,2108 @@
-Hello World
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Endrazine.com Information Security Research blog of Jonathan Brossard.">
+    <meta name="keywords" content="Reverse Engineering, Firmware Security, Binary analysis, Preventive Software analytics, IoT security, security analytics, preventive security, IIot security">
+    <title>Endrazine.com - Information Security Research blog of Jonathan Brossard</title>
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://endrazine.com https://www.slideshare.net https://github.com; script-src 'self' https://endrazine.com https://www.slideshare.net https://github.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-analytics.net https://track.hubspot.com 'unsafe-inline'; connect-src 'self' https://endrazine.com https://www.slideshare.net https://github.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-analytics.net https://track.hubspot.com ; img-src 'self' data: https://endrazine.com https://www.slideshare.net https://github.com https://www.google-analytics.com https://track.hubspot.com https://www.googletagmanager.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://endrazine.com https://www.slideshare.net https://github.com https://tagmanager.google.com/ https://fonts.googleapis.com/ 'unsafe-inline' ; font-src 'self' https://endrazine.com https://fonts.googleapis.com https://fonts.gstatic.com/ ; frame-src https://www.youtube.com/ https://youtube.com/ https://www.slideshare.net https://github.com https://endrazine.com ; base-uri 'self' https://endrazine.com https://www.slideshare.net https://github.com;" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.86">
+
+    <!-- Json-ld information -->
+    <script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@id": "https://endrazine.com/index.html#top",
+		"@type": "Organization",
+		"name": "Moabi",
+		"url": "https://endrazine.com/",
+		"logo": "https://moabi.com/moabi.png",
+		"email": "info(at)endrazine.com",
+		"description": "Endrazine.com Information Security Research blog of Jonathan Brossard.",
+		"address": [
+			{
+				"@type": "PostalAddress",
+				"addressLocality": "Paris, France",
+				"postalCode":"75015",
+				"streetAddress": "33 Avenue du Maine"
+			},
+			{
+				"@type": "PostalAddress",
+				"addressLocality": "San Francisco",
+				"addressRegion": "CA",
+				"postalCode":"94133",
+				"streetAddress": "1640 Stockton Street",
+				"postOfficeBoxNumber": "330143"
+			}
+		],
+		"contactPoint": [
+			{
+				"@type": "ContactPoint",
+				"telephone": "+33188335053",
+				"email": "info(at)moabi.com",
+				"contactType": "sales"
+			},
+			{
+				"@type": "ContactPoint",
+				"email": "jb(at)endrazine.com",
+				"contactType": "customer service",
+				"url": "https://endrazine.com"
+			}
+		],
+		"sameAs": [
+			"https://moabi.com",
+			"https://blog.moabi.com"
+		]
+	}
+    </script>
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Endrazine - Reverse Engineering - Research blog of Jonathan Brossard" />
+    <meta property="og:url" content="https://endrazine.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://endrazine.com/moabi_card.png" />
+    <meta property="og:description" content="Endrazine.com Information Security Research blog of Jonathan Brossard." />
+    <meta property="og:site_name" content="Endrazine.com : Information Security Research blog of Jonathan Brossard">
+
+    <!-- Twitter card integration (works with Open Graph data above) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Endrazine.com - Jonathan Brossard low level Information Security blog">
+    <meta name="twitter:site" content="@endrazine">
+
+    <!-- Yandex indexation -->
+    <meta name="yandex-verification" content="e477bac9aff66624" />
+
+    <!-- Bing Indexing -->
+    <meta name="msvalidate.01" content="E6F45B72576D2C71AD0A5B162DF8117D" />
+
+    <!-- Preconnect optimization -->
+    <link rel="preconnect" href="https://js.hs-scripts.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+
+    <!-- Preload optimization -->
+   <link rel="preload" href="./fonts/1Ptrg8zYS_SKggPNwIouWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="./fonts/1Ptrg8zYS_SKggPNwN4rWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="./fonts/1Ptug8zYS_SKggPNyC0ISg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="./fonts/1Ptrg8zYS_SKggPNwJYtWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="./js/modernizr.js" as="script">
+   <link rel="preload" href="./js/jquery-3.3.1.min.js" as="script">
+   <link rel="preload" href="./js/lazyload.js" as="script">
+   <link rel="preload" href="./js/main.js" as="script">
+   <link rel="preload" href="./js/rev.js" as="script">
+   <link rel="preload" href="./js/custom.js" as="script">
+   <link rel="preload" href="./js/site.js" as="script">
+
+    <link rel="preload" href="./fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <!-- Canonical name -->
+    <link rel="canonical" href="https://endrazine.com/" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />  
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />  
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />  
+
+    <!-- Apple icons -->
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-152.png" />  
+    <link rel="apple-touch-icon" sizes="167x167" href="apple-167.png" />  
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-180.png" />  
+
+    <!-- Apple Safari -->
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#446CDE" />
+
+    <!-- Microsoft Windows/IE11 Start Screen Tile-->
+    <meta name="application-name" content="endrazine.com"/>
+    <meta name="msapplication-square70x70logo" content="small.jpg"/>
+    <meta name="msapplication-square150x150logo" content="medium.jpg"/>
+    <meta name="msapplication-wide310x150logo" content="wide.jpg"/>
+    <meta name="msapplication-square310x310logo" content="large.jpg"/>
+    <meta name="msapplication-TileColor" content="#446CDE">
+    <meta name="theme-color" content="#446CDE">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129423028-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129423028-1');
+    </script>
+
+    <!-- Note: stylesheets are loaded twice to make up for the lack of preloading in Firefox. See https://stackoverflow.com/questions/45321043/preload-css-file-not-supported-on-firefox-and-safari-mac -->
+    <!-- CSS  Fonts -->
+    <link rel="preload" href="./css/font-awesome.min.css" as="style" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+
+    <!-- CSS  -->
+    <link rel="preload" href="./css/site.css" as="style" />
+    <link rel="stylesheet" href="./css/site.css">
+
+
+</head>
+<body class="skew">
+
+    <!-- Noscript tag -->
+    <noscript>Your browser does not support javascript : some elements may not be displayed as intended.<br /><br /></noscript>
+
+    <!-- Page Wrapper Starts -->
+    <div class="wrapper">
+        <!-- Header Starts -->
+        <header id="header" class="header">
+            <div class="header-inner">
+                <!-- Navbar Starts -->
+                <nav class="navbar navbar-expand-lg p-0" id="singlepage-nav">
+					<!-- Logo Starts -->
+                    <div class="logo">
+                        <a data-toggle="collapse" data-target=".navbar-collapse.show" class="navbar-brand link-menu scroll-to-target" alt="main slider" href="#mainslider">
+                            <!-- Logo White Starts -->
+                            <img id="logo-light" class="logo-light" src="./IoT/security/metrics/logo-white.png" alt="Blog of Jonathan Brossard" title="Moabi white logo" decoding="async" />
+                            <!-- Logo White Ends -->
+                            <!-- Logo Black Starts -->
+                            <img id="logo-dark" class="logo-dark" src="./IoT/security/metrics/logo-white.png" alt="Analytics" title="Moabi logo" decoding="async" />
+                            <!-- Logo Black Ends -->
+                        </a>
+                    </div>
+					<!-- Logo Ends -->
+					<!-- Hamburger Icon Starts -->
+                    <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span id="icon-toggler">
+						</span>
+					</button>
+					<!-- Hamburger Icon Ends -->
+					<!-- Navigation Menu Starts -->
+                    <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
+                        <ul class="nav-menu-inner ml-auto">
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="home" href="#mainslider"><i class="fa fa-home"></i> home</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="profile" href="#profile"><i class="fa fa-handshake-o"></i> profile</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="research" href="#research"><i class="fa fa-cogs"></i> research</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="consulting" href="./whitepapers/" onclick="window.location=$(this).attr('href')"><i class="fa fa-file-pdf-o"></i> Whitepapers</a>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="consulting" href="https://toucan-system.com" onclick="window.location=$(this).attr('href')"><i class="fa fa-play"></i> Consulting</a>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="moabi" href="https://moabi.com" onclick="window.location=$(this).attr('href')"><i class="fa fa-cloud"></i> Moabi</a>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="blog" href="https://blog.moabi.com/" onclick="window.location=$(this).attr('href')"><i class="fa fa-bookmark"></i> Moabi blog</a>
+                        </ul>
+                    </div>
+					<!-- Navigation Menu Ends -->
+                </nav>
+                <!-- Navbar Ends -->
+            </div>
+        </header>
+	<!-- Header Ends -->
+
+        <!-- Main Slider Section Starts -->
+        <section class="mainslider" id="mainslider">
+            <!-- Slider Hero Starts -->
+            <div class="rev_slider_wrapper fullwidthbanner-container dark-slider" data-alias="vimeo-hero" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+                <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
+                <div id="rev_slider" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
+                    <ul>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-18" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="./IoT/security/metrics/moabi_paris-thumbnail.jpg" data-rotate="0" data-saveperformance="off" data-title="Ken Burns" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="./IoT/security/metrics/blank.jpg" data-lazyload="./IoT/security/metrics/moabi_paris-1600.jpg" alt="Security Analytics" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="180" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina title="Moabi office background" decoding="async">
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','45']" data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap;">MISSION
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','52','52','51']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">Securing Firmware
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-68','-68','-68','-68']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"><i class="pe-7s-refresh"></i>
+                            </div>
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['150','97','90','90']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:100px;sX:1;sY:1;opacity:0;s:2000;e:Power3.easeInOut;" data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="off" style="z-index: 11; white-space: nowrap;text-transform:left;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><a href="#platform" alt="platform" class="custom-button slider-button scroll-to-target">Platform</a></div>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-3" data-transition="zoomin" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="./IoT/security/metrics/moabi_NYC-thumbnail.jpg" data-rotate="0" data-fsmasterspeed="300" data-fsslotamount="7" data-saveperformance="off" data-title="Intro" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="./IoT/security/metrics/blank.jpg" data-lazyload="./IoT/security/metrics/moabi_NYC-1600.jpg" alt="Validation" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="180" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina title="Moabi NYC background" decoding="async">
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','45']" data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap;">SaaS PLATFORM
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','52','52','51']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">FOR AUTOMATED SOFTWARE SECURITY AUDITS
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-68','-68','-68','-68']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"><i class="pe-7s-refresh"></i>
+                            </div>
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['150','97','90','90']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:100px;sX:1;sY:1;opacity:0;s:2000;e:Power3.easeInOut;" data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="off" style="z-index: 11; white-space: nowrap;text-transform:left;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><a href="#analytics" alt="analytics" class="custom-button slider-button scroll-to-target">Analytics</a></div>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-2" data-transition="zoomin" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="./IoT/security/metrics/moabi_singapore-thumbnail.jpg" data-rotate="0" data-fsmasterspeed="300" data-fsslotamount="7" data-saveperformance="off" data-title="Intro" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="./IoT/security/metrics/blank.jpg" data-lazyload="./IoT/security/metrics/moabi_singapore-1600.jpg" alt="Cloud Based Software Verification" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="180" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina title="Moabi Singapore background" decoding="async">
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['70','70','70','45']" data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap;">DEFENSE SURFACE
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','52','52','51']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">MEASURE YOUR SOFTWARE GLOBAL SECURITY
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-68','-68','-68','-68']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"><i class="pe-7s-refresh"></i>
+                            </div>
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['150','97','90','90']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:100px;sX:1;sY:1;opacity:0;s:2000;e:Power3.easeInOut;" data-transform_out="y:50px;opacity:0;s:1000;e:Power2.easeInOut;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="off" style="z-index: 11; white-space: nowrap;text-transform:left;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><a href="#mission" alt="mission" class="custom-button slider-button scroll-to-target">Mission</a></div>
+                        </li>
+                    </ul>
+                    <div class="tp-static-layers"></div>
+                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                </div>
+            </div>
+            <!-- END REVOLUTION SLIDER -->
+            <!-- Slider Hero Ends -->
+        </section>
+        <!-- Main Slider Section Ends -->
+
+
+<br><br><br>
+
+
+        <!-- Project Manager Section Starts -->
+
+	<section id="profile" class="projectmanager lazyload" data-src="./IoT/security/metrics/moabi_paris-1600.jpg" decoding="async" style="width: 100%;">
+            <!-- Section Overlay Starts -->
+            <div class="section-overlay">
+                <!-- Container Starts -->
+                <div class="container">
+                    <div class="row">
+                        <!-- Image Starts -->
+                        <div class="col-md-12 col-lg-12 col-xl-5">
+                            <img class="img-fluid projectmanagerpicture" src="./images/jonathan_brossard.jpeg" alt="project manager">
+                        </div>
+                        <!-- Image Ends -->
+                        <!-- Details Starts -->
+                        <div class="col-md-12 col-lg-12 col-xl-6 offset-xl-1">
+                            <h1><span>World Class</span> Security Expert</h1>
+                            <h3>Jonathan Brossard</h3>
+                            <p>Jonathan Brossard is the Managing Director of Moabi. With 20+ years experience in assembly programming and Reverse Engineering, he's a world renown security expert having participated in over 50 conferences with disruptive original research. He for instance published the first exploits against Microsoft Bitlocker, and the first remote exploits targetting Microsoft Windows 10 and the Microsoft Edge web browser. His research in low level binary, BIOS, and firmware security has been featured by many media, including The Interpect, the MIT Technology Review and Forbes, who covered his PoC firmware malware Rakshasa (the World's first public portable firmware backdoor). Prior to co-funding Moabi, Jonathan has worked as Head and Director of Offensive Security and Security Research at Salesforce (San Francisco, USA), Director and Principal Engineer of Product Security at Salesforce (San Francisco, USA), Head of Security at Change.org (San Francisco, USA), Co-Founder and CEO of Consulting Firm Toucan System (Sydney, Australia/Paris France). He's also worked in India and lived in Brazil. Jonathan holds a Master's degree in Engineering and a Master's degree in Artificial Intelligence, both obtained at the Ecole des Mines (Saint-Etienne, France). Jonathan is a PhD Candidate with the Conservatoire National des Arts et Métiers (Paris, France).  
+                            </p>
+                            <blockquote>
+                                " Welcome to this blog. I hope you enjoy the read and find what you were looking for. I created this page to give back to a community that gave me so much. "
+                            </blockquote>
+                            <!-- Social Media Starts -->
+                            <div class="social-icons">
+                                <ul class="social">
+                                    <li>
+                                        <a class="linkedin" href="https://www.linkedin.com/in/endrazine" title="linkedin"></a>
+                                    </li>
+                                    <li>
+                                        <a class="twitter" href="https://twitter.com/endrazine" title="twitter"></a>
+                                    </li>
+		                <li>
+		                    <a class="facebook" href="https://www.facebook.com/endrazine" title="facebook"></a>
+		                </li>
+		                <li>
+		                    <a class="github" href="https://github.com/endrazine" title="github"></a>
+		                </li>
+                                </ul>
+                            </div>
+                            <!-- Social Media Ends -->
+                        </div>
+                    </div>
+                    <!-- Details Ends -->
+                </div>
+                <!-- Container Ends -->
+            </div>
+        </section>
+        <!-- Project Manager Section Ends -->
+
+
+
+
+
+        <!-- About Section Starts -->
+        <section id="research" class="about">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1>The <span>Witchcraft</span> Compiler Collection (<span>WCC</span>)</h1>
+                    <h4>Towards Self Aware Computer Programs<br>(World class reverse engineering framework)</h4>
+                </div>
+                <!-- Main Heading Ends -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cloud" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <!-- About Content Starts -->
+                <div class="row about-content">
+                    <div class="col-sm-12 col-md-12 col-lg-6 about-left-side">
+                        <h3 class="title-about">Advances in <span style="color:#446CDE;font-weight:bolder">REVERSE ENGINEERING</span> of <span style="color:#446CDE;font-weight:bolder">BINARY</span> programs</h3>
+                        <hr>
+
+			<p>With this presentation, we take a new approach to reverse engineering. Instead of attempting to decompile code, we seek to undo the work of the linker and produce relocatable files, the typical output of a compiler. The main benefit of the later technique over the former being that it does work. Once achieved universal code ‘reuse’ by relinking those relocatable objects as arbitrary shared libraries, we'll create a form of binary reflection, add scripting capabilities and in memory debugging using a JIT compiler, to attain automated API prototyping and annotation, which, we will argue, constitutes a primary form of binary code self awareness. Finally, we'll see how abusing the dynamic linker internals shall elegantly solve a number of complex tasks for us, such as calling a given function within a binary without having to craft a valid input to reach it. The applications in terms of vulnerability exploitation, functional testing, static analysis validation and more generally computer wizardry being tremendous, we'll have fun demoing some new exploits in real life applications, and commit public program profanity, such as turing PEs into ELFs, functional scripting of sshd in memory, stealing crypto routines without even disassembling them, among other things that were never supposed to work. All the above techniques have been implemented into the Wichcraft Compiler Collection, released as open source software (MIT/BSD-2 licenses).</p>
+
+
+
+<ul class="nav nav-tabs">
+<li><a class="active" data-toggle="tab" alt="Conferences" href="#menu1">Presentations</a></li>
+<li><a data-toggle="tab" alt="performance" href="#menu2" STYLE="color: #000000;  background-color: #ffffff;">Code</a></li>
+<li><a data-toggle="tab" alt="benefits" href="#menu3" STYLE="color: #000000;  background-color: #ffffff;">Slides</a></li>
+</ul>
+
+
+<div class="tab-content">
+<div id="menu1" class="tab-pane fade in active">
+<p>This presentation has been given at:<ul>
+<li>Defcon 24 (Las Vegas)</li> 
+<li>Blackhat EU 2016 (London)</li> 
+<li>H2HC (Sao Paolo)</li>
+<li>Intel ISecCon (Hillsboro)</li>
+<li>BSides (San Francisco) 2017</li>
+</ul>
+</p>
+</div>
+<div id="menu2" class="tab-pane fade">
+<p>
+The code of the Wichcraft Compiler Collection is License under Open Source Lincenses (MIT/BDS2). It is available on the <a href="https://github.com/endrazine/wcc">github wcc reporitory</a>.
+</p>
+</div>
+<div id="menu3" class="tab-pane fade">
+<p>
+The slides of the Witchcraft Compiler Collection presentations are available on the <a href="https://www.slideshare.net/endrazine/introduction-to-the-witchcraft-compiler-collection/">author's slideshare</a>.
+</p>
+</div>
+</div>
+
+<a class="custom-button scroll-to-target" alt="WCC Resources" href="#wcc-resources">WCC Resources</a>
+</div>
+
+
+                    <div class="col-md-12 col-lg-6 about-right">
+						<div class="about-right-side">
+							<img class="img-fluid" src="./images/wcc-thumb.jpeg" alt="Mission" height="385" width="576" title="WCC presentation" decoding="async">
+						</div>
+                    </div>
+                </div>
+                <!-- About Content Ends -->
+            </div>
+            <!-- Container Ends -->
+        </section>
+        <!-- About Section Ends -->
+        <!-- Video Section Starts -->
+        <section id="Witchcraft" class="videopromotion lazyload" src="./IoT/security/metrics/blank.jpg" data-src="./images/wcc-thumb.jpeg" decoding="async" style="width: 80%;margin-left: 10%;" >
+            <div class="section-overlay">
+                <!-- Container Starts -->
+                <div class="container">
+                    <!-- Main Heading Starts -->
+                    <div class="text-center top-text">
+                        <h4><span style="color:#446CDE;font-weight:bolder">DEF CON 24 - Presentation</span></h4>
+                    </div>
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                </div>
+                <!-- Divider Ends -->
+                    <!-- Main Heading Ends -->
+                    <div class="video-content">
+                        <!-- Video Play Starts -->
+                        <div class="magnific-popup-gallery">
+                            <div class="btn-wrapper text-center"><a class="image-wrap mfp-youtube" alt="WCC DEF CON presentation video" aria-label="WCC DEF CON presentation video" rel=nofollow href="https://www.youtube.com/watch?v=1cgtr7VW7gY" crossorigin="anonymous"></a></div>
+                        </div>
+                        <!-- Video Play Ends -->
+                    </div>
+                </div>
+                <!-- Container Ends -->
+            </div>
+        </section>
+        <!-- Video Section Ends -->
+
+
+        <!-- Portfolio Section Starts -->
+        <section id="wcc-resources" class="portfolio">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h2><span style="color:#446CDE;font-weight:bolder">Witchcraft Resources</span></h2>
+                    <h4>Towards Self Aware Computer Programs<br>(World class reverse engineering framework)</h4>
+                </div>
+                <!-- Main Heading Starts -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cogs" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <!-- Filter Wrapper Starts -->
+                <nav>
+                    <ul class="simplefilter nav nav-pills d-block">
+                        <!-- Filter Wrapper Items Starts -->
+                        <li class="active" data-filter="all"><i class="fa fa-reorder"></i> All Items</li>
+                        <li data-filter="1">Codebase</li>
+                        <li data-filter="4">Documentation</li>
+                        <li data-filter="2">Presentations</li>
+                        <li data-filter="3">Slides</li>
+                        <!-- Filter Wrapper Items Ends -->
+                    </ul>
+                </nav>
+                <!-- Filter Wrapper Ends -->
+                <div>
+                    <div class="filtr-container">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://github.com/endrazine/wcc/" title="Wichcraft Compiler Collection source code" alt="Wichcraft Compiler Collection source code"><img class="img-fluid" src="./IoT/security/metrics/hardening.jpg" alt="Wichcraft Compiler Collection source code" height="385" width="576" title="Wichcraft Compiler Collection source code" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>Codebase</h3>
+                                    <p>The code of WCC (BSD2/MIT licenses).</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="2">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap mfp-youtube" title="Defcon 24 (Las Vegas) Video" rel=nofollow href="https://www.youtube.com/watch?v=1cgtr7VW7gY" crossorigin="anonymous" alt="Defcon 24 (Las Vegas) Video"><img class="img-fluid" src="./IoT/security/metrics/trailer1.jpg" alt="Defcon 24 (Las Vegas) Video" height="385" width="576" title="Defcon 24 (Las Vegas) Video" decoding="async" /><span class="zoom-icon video-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>WCC DEF CON 24 Presentation</h3>
+                                    <p>Defcon 24 (Las Vegas) Presentation.</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="4">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://github.com/endrazine/wcc/wiki" title="WCC online documentation" alt="WCC online documentation"><img class="img-fluid" src="./IoT/security/metrics/automotive.jpg" alt="WCC online documentation" height="385" width="576" title="WCC online documentation" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>Documentation</h3>
+                                    <p>WCC online documentation</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="2">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap mfp-youtube" title="WCC Blackhat Europe 2016 Presentation" rel=nofollow href="https://www.youtube.com/watch?v=J5g0udW2jMQ" crossorigin="anonymous" alt="WCC Blackhat Europe 2016 Presentation"><img class="img-fluid" src="./IoT/security/metrics/trailer2.jpg" alt="WCC Blackhat Europe 2016 Presentation" height="385" width="576" title="WCC Blackhat Europe 2016 Presentation" decoding="async" /><span class="zoom-icon video-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>Witchcraft Blackhat 2016</h3>
+                                    <p>WCC Blackhat Europe 2016 Presentation</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="3">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://www.slideshare.net/endrazine/introduction-to-the-witchcraft-compiler-collection/" title="Witchcraft compiler Collection slides" alt="WCC Slides"><img class="img-fluid" src="./IoT/security/metrics/samples.jpg" alt="WCC Slides" height="385" width="576" title="WCC Slides" decoding="async" /><span class="zoom-icon external-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>WCC Slides (slideshare)</h3>
+                                    <p>Witchcraft compiler Collection slides</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="4">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="./whitepapers/Jonathan_Brossard_Blackhat_2016_Witchcraft-Compiler-Collection_User_Manual.pdf" title="WCC user manual" alt="WCC user manual"><img class="img-fluid" src="./IoT/security/metrics/automotive.jpg" alt="WCC user manual" height="385" width="576" title="WCC user manual" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>WCC user manual</h3>
+                                    <p>Download the WCC user manual</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="1">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="https://packages.debian.org/search?keywords=wcc" title="Wichcraft Compiler Collection package" alt="WCC package"><img class="img-fluid" src="./IoT/security/metrics/automotive.jpg" alt="Wichcraft Compiler Collection package" height="385" width="576" title="WCC user manual" decoding="async" /><span class="zoom-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>Package</h3>
+                                    <p>WCC Debian package</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="2">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap mfp-youtube" title="WCC BSides San Francisco Video" rel=nofollow href="https://www.youtube.com/watch?v=luzNJqYrH2w" crossorigin="anonymous" alt="WCC BSides San Francisco Video"><img class="img-fluid" src="./IoT/security/metrics/trailer2.jpg" alt="WCC BSides San Francisco Video" height="385" width="576" title="WCC BSides San Francisco Video" decoding="async" /><span class="zoom-icon video-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>WCC BSidesSF Presentation</h3>
+                                    <p>WCC BSides San Francisco 2017 Presentation</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 filtr-item" data-category="3">
+                            <div class="magnific-popup-gallery">
+                                <!-- Thumbnail Starts -->
+                                <figure class="thumbnail thumbnail__portfolio">
+                                    <a class="image-wrap" href="./whitepapers/Jonathan_Brossard_DEFCON_24_Introduction-to-the-Witchcraft-Compiler-Collection.pdf" title="Witchcraft compiler Collection slides" alt="WCC Slides"><img class="img-fluid" src="./IoT/security/metrics/samples.jpg" alt="WCC Slides" height="385" width="576" title="WCC Slides" decoding="async" /><span class="zoom-icon external-icon"></span></a>
+                                </figure>
+                                <!-- Thumbnail Ends -->
+                                <!-- Caption Starts -->
+                                <div class="caption">
+                                    <h3>WCC Slides</h3>
+                                    <p>Witchcraft compiler Collection slides</p>
+                                </div>
+                                <!-- Caption Ends -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Container Ends -->
+        </section>
+        <!-- Portfolio Section Ends -->
+
+
+
+<!-- WCC end -->
+<!-- SMB v2 start -->
+
+
+        <!-- About Section Starts -->
+        <section id="smb" class="about">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>SMB v2</span></h1>
+                    <h4>Sharing more than your files<br>(World's first exploits against Windows 10 and Microsoft Edge)</h4>
+                </div>
+                <!-- Main Heading Ends -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cloud" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <!-- About Content Starts -->
+                <div class="row about-content">
+                    <div class="col-sm-12 col-md-12 col-lg-6 about-left-side">
+                        <h3 class="title-about">World's First exploits in <span style="color:#446CDE;font-weight:bolder">windows 10</span> and <span style="color:#446CDE;font-weight:bolder">microsoft EDGE</span></h3>
+                        <hr>
+
+			<p>In this presentation, we detail a new attack vector against SMBv2, affecting all versions of IE, including the Spartan version shipped with Windows10. While attacks involving SMB have long time been common in LANs, our attack allows complete user compromise from the internet. By leveraging a series of bugs and malfunctions, we'll see how remote credentials theft or user impersonation can be performed without user interaction, extremely reliably, and from the Internet.</p>
+
+
+
+<ul class="nav nav-tabs">
+<li><a class="active" data-toggle="tab" alt="Conferences" href="#menu1smb">Presentations</a></li>
+<li><a data-toggle="tab" alt="performance" href="#menu2smb" STYLE="color: #000000;  background-color: #ffffff;">Whitepaper</a></li>
+<li><a data-toggle="tab" alt="benefits" href="#menu3smb" STYLE="color: #000000;  background-color: #ffffff;">Press</a></li>
+</ul>
+
+
+<div class="tab-content">
+<div id="menu1smb" class="tab-pane fade in active">
+<p>Blackhat (Las Vegas) 2015</p>
+</div>
+<div id="menu2smb" class="tab-pane fade">
+<p>
+The original whitepaper is archived on the <a href=https://www.blackhat.com/docs/us-15/materials/us-15-Brossard-SMBv2-Sharing-More-Than-Just-Your-Files-wp.pdf>Blackhat website</a>. The latest version is available on <a href=https://www.slideshare.net/endrazine/blackhat2015-smb-sharing-more-than-just-your-files-whitepaper>slideshare</a>.</p>
+</div>
+<div id="menu3smb" class="tab-pane fade">
+<p>
+Dark Readings article on our Blackhat presentation. <a href=https://www.darkreading.com/vulnerabilities---threats/new-smb-relay-attack-steals-user-credentials-over-internet/d/d-id/1321633>Read here</a>.
+</p>
+</div>
+</div>
+
+<a class="custom-button scroll-to-target" alt="SMBv2 Resources" href="#smbv2-resources">SMBv2 Resources</a>
+</div>
+
+
+                    <div class="col-md-12 col-lg-6 about-right">
+						<div class="about-right-side">
+							<img class="img-fluid" src="./images/smb.jpeg" alt="Mission" height="385" width="576" title="SMBv2 Presentation" decoding="async">
+						</div>
+                    </div>
+                </div>
+                <!-- About Content Ends -->
+            </div>
+            <!-- Container Ends -->
+        </section>
+        <!-- About Section Ends -->
+        <!-- Video Section Starts -->
+        <section id="Witchcraft" class="videopromotion lazyload" src="./IoT/security/metrics/blank.jpg" data-src="./images/smb.jpeg" decoding="async" style="width: 80%;margin-left: 10%;" >
+            <div class="section-overlay">
+                <!-- Container Starts -->
+                <div class="container">
+                    <!-- Main Heading Starts -->
+                    <div class="text-center top-text">
+                        <h4><span style="color:#446CDE;font-weight:bolder">Blackhat USA 2015 - Presentation</span></h4>
+                    </div>
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                </div>
+                <!-- Divider Ends -->
+                    <!-- Main Heading Ends -->
+                    <div class="video-content">
+                        <!-- Video Play Starts -->
+                        <div class="magnific-popup-gallery">
+                            <div class="btn-wrapper text-center"><a class="image-wrap mfp-youtube" alt="SMBv2 Blackhat presentation video" aria-label="SMBv2 Blackhat presentation video" rel=nofollow href="www.youtube.com/watch?v=a1dgOO9bALA" crossorigin="anonymous"></a></div>
+                        </div>
+                        <!-- Video Play Ends -->
+                    </div>
+                </div>
+                <!-- Container Ends -->
+            </div>
+        </section>
+        <!-- Video Section Ends -->
+
+
+        <!-- Blog Section Starts -->
+        <section class="blog" id="smbv2-resources">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>SMB</span> Resources</h1>
+                    <h4>SMBv2 : Sharing more than your files<br>(World's first exploits against Windows 10 and Microsoft Edge)</h4>
+                </div>
+                <!-- Main Heading Starts -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cogs" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <div class="row latest-posts-content">
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="https://www.darkreading.com/vulnerabilities---threats/new-smb-relay-attack-steals-user-credentials-over-internet/d/d-id/1321633"><img class="img-fluid" src="./images/windows10-thumbnail.jpeg" alt="First Windows 10 exploit"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="https://www.darkreading.com/vulnerabilities---threats/new-smb-relay-attack-steals-user-credentials-over-internet/d/d-id/1321633">First Windows 10 exploit</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Dark Readings article on our Blackhat presentation. <a href=https://www.darkreading.com/vulnerabilities---threats/new-smb-relay-attack-steals-user-credentials-over-internet/d/d-id/1321633>Read here</a>.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2015</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="./whitepapers/Jonathan_Brossard_Blackhat_2015_SMBv2_Sharing_More_Than_Just_Your_Files.pdf"><img class="img-fluid" src="./images/edge-thumbnail.jpeg" alt="First Edge exploit"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="./whitepapers/Jonathan_Brossard_Blackhat_2015_SMBv2_Sharing_More_Than_Just_Your_Files.pdf">Whitepaper</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>The original whitepaper is archived on the <a href=https://www.blackhat.com/docs/us-15/materials/us-15-Brossard-SMBv2-Sharing-More-Than-Just-Your-Files-wp.pdf>Blackhat website</a>. The latest version is available on <a href=https://www.slideshare.net/endrazine/blackhat2015-smb-sharing-more-than-just-your-files-whitepaper>slideshare</a>.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2015</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="./whitepapers/Jonathan_Brossard_Blackhat_2015_SMB_Sharing_More_than_your_files.pdf"><img class="img-fluid" src="./images/Blackhat_2015-thumbnail.jpeg" alt="Blackhat slides"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="./whitepapers/Jonathan_Brossard_Blackhat_2015_SMB_Sharing_More_than_your_files.pdf">Slides</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>The material of our <a href=https://www.slideshare.net/endrazine/blackhat2015-smb-sharing-more-than-just-your-files>presentation</a> is available <a href=https://www.blackhat.com/us-15/briefings.html#smbv2-sharing-more-than-just-your-files>here</a>.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2015</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+					<div class="mx-auto">
+                    </div>
+                </div>
+                <!-- Latest Blog Posts Ends -->
+            </div>
+        </section>
+        <!-- Blog Section Ends -->
+
+<!-- SMB v2 end -->
+
+<!-- FileCry start -->
+
+
+        <!-- About Section Starts -->
+        <section id="filecry" class="about">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>Filecry</span> (Co-Author)</h1>
+                    <h4>The new age of XXE<br>(Remote exploits against Microsoft Internet Exlporer)</h4>
+                </div>
+                <!-- Main Heading Ends -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cloud" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <!-- About Content Starts -->
+                <div class="row about-content">
+                    <div class="col-sm-12 col-md-12 col-lg-6 about-left-side">
+                        <h3 class="title-about">Filecry : Internet explorer <span style="color:#446CDE;font-weight:bolder">CVE-2015-1646</span> and <span style="color:#446CDE;font-weight:bolder">MS15-039</span></h3>
+                        <hr>
+
+			<p>Xml eXternal Entities (XXE) is one of the most deadly vulnerabilities on the Internet, and we will demonstrate how critical enterprise software packages are still vulnerable to these attacks today. In this action-packed presentation, we will demonstrate two 0-day vulnerabilities we identified in both popular server (Java) and client-side (Internet Explorer) technologies. The first vulnerability can be exploited with an attacker-controlled XML leading to arbitrary file ex-filtration on a target server even with all the Java protections enabled. The second vulnerability, allows an attacker to steal both arbitrary files on the local hard drive and secret information across origins with a malicious webpage. Therefore, effectively bypassing the Same Origin Policy and breaching the web-local separation. Both exploits are reliable and do not depend on memory corruptions.</p>
+
+
+
+<ul class="nav nav-tabs">
+<li><a class="active" data-toggle="tab" alt="Conferences" href="#menu1xxe">Advisory</a></li>
+<li><a data-toggle="tab" alt="performance" href="#menu2xxe" STYLE="color: #000000;  background-color: #ffffff;">Whitepaper</a></li>
+<li><a data-toggle="tab" alt="benefits" href="#menu3xxe" STYLE="color: #000000;  background-color: #ffffff;">CVE-2015-1646</a></li>
+</ul>
+
+
+<div class="tab-content">
+<div id="menu1xxe" class="tab-pane fade in active">
+<p>The Microsoft security bulletin for MS15-039 (Important) is available on the <a href="https://technet.microsoft.com/library/security/MS15-039">Microsoft</a> website.Microsoft's acknowledgment to the Salesforce team is archived <a href=https://www.microsoft.com/en-us/msrc/researcher-acknowledgments-online-services-archive>here</a>.</p>
+</div>
+<div id="menu2xxe" class="tab-pane fade">
+<p>
+The technical whitepaper is available on <a href="https://www.slideshare.net/endrazine/blackhat2015-filecry">slideshare</a>.</p>
+</div>
+<div id="menu3xxe" class="tab-pane fade">
+<p>
+Read the advisory for <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1646">CVE-2015-1646</a>.
+</p>
+</div>
+</div>
+
+<a class="custom-button scroll-to-target" alt="SMBv2 Resources" href="#xxe-resources">Filecry Resources</a>
+</div>
+
+
+                    <div class="col-md-12 col-lg-6 about-right">
+						<div class="about-right-side">
+							<img class="img-fluid" src="./images/filecry-thumbnail3.jpeg" alt="FileCry Resources" height="385" width="576" title="Filecry Resources" decoding="async">
+						</div>
+                    </div>
+                </div>
+                <!-- About Content Ends -->
+            </div>
+            <!-- Container Ends -->
+        </section>
+        <!-- About Section Ends -->
+
+        <!-- Blog Section Starts -->
+        <section class="blog" id="xxe-resources">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>Filecry</span> Resources</h1>
+                    <h4>The new age of XXE<br>(Remote exploits against Microsoft Internet Exlporer)</h4>
+                </div>
+                <!-- Main Heading Starts -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cogs" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <div class="row latest-posts-content">
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1646"><img class="img-fluid" src="./images/ie-thumbnail.jpeg" alt="MS15-039/CVE-2015-1646"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1646">Advisory MS15-039 and CVE-2015-1646</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>The Microsoft security bulletin for MS15-039 (Important) is available on the <a href="https://technet.microsoft.com/library/security/MS15-039">Microsoft</a> website.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2015</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="./whitepapers/Jonathan_Brossard_Blackhat_2015_Filecry_the_new_age_of_xxe.pdf"><img class="img-fluid" src="./images/filecry-thumbnail2.jpeg" alt="First Edge exploit"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="./whitepapers/Jonathan_Brossard_Blackhat_2015_Filecry_the_new_age_of_xxe.pdf">Whitepaper</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>The original whitepaper is archived on the <a href="https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE.pdf">Blackhat website</a>. The latest version is available on <a href=https://www.slideshare.net/endrazine/blackhat2015-filecry>slideshare</a>.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2015</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE.pdf"><img class="img-fluid" src="./images/blackhat-2015-thumbnail.jpeg" alt="Blackhat slides"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE.pdf">Slides</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>The material of our <a href=https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE.pdf>presentation</a> is available <a href=https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE.pdf>here</a>.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2015</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+					<div class="mx-auto">
+                    </div>
+                </div>
+                <!-- Latest Blog Posts Ends -->
+            </div>
+        </section>
+        <!-- Blog Section Ends -->
+
+<!-- FileCry end -->
+
+<!-- XXE Java start -->
+
+
+        <!-- About Section Starts -->
+        <section id="java" class="about">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>JAVA JDK</span> Defenseless against XML Parsers (Co-Author)</h1>
+                    <h4>The new age of XXE<br>(Remote Oracle Java exploits)</h4>
+                </div>
+                <!-- Main Heading Ends -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cloud" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <!-- About Content Starts -->
+                <div class="row about-content">
+                    <div class="col-sm-12 col-md-12 col-lg-6 about-left-side">
+                        <h3 class="title-about">JDK Defenseless against XML Parsers</h3>
+                        <hr>
+
+			<p>Xml eXternal Entities (XXE) is one of the most deadly vulnerabilities on the Internet, and we will demonstrate how critical enterprise software packages are still vulnerable to these attacks today. In this action-packed presentation, we will demonstrate two 0-day vulnerabilities we identified in both popular server (Java) and client-side (Internet Explorer) technologies. The first vulnerability can be exploited with an attacker-controlled XML leading to arbitrary file ex-filtration on a target server even with all the Java protections enabled. The second vulnerability, allows an attacker to steal both arbitrary files on the local hard drive and secret information across origins with a malicious webpage. Therefore, effectively bypassing the Same Origin Policy and breaching the web-local separation. Both exploits are reliable and do not depend on memory corruptions.</p>
+
+
+
+<ul class="nav nav-tabs">
+<li><a class="active" data-toggle="tab" alt="Conferences" href="#menu1xxe2">Whitepaper</a></li>
+<li><a data-toggle="tab" alt="performance" href="#menu2xxe2" STYLE="color: #000000;  background-color: #ffffff;">Summary</a></li>
+<li><a data-toggle="tab" alt="benefits" href="#menu3xxe2" STYLE="color: #000000;  background-color: #ffffff;">Advisories</a></li>
+</ul>
+
+
+<div class="tab-content">
+<div id="menu1xxe2" class="tab-pane fade in active">
+<p>
+The technical whitepaper is available <a href="https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE-java-wp.pdf">here</a>.</p>
+</div>
+<div id="menu2xxe2" class="tab-pane fade">
+<p>Multiple Java XML parsers are vulnerable to XXE attack. We identified in particular XXE vulnerabilities in:
+<ul>
+<li>avax.xml.stream.XMLInputFactory</li>
+<li>avax.xml.parsers.DocumentBuilderFactory</li>
+<li>avax.xml.parsers.SAXParserFactory</li>
+<li>avax.xml.transform.sax.SAXTransformerFactory</li>
+<li>javax.xml.transform.TransformerFactory</li>
+<li>avax.xml.validation.SchemaFactory</li>
+<li>javax.xml.validation.Validator</li>
+<li>avax.xml.bind.Unmarshaller</li>
+<li>javax.xml.xpath.XPathExpression</li>
+</ul>
+</p>
+</div>
+<div id="menu3xxe2" class="tab-pane fade">
+<p>
+Responsible disclosure was handled directly with Oracle. Some of the vulnerabilities we identified have been granted their own CVEs after other researchers reported them independently subsequently:
+<ul>
+<li>Read the advisory for <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18197">CVE-2017-18197</a>.</li>
+<li>Read the advisory for <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7503">CVE-2017-7503</a>.<br></li>
+<li>Read the advisory for <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0408">CVE-2015-0408</a>.<br></li>
+</ul>
+</p>
+</div>
+</div>
+
+<a class="custom-button scroll-to-target" alt="SMBv2 Resources" href="#javaxxe-resources">XXE Java Resources</a>
+</div>
+
+
+                    <div class="col-md-12 col-lg-6 about-right">
+						<div class="about-right-side">
+							<img class="img-fluid" src="./images/java-thumb2.jpeg" alt="XXE Java Resources" height="385" width="576" title="XXE Java Resources" decoding="async">
+						</div>
+                    </div>
+                </div>
+                <!-- About Content Ends -->
+            </div>
+            <!-- Container Ends -->
+        </section>
+        <!-- About Section Ends -->
+
+        <!-- Blog Section Starts -->
+        <section class="blog" id="javaxxe-resources">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>JAVA XXE</span> Resources</h1>
+                    <h4>The new age of XXE<br>(Remote Oracle Java exploits)</h4>
+                </div>
+                <!-- Main Heading Starts -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cogs" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <div class="row latest-posts-content">
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18197"><img class="img-fluid" src="./images/java-thumbnail.jpeg" alt="CVE-2017-18197"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="CVE-2017-18197">Advisories</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>The  security bulletin for CVE-2017-18197 is available on the <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18197">MITRE</a> website.</p>
+                                    <p>The  security bulletin for CVE-2017-7503 is available on the <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7503">MITRE</a> website.</p>
+                                    <p>The  security bulletin for CVE-2015-0408 is available on the <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0408">MITRE</a> website.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2015</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="./whitepapers/Jonathan_Brossard_Blackhat_2015_Filecry_the_new_age_of_xxe.pdf"><img class="img-fluid" src="./images/salesforce-thumbnail.jpeg" alt="First Edge exploit"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="./whitepapers/Jonathan_Brossard_Blackhat_2015_XXE_Defenseless_JDK_XML_Parsers_JAVA.pdf">Whitepaper</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>The original whitepaper is archived on the <a href="https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE-java-wp.pdf">Blackhat website</a>. The latest version is available on <a href=https://www.slideshare.net/endrazine/us-15wangfile-crythenewageofxxejavawp>slideshare</a>.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2015</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="./whitepapers/Jonathan_Brossard_Blackhat_2015_XXE_Defenseless_JDK_XML_Parsers_JAVA.pdf"><img class="img-fluid" src="./images/Blackhat_2015-thumbnail.jpeg" alt="Blackhat slides"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE.pdf">Slides</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>The material of our <a href=https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE.pdf>presentation</a> is available <a href=https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE.pdf>here</a>.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2015</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+					<div class="mx-auto">
+                    </div>
+                </div>
+                <!-- Latest Blog Posts Ends -->
+            </div>
+        </section>
+        <!-- Blog Section Ends -->
+
+<!-- XXE Java end -->
+
+<!-- Rakshasa start -->
+
+
+        <!-- About Section Starts -->
+        <section id="rakshasa" class="about">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>Rakshasa</span></h1>
+                    <h4>Hardware Backdooring is Practical<br>(The World's FIRST Public Firmware Backdoor)</h4>
+                </div>
+                <!-- Main Heading Ends -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cloud" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <!-- About Content Starts -->
+                <div class="row about-content">
+                    <div class="col-sm-12 col-md-12 col-lg-6 about-left-side">
+                        <h3 class="title-about">Rakshasa <span style="color:#446CDE;font-weight:bolder">Hardware Backdooring</span> is Practical</h3>
+                        <hr>
+
+			<p>This presentation will demonstrate that permanent backdooring of hardware is practical. We have built a generic proof of concept malware for the intel architecture, Rakshasa, capable of infecting more than a hundred of different motherboards. The first net effect of Rakshasa is to disable NX permanently and remove SMM related fixes from the BIOS, resulting in permanent lowering of the security of the backdoored computer, even after complete earasing of hard disks and reinstallation of a new operating system. We shall also demonstrate that preexisting work on MBR subvertions such as bootkiting and preboot authentication software bruteforce can be embedded in Rakshasa with little effort. More over, Rakshasa is built on top of free software, including the Coreboot project, meaning that most of its source code is already public. This presentation will take a deep dive into Coreboot and hardware components such as the BIOS, CMOS and PIC embedded on the motherboard, before detailing the inner workings of Rakshasa and demo its capabilities. It is hoped to raise awareness of the security community regarding the dangers associated with non open source firmwares shipped with any computer and question their integrity. This shall also result in upgrading the best practices for forensics and post intrusion analysis by including the afore mentioned firmwares as part of their scope of work.</p>
+
+
+
+<ul class="nav nav-tabs">
+<li><a class="active" data-toggle="tab" alt="Conferences" href="#menu1rakshasa">Presentation</a></li>
+<li><a data-toggle="tab" alt="performance" href="#menu2rakshasa" STYLE="color: #000000;  background-color: #ffffff;">Whitepaper</a></li>
+<li><a data-toggle="tab" alt="benefits" href="#menu3rakshasa" STYLE="color: #000000;  background-color: #ffffff;">Slides</a></li>
+<li><a data-toggle="tab" alt="benefits" href="#menu4rakshasa" STYLE="color: #000000;  background-color: #ffffff;">Press</a></li>
+</ul>
+
+
+<div class="tab-content">
+<div id="menu1rakshasa" class="tab-pane fade in active">
+<p>This presentation has been given at:
+<ul>
+<li>Defcon 20 (Las Vegas) 2012</li>
+<li>Blackhat (Las Vegas) 2012</li>
+<li>Intel IsecCon (Hillsboro) 2012</li>
+<li>NoSuchCon (Paris) 2012</li>
+<li>Ruxcon (Melbourne) 2012</li>
+<li>NullCon (Goa) 2013</li>
+<li>NullCon X (Goa) 2019</li>
+<ul>
+</p>
+</div>
+<div id="menu2rakshasa" class="tab-pane fade">
+<p>
+The technical whitepaper is available <a href="https://media.defcon.org/DEF%20CON%2020/DEF%20CON%2020%20presentations/DEF%20CON%2020%20-%20Brossard-Hardware-Backdooring-is-Practical-WP.pdf">here</a>.</p>
+</div>
+<div id="menu3rakshasa" class="tab-pane fade">
+<p>
+Read the slides on <a href="https://media.defcon.org/DEF%20CON%2020/DEF%20CON%2020%20presentations/DEF%20CON%2020%20-%20Brossard-Hardware-Backdooring-is-Practical.pdf">DEF CON 20</a> archives.
+</p>
+</div>
+<div id="menu4rakshasa" class="tab-pane fade">
+<p>
+Read the summary from the <a href="https://www.technologyreview.com/s/428652/a-computer-infection-that-can-never-be-cured/">MIT Technology Review</a>.<br>
+Read the post from <a href="https://www.forbes.com/sites/andygreenberg/2012/07/26/meet-rakshasa-the-malware-infection-designed-to-be-undetectable-and-incurable/#413cd47b7cd5">Forbes</a>.</p>
+</div>
+</div>
+
+<a class="custom-button scroll-to-target" alt="Rakshasa Resources" href="#rakshasa-resources">Rakshasa Resources</a>
+</div>
+
+
+                    <div class="col-md-12 col-lg-6 about-right">
+						<div class="about-right-side">
+							<img class="img-fluid" src="./images/rakshasa-thumb.jpeg" alt="FileCry Resources" height="385" width="576" title="Filecry Resources" decoding="async">
+						</div>
+                    </div>
+                </div>
+                <!-- About Content Ends -->
+            </div>
+            <!-- Container Ends -->
+        </section>
+        <!-- About Section Ends -->
+
+        <!-- Video Section Starts -->
+        <section id="Witchcraft" class="videopromotion lazyload" src="./IoT/security/metrics/blank.jpg" data-src="./images/rakshasa-thumb.jpeg" decoding="async" style="width: 80%;margin-left: 10%;" >
+            <div class="section-overlay">
+                <!-- Container Starts -->
+                <div class="container">
+                    <!-- Main Heading Starts -->
+                    <div class="text-center top-text">
+                        <h4><span style="color:#446CDE;font-weight:bolder">DEF CON 20 - Presentation</span></h4>
+                    </div>
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                </div>
+                <!-- Divider Ends -->
+                    <!-- Main Heading Ends -->
+                    <div class="video-content">
+                        <!-- Video Play Starts -->
+                        <div class="magnific-popup-gallery">
+                            <div class="btn-wrapper text-center"><a class="image-wrap mfp-youtube" alt="Rakshasa DEF CON presentation video" aria-label="Rakshasa DEF CON presentation video" rel=nofollow href="https://www.youtube.com/watch?v=yRxDvkKBMTc" crossorigin="anonymous"></a></div>
+                        </div>
+                        <!-- Video Play Ends -->
+                    </div>
+                </div>
+                <!-- Container Ends -->
+            </div>
+        </section>
+        <!-- Video Section Ends -->
+
+        <!-- Blog Section Starts -->
+        <section class="blog" id="rakshasa-resources">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>Rakshasa</span> Resources</h1>
+                    <h4>Hardware Backdooring is Practical<br>(The World's FIRST Public Firmware Backdoor)</h4>
+                </div>
+                <!-- Main Heading Starts -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cogs" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <div class="row latest-posts-content">
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="https://en.wikipedia.org/wiki/Hardware_backdoor#Examples"><img class="img-fluid" src="./images/wikipedia-thumbnail.jpeg" alt="World's first Firmware Backdoor"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="https://en.wikipedia.org/wiki/Hardware_backdoor#Examples">The world's first Hardware Backdoor</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Wikipedia describes Rakshasa as the first public demonstration of a permanent firmware backdoor.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2012</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="https://www.slideshare.net/endrazine/defcon-hardware-backdooring-is-practical"><img class="img-fluid" src="./images/defcon-20-thumbnail.jpeg" alt="First Edge exploit"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="https://www.slideshare.net/endrazine/whitepaper-final">Whitepaper</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>The original slides are archived on the <a href="https://www.defcon.org/images/defcon-20/dc-20-presentations/Brossard/DEFCON-20-Brossard-Hardware-Backdooring-is-Practical.pdf">DEF CON website</a>. The latest version is available on <a href="https://www.slideshare.net/endrazine/defcon-hardware-backdooring-is-practical">slideshare</a> (190 000+ views).</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2012</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="https://www.technologyreview.com/s/428652/a-computer-infection-that-can-never-be-cured/"><img class="img-fluid" src="./images/MIT-thumbnail.jpeg" alt="Blackhat slides"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="https://www.technologyreview.com/s/428652/a-computer-infection-that-can-never-be-cured/">MIT Technology Review</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Rakshasa has been featured in the MIT Technology review as a backdoor "Undetectable and Uncurable".</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2012</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="https://www.forbes.com/sites/andygreenberg/2012/07/26/meet-rakshasa-the-malware-infection-designed-to-be-undetectable-and-incurable/"><img class="img-fluid" src="./images/Forbes-thumbnail.jpeg" alt="Blackhat slides"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="https://www.forbes.com/sites/andygreenberg/2012/07/26/meet-rakshasa-the-malware-infection-designed-to-be-undetectable-and-incurable/">Forbes Review</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Forbes published an article outlining the disruptive innovations behind Rakshasa.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2012</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="https://media.blackhat.com/bh-us-12/Briefings/Brossard/BH_US_12_Brossard_Backdoor_Hacking_Slides.pdf"><img class="img-fluid" src="./images/blackhat-2012-thumbnail.jpeg" alt="Blackhat slides"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="https://media.blackhat.com/bh-us-12/Briefings/Brossard/BH_US_12_Brossard_Backdoor_Hacking_Slides.pdf">Slides</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Download the Slides of Rakshasa's presentation at Blackhat USA 2012.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2012</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="https://www.youtube.com/watch?v=PE97Ajaaur8"><img class="img-fluid" src="./images/rakshasa-blackhat-2012-thumbnail.jpeg" alt="Blackhat slides"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="https://www.youtube.com/watch?v=PE97Ajaaur8">Blackhat Presentation</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Attend Rakshasa's presentation with this video from Blackhat USA 2012.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2012</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+
+
+
+					<div class="mx-auto">
+                    </div>
+                </div>
+                <!-- Latest Blog Posts Ends -->
+            </div>
+        </section>
+        <!-- Blog Section Ends -->
+
+<!-- Rakshasa end -->
+
+
+<!-- PMCMA start -->
+
+
+        <!-- About Section Starts -->
+        <section id="rakshasa" class="about">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>PMCMA</span></h1>
+                    <h4>Post Memory Corruption Memory Analysis<br>(Automating exploitation of arbirary writes)</h4>
+                </div>
+                <!-- Main Heading Ends -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cloud" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <!-- About Content Starts -->
+                <div class="row about-content">
+                    <div class="col-sm-12 col-md-12 col-lg-6 about-left-side">
+                        <h3 class="title-about"><span style="color:#446CDE;font-weight:bolder">PMCMA</span> Post Memory Corruption Memory Analysis</h3>
+                        <hr>
+
+			<p>In this presentation, we introduce a new exploitation methodology of invalid memory reads and writes, based on dataflow analysis after a memory corruption bug has occured inside a running process.<br>
+We will expose a methodology which shall help writting a reliable exploit out of a PoC triggering an invalid memory write, in presence of security defense mechanisme such as compiler enchancements (full RELRO, SSP...), or kernel anti exploitation features (ASLR, NX...).<br>
+We will demonstrate how to:find all the function pointers inside a running process, how to determine which ones would have been dereferenced after the crash, which ones are truncable (in particular with 0x00000000). In case all of the above fail, how to test for specific locations overwrites in order to indirectly trigger a second vulnerability allowing greater control and eventually control flow hijacking. All of the above without source code, indeed.<br>
+In the case of invalid memory reads, we will exemplify how indirectly influence the control flow of execution by reading arbitary values, how to trace all the unaligned memory access and how to test if an invalid read can be turned into an invalid write or used to infere the mapping of the binary.
+We will also introduce a new debugging technique which allows for very effective testing of all of the above by forcing the debugged process to fork(). Automatically. And with a rating of the best read/write location based on probabilities of mapping addresses (because of ASLR).<br>
+Finally, since overwriting function pointers doesn't allow direct shellcode execution because of W^X mappings, we introduce a new exploitation technique which works even in the most hardcore kernels such as grsecurity. IT is called "stack desynchronization" and allows frame faking inside the stack itself.<br>
+Those techniques are implemented in the form of a proof of concept tool running under x86 GNU/Linux available as open source : <a href="https://github.com/toucan-system/pmcma">here</a>.</p>
+
+
+
+<ul class="nav nav-tabs">
+<li><a class="active" data-toggle="tab" alt="Conferences" href="#menu1pmcma">Presentations</a></li>
+<li><a data-toggle="tab" alt="performance" href="#menu2pmcma" STYLE="color: #000000;  background-color: #ffffff;">Whitepaper</a></li>
+<li><a data-toggle="tab" alt="benefits" href="#menu3pmcma" STYLE="color: #000000;  background-color: #ffffff;">Slides</a></li>
+</ul>
+
+
+<div class="tab-content">
+<div id="menu1pmcma" class="tab-pane fade in active">
+<p>This presentation has been given at:
+<ul>
+<li>Blackhat (Las Vegas) 2011</li>
+<li>CCC (Berlin) 2011</li>
+<li>Hack In the Box (Kuala Lumpur) 2011</li>
+<li>NoSuchCon (Paris) 2011</li>
+<li>Ruxcon (Melbourne) 2011</li>
+<li>Kiwicon (New Zealand) 2011</li>
+<ul>
+</p>
+</div>
+<div id="menu2pmcma" class="tab-pane fade">
+<p>
+The technical whitepaper is available from the <a href="https://fahrplan.events.ccc.de/congress/2011/Fahrplan/attachments/1907_BHUS-2011_Brossard.pdf">CCC</a> and <a href="https://media.blackhat.com/bh-us-11/Brossard/BH_US_11_Brossard_Post_Memory_WP.pdf">Blackhat</a> archives.</p>
+</div>
+<div id="menu3pmcma" class="tab-pane fade">
+<p>
+Read the slides from the <a href="https://www.slideshare.net/endrazine/ccc28c3-post-memory-corruption-memory-analysis">CCC</a> conference.
+</p>
+</div>
+</div>
+
+<a class="custom-button scroll-to-target" alt="PMCMA Resources" href="#pmcma-resources">PMCMA Resources</a>
+</div>
+
+
+                    <div class="col-md-12 col-lg-6 about-right">
+						<div class="about-right-side">
+							<img class="img-fluid" src="./images/pmcma-thumb.jpeg" alt="PMCMA Resources" height="385" width="576" title="PMCMA Resources" decoding="async">
+						</div>
+                    </div>
+                </div>
+                <!-- About Content Ends -->
+            </div>
+            <!-- Container Ends -->
+        </section>
+        <!-- About Section Ends -->
+
+        <!-- Video Section Starts -->
+        <section id="pmcma2" class="videopromotion lazyload" src="./IoT/security/metrics/blank.jpg" data-src="./images/pmcma-thumb.jpeg" decoding="async" style="width: 80%;margin-left: 10%;" >
+            <div class="section-overlay">
+                <!-- Container Starts -->
+                <div class="container">
+                    <!-- Main Heading Starts -->
+                    <div class="text-center top-text">
+                        <h4><span style="color:#446CDE;font-weight:bolder">Blackhat 2011 - Presentation</span></h4>
+                    </div>
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                </div>
+                <!-- Divider Ends -->
+                    <!-- Main Heading Ends -->
+                    <div class="video-content">
+                        <!-- Video Play Starts -->
+                        <div class="magnific-popup-gallery">
+                            <div class="btn-wrapper text-center"><a class="image-wrap mfp-youtube" alt="Blackhat 2011 presentation video" aria-label="Blackhat 2011 presentation video" rel=nofollow href="https://youtu.be/Q7is5pdoKgw" crossorigin="anonymous"></a></div>
+                        </div>
+                        <!-- Video Play Ends -->
+                    </div>
+                </div>
+                <!-- Container Ends -->
+            </div>
+        </section>
+        <!-- Video Section Ends -->
+
+        <!-- Blog Section Starts -->
+        <section class="blog" id="pmcma-resources">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>PMCMA</span> Resources</h1>
+                    <h4>Post Memory Corruption Memory Analysis<br>(Automating exploitation of arbirary writes)</h4>
+                </div>
+                <!-- Main Heading Starts -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cogs" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <div class="row latest-posts-content">
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="https://github.com/toucan-system/pmcma"><img class="img-fluid" src="./images/ccc-thumbnail.jpeg" alt="PMCMA source code"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="https://github.com/toucan-system/pmcma">Source Code</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>The PMCMA debugger is free software (Apache License) and is available on <a href=https://github.com/toucan-system/pmcma>github</a>.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2011</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="https://www.slideshare.net/endrazine/defcon-hardware-backdooring-is-practical"><img class="img-fluid" src="./images/blackhat-2011-thumbnail.jpeg" alt="First Edge exploit"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="https://media.blackhat.com/bh-us-11/Brossard/BH_US_11_Brossard_Post_Memory_WP.pdf">Whitepaper</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>The original whitepaper is archived on the <a href="https://media.blackhat.com/bh-us-11/Brossard/BH_US_11_Brossard_Post_Memory_WP.pdf">Blackhat website</a>. The latest version is available on <a href="https://www.slideshare.net/endrazine/jonathan-brossard-blackhat2011postmemorycorruptionmemoryanalysiswhitepaper">slideshare</a>.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2011</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="https://www.slideshare.net/endrazine/blackhat-us-2011-post-memory-corruption-memory-analysis"><img class="img-fluid" src="./images/pmcma-thumbnail.jpeg" alt="Blackhat slides"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="https://www.slideshare.net/endrazine/blackhat-us-2011-post-memory-corruption-memory-analysis">Slides</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Download the Slides of PMCMA's presentation from the archives of <a href="https://www.blackhat.com/html/bh-us-11/bh-us-11-archives.html#Brossard">Blackhat USA 2011</a>.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2011</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+					<div class="mx-auto">
+                    </div>
+                </div>
+                <!-- Latest Blog Posts Ends -->
+            </div>
+        </section>
+        <!-- Blog Section Ends -->
+
+        <!-- Video Section Starts -->
+        <section id="pmcma1" class="videopromotion lazyload" src="./IoT/security/metrics/blank.jpg" data-src="./images/pmcma-thumb.jpeg" decoding="async" style="width: 80%;margin-left: 10%;" >
+            <div class="section-overlay">
+                <!-- Container Starts -->
+                <div class="container">
+                    <!-- Main Heading Starts -->
+                    <div class="text-center top-text">
+                        <h4><span style="color:#446CDE;font-weight:bolder">CCC 28c3 - Presentation</span></h4>
+                    </div>
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                </div>
+                <!-- Divider Ends -->
+                    <!-- Main Heading Ends -->
+                    <div class="video-content">
+                        <!-- Video Play Starts -->
+                        <div class="magnific-popup-gallery">
+                            <div class="btn-wrapper text-center"><a class="image-wrap mfp-youtube" alt="CCC 28c3 presentation video" aria-label="CCC 28c3 presentation video" rel=nofollow href="https://www.youtube.com/watch?v=PAanj8F-hXc" crossorigin="anonymous"></a></div>
+                        </div>
+                        <!-- Video Play Ends -->
+                    </div>
+                </div>
+                <!-- Container Ends -->
+            </div>
+        </section>
+        <!-- Video Section Ends -->
+
+<!-- PMCMA end -->
+
+<!-- Breaking Virtualization start -->
+
+
+        <!-- About Section Starts -->
+        <section id="breakingvirtualization" class="about">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>Breaking Virtualization</span></h1>
+                    <h4>By switching the cpu to 8086 mode</h4>
+                </div>
+                <!-- Main Heading Ends -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cloud" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <!-- About Content Starts -->
+                <div class="row about-content">
+                    <div class="col-sm-12 col-md-12 col-lg-6 about-left-side">
+                        <h3 class="title-about"><span style="color:#446CDE;font-weight:bolder">Breaking Virtualization</span> By switching the cpu to 8086 mode</h3>
+                        <hr>
+
+			<p>In the last 5 years, virtualization software have been massively adopted by companies as a mean to reduce costs, achieve instant scalability, and possibly better their security through isolation. Recent numbers indicate that 78 percent of companies have their production servers virtualized, and 20 percent of them actually only rely on virtualized servers. At the same time, security auditing of such software poses unique challenges, in particular when it comes to dynamic testing. In this paper, we describe a methodology for the security assessment ofvirtualization software based on switching the CPU mode to virtual 8086 mode in orter to get access to the (possibly virtualized) hardware, that aims at being both generic (applicable to both x86 and x64 architectures) and extremely large in terms of code coverage. We have implemented this technology under the form of a dynamic testing tool which has proved to be very efficient in finding bugs in virtualization software.</p>
+
+
+
+<ul class="nav nav-tabs">
+<li><a class="active" data-toggle="tab" alt="Conferences" href="#menu1virt">Presentations</a></li>
+<li><a data-toggle="tab" alt="benefits" href="#menu3virt" STYLE="color: #000000;  background-color: #ffffff;">Slides</a></li>
+</ul>
+
+
+<div class="tab-content">
+<div id="menu1virt" class="tab-pane fade in active">
+<p>This presentation has been given at:
+<ul>
+<li>Hackito Ergo Sum (Paris) 2010</li>
+<li>HITB (Kuala Lumpur) 2010</li>
+<li>HITB (Amsterdam) 2010</li>
+<li>H2HC (Sao Paolo) 2010</li>
+<li>Ruxcon (Melbourne) 2010</li>
+<ul>
+</p>
+</div>
+<div id="menu3virt" class="tab-pane fade">
+<p>
+Read the slides from the <a href="https://conference.hitb.org/hitbsecconf2010ams/materials/D1T2%20-%20Jonathan%20Brossard%20-%20Breaking%20Virtualization%20by%20Switching%20to%20Virtual%208086%20Mode.pdf">HITB Amsterdam</a> and <a href="http://conference.hackinthebox.org/hitbsecconf2010kul/materials/D1T1%20-%20Jonathan%20Brossard%20-%20Breaking%20Virtualization%20by%20Any%20Means.pdf"> HITB Kuala Lumpur</a> conferences.
+</p>
+</div>
+</div>
+
+<a class="custom-button scroll-to-target" alt="Breaking Virtualization Resources" href="#virt-resources">Breaking Virtualization Resources</a>
+</div>
+
+
+                    <div class="col-md-12 col-lg-6 about-right">
+						<div class="about-right-side">
+							<img class="img-fluid" src="./images/virtualization-thumbnail.jpeg" alt="Breaking Virtualization Resources" height="385" width="576" title="Breaking Virtualization Resources" decoding="async">
+						</div>
+                    </div>
+                </div>
+                <!-- About Content Ends -->
+            </div>
+            <!-- Container Ends -->
+        </section>
+        <!-- About Section Ends -->
+
+        <!-- Video Section Starts -->
+        <section id="virt" class="videopromotion lazyload" src="./IoT/security/metrics/blank.jpg" data-src="./images/virtualization-thumbnail.jpeg" decoding="async" style="width: 80%;margin-left: 10%;" >
+            <div class="section-overlay">
+                <!-- Container Starts -->
+                <div class="container">
+                    <!-- Main Heading Starts -->
+                    <div class="text-center top-text">
+                        <h4><span style="color:#446CDE;font-weight:bolder">Hack in the Box - Presentation</span></h4>
+                    </div>
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                </div>
+                <!-- Divider Ends -->
+                    <!-- Main Heading Ends -->
+                    <div class="video-content">
+                        <!-- Video Play Starts -->
+                        <div class="magnific-popup-gallery">
+                            <div class="btn-wrapper text-center"><a class="image-wrap mfp-youtube" alt="Breaking Virtualization presentation video" aria-label="Breaking Virtualization presentation video" rel=nofollow href="https://www.youtube.com/watch?v=kOgarD9KCbg" crossorigin="anonymous"></a></div>
+                        </div>
+                        <!-- Video Play Ends -->
+                    </div>
+                </div>
+                <!-- Container Ends -->
+            </div>
+        </section>
+        <!-- Video Section Ends -->
+
+        <!-- Blog Section Starts -->
+        <section class="blog" id="virt-resources">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>Breaking Virtualization</span> Resources</h1>
+                    <h4>By switching the cpu to 8086 mode</h4>
+                </div>
+                <!-- Main Heading Starts -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cogs" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <div class="row latest-posts-content">
+
+
+
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="hhttps://conference.hitb.org/hitbsecconf2010ams/materials/D1T2%20-%20Jonathan%20Brossard%20-%20Breaking%20Virtualization%20by%20Switching%20to%20Virtual%208086%20Mode.pdf"><img class="img-fluid" src="./images/hitb_2010-thumbnail.jpeg" alt="HITB Amsterdam slides"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="https://conference.hitb.org/hitbsecconf2010ams/materials/D1T2%20-%20Jonathan%20Brossard%20-%20Breaking%20Virtualization%20by%20Switching%20to%20Virtual%208086%20Mode.pdf">HITB Amsterdam Slides</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Download the Slides of this presentation from the archives of <a href="https://conference.hitb.org/hitbsecconf2010ams/materials/D1T2%20-%20Jonathan%20Brossard%20-%20Breaking%20Virtualization%20by%20Switching%20to%20Virtual%208086%20Mode.pdf">HITB Asmterdam</a> website.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>JUL</span>
+                                <span>2010</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="https://www.slideshare.net/endrazine/ruxcon-breaking-virtualization-by-switching-the-cpu-to-virtual-8086-mode-6104654"><img class="img-fluid" src="./images/ruxcon-2010-thumbnail.jpeg" alt="HITB slides"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="https://www.slideshare.net/endrazine/ruxcon-breaking-virtualization-by-switching-the-cpu-to-virtual-8086-mode-6104654">Ruxcon Slides</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Download the Slides of this presentation from the archives of <a href="https://www.slideshare.net/endrazine/ruxcon-breaking-virtualization-by-switching-the-cpu-to-virtual-8086-mode-6104654">Ruxcon</a> website.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>NOV</span>
+                                <span>2010</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="http://conference.hackinthebox.org/hitbsecconf2010kul/materials/D1T1%20-%20Jonathan%20Brossard%20-%20Breaking%20Virtualization%20by%20Any%20Means.pdf"><img class="img-fluid" src="./images/hitb-KL-2010-thumbnail.jpeg" alt="HITB Kuala Lumpur slides"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="http://conference.hackinthebox.org/hitbsecconf2010kul/materials/D1T1%20-%20Jonathan%20Brossard%20-%20Breaking%20Virtualization%20by%20Any%20Means.pdf">HITB Kuala Lumpur Slides</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Download the Slides of this presentation from the archives of <a href="http://conference.hackinthebox.org/hitbsecconf2010kul/materials/D1T1%20-%20Jonathan%20Brossard%20-%20Breaking%20Virtualization%20by%20Any%20Means.pdf">HITB Kuala Lumpur</a> website.</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>OCT</span>
+                                <span>2010</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+
+
+					<div class="mx-auto">
+                    </div>
+                </div>
+                <!-- Latest Blog Posts Ends -->
+            </div>
+        </section>
+        <!-- Blog Section Ends -->
+
+<!-- Breaking Virtualization end -->
+
+        <!-- Testimonials Section Starts -->
+        <section class="testimonials">
+	<center>
+            <div class="section-overlay">
+                <!-- Container Starts -->
+                <div class="container">
+                    <!-- Main Heading Starts -->
+                    <div class="text-center top-text">
+                        <h1><span>Press </span>review</h1>
+                        <h4>Global coverage</h4>
+                    </div>
+                    <!-- Main Heading Starts -->
+                    <!-- Blockquotes Starts -->
+                    <div id="quote-carousel" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper For Sliders Starts -->
+                        <!-- Indicators Starts -->
+                        <ol class="carousel-indicators mx-auto">
+                            <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#quote-carousel" data-slide-to="1"></li>
+                            <li data-target="#quote-carousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Indicators Ends -->
+                        <div class="carousel-inner">
+                            <!-- Quote #1 Starts -->
+                            <div class="carousel-item active">
+                                <blockquote>
+                                    <img class="rounded-circle img-fluid" src="./images/forbes.png" alt="Toucan System - Forbes">
+                                    <p>Researcher Jonathan Brossard has innovated a uniquely nasty coding trick: A strain of malware that's nearly impossible to disinfect.</p>
+                                    <h5>Andy Greenberg</h5>
+                                    <h6>Journalist - Forbes</h6>
+                                </blockquote>
+                            </div>
+                            <!-- Quote #1 Ends -->
+                            <!-- Quote #2 Starts -->
+                            <div class="carousel-item">
+                                <blockquote>
+                                    <img class="rounded-circle img-fluid" src="./images/MIT.png" alt="Toucan System - MIT">
+                                    <p>A hacker demonstrates that code can be hidden inside a new computer to put it forever under remote control.</p>
+                                    <h5>Tom Simonite</h5>
+                                    <h6>Writer - MIT Technology Review</h6>
+                                </blockquote>
+                            </div>
+                            <!-- Quote #2 Ends -->
+                            <!-- Quote #3 Starts -->
+                            <div class="carousel-item">
+                                <blockquote>
+                                    <img class="rounded-circle img-fluid" src="./images/SHM.png" alt="client">
+                                    <p>Mr Brossard is one of the world’s best-known ‘‘ethical hackers’’, and uses his computer skills to help companies strengthen their cybersecurity.</p>
+                                    <h5>Tim Barlass</h5>
+                                    <h6>Reporter - Sydney Morning Herald</h6>
+                                </blockquote>
+                            </div>
+                            <!-- Quote #3 Ends -->
+                        </div>
+                        <!-- Wrapper For Sliders Ends -->
+                    </div>
+                    <!-- Blockquotes Ends -->
+                </div>
+                <!-- Container Ends -->
+            </div>
+	</center>
+        </section>
+        <!-- Testimonials Section Ends -->
+        <!-- Footer Section Starts -->
+        <footer class="footer text-center">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Copyright Text Starts -->
+                    &copy; Copyright 2010-2019 <a href="https://endrazine.com" alt="endrazine.com">Jonathan Brossard</a>
+                </p>
+                <!-- Copyright Text Ends -->
+                <!-- Social Media Links Starts -->
+                <div class="social-icons">
+                    <ul class="social">
+                        <li>
+                            <a class="linkedin" rel=nofollow href="https://www.linkedin.com/in/endrazine" title="linkedin" alt="Jonathan Brossard Linkedin page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="twitter" rel=nofollow href="https://twitter.com/endrazine" title="twitter" alt="Jonathan Brossard Twitter page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="facebook" rel=nofollow href="https://www.facebook.com/endrazine" title="facebook" alt="Jonathan Brossard Facebook page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="youtube" rel=nofollow href="https://www.youtube.com/moabi" title="youtube" alt="Moabi Youtube page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="github" rel=nofollow href="https://github.com/endrazine" title="github" alt="Jonathan Brossard Github page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="blog" rel=nofollow href="https://blog.moabi.com" title="blog" alt="Moabi blog" crossorigin="anonymous" ></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Social Media Links Ends -->
+
+	    <!-- Legal disclaimers -->
+
+		<a rel=nofollow href="https://sway.office.com/s/ZGZJ9H4Acjpmeiv1/embed" crossorigin="anonymous" alt="Moabi Statement of privacy" >Statement of Privacy and Data Protection</a><p />
+		<a rel=nofollow href="https://sway.office.com/s/77E2E35BSeGykIj0/embed" crossorigin="anonymous" alt="Moabi terms of use" >Website Terms of Use</a>
+
+	    <!-- End of Legal disclaimers -->
+
+            </div>
+            <!-- Container Ends -->
+        </footer>
+        <!-- Footer Section Starts -->
+        <!-- Back To Top Starts -->
+        <div id="back-top-wrapper" class="d-none d-sm-block">
+            <p id="back-top">
+                <a href="index.html#top" alt="back to top"><span> </span></a>
+            </p>
+        </div>
+        <!-- Back To Top Ends -->
+    </div>
+    <!-- Wrapper Ends -->
+
+    <!-- Template JS Files -->
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/lazyload.js"></script>
+    <!-- Revolution Slider Main JS Files -->
+    <script defer type="text/javascript" src="js/rev.js"></script>
+    <!-- Revolution Slider Extensions -->
+    <script defer type="text/javascript" src="js/site.js"></script>
+    <!-- Main JS Initialization File -->
+    <script defer type="text/javascript" src="js/custom.js"></script>
+
+    <!-- Add javascript listener -->
+    <script type="text/javascript">
+	jQuery.event.special.touchstart = {
+	  setup: function( _, ns, handle ){
+	   if ( ns.includes("noPreventDefault") ) {
+	     this.addEventListener("touchstart", handle, { passive: false });
+	   } else {
+	     this.addEventListener("touchstart", handle, { passive: true });
+	  }
+	 }
+	};
+	jQuery.event.special.touchmove = {
+	   setup: function( _, ns, handle ){
+	      if ( ns.includes("noPreventDefault") ) {
+		 this.addEventListener("touchmove ", handle, { passive: false });
+	      } else {
+		 this.addEventListener("touchmove ", handle, { passive: true });
+	      }
+	   }
+	};
+    </script>
+
+    <!-- Lazy loading of images handler -->
+    <script type="text/javascript">
+	window.addEventListener("load", function(event) {
+	    lazyload();
+	});
+    </script>
+
+    <!-- Add Service Worker -->
+    <script type="text/javascript">
+	if ('serviceWorker' in navigator) {
+	  // Register a service worker hosted at the root of the
+	  // site using the default scope.
+	  navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+	    console.log('Service worker registration succeeded:', registration);
+	  }, /*catch*/ function(error) {
+	    console.log('Service worker registration failed:', error);
+	  });
+	} else {
+	  console.log('Service workers are not supported.');
+	}
+    </script>
+
+    <!-- Revolution Slider Initialization Starts -->
+    <script type="text/javascript">
+!function(){"use strict";var e=jQuery;e(document).ready(function(){null==e("#rev_slider").revolution?revslider_showDoubleJqueryError("#rev_slider"):e("#rev_slider").show().revolution({sliderType:"standard",jsFileLocation:"js/plugins/revolution/js/",dottedOverlay:"none",sliderLayout:"fullscreen",delay:9e3,navigation:{keyboardNavigation:"off",keyboard_direction:"horizontal",mouseScrollNavigation:"off",onHoverStop:"off",touch:{touchenabled:"on",swipe_threshold:75,swipe_min_touches:1,swipe_direction:"horizontal",drag_block_vertical:!1},arrows:{style:"zeus",enable:!0,hide_onmobile:!0,hide_under:600,hide_onleave:!0,hide_delay:200,hide_delay_mobile:1200,tmp:'<div class="tp-title-wrap">  \t<div class="tp-arr-imgholder"></div> </div>',left:{h_align:"left",v_align:"center",h_offset:90,v_offset:0},right:{h_align:"right",v_align:"center",h_offset:90,v_offset:0}},bullets:{enable:!1,hide_onmobile:!0,hide_under:600,style:"metis",hide_onleave:!0,hide_delay:200,hide_delay_mobile:1200,direction:"horizontal",h_align:"center",v_align:"bottom",h_offset:0,v_offset:30,space:5,tmp:'<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span>'}},viewPort:{enable:!0,outof:"pause",visible_area:"80%"},responsiveLevels:[1240,1024,778,480],gridwidth:[1240,1024,778,480],gridheight:[600,600,500,400],lazyType:"none",parallax:{type:"mouse",origo:"slidercenter",speed:2e3,levels:[2,3,4,5,6,7,12,16,10,50]},shadow:0,spinner:"off",stopLoop:"off",stopAfterLoops:-1,stopAtSlide:-1,shuffle:"off",hideThumbsOnMobile:"off",autoHeight:"off",hideSliderAtLimit:0,hideCaptionAtLimit:0,hideAllCaptionAtLilmit:0,debugMode:!1,fallbacks:{simplifyAll:"off",nextSlideOnWindowFocus:"off",disableFocusListener:!1}})})}(jQuery);
+    </script>
+    <!-- Revolution Slider Initialization Ends -->
+
+    <!-- HubSpot Embed Code -->
+    <script async defer type="text/javascript" id="hs-script-loader" src="https://js.hs-scripts.com/5554324.js"></script>
+
+</body>
+</html>

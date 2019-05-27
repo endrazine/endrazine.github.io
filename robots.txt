@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /IoT
+Allow: /blog
+Allow: /news
+
+User-agent: Twitterbot
+Allow: /IoT
+
+User-agent: facebookexternalhit
+Allow: /IoT
+
+#Sitemap
+Sitemap: https://moabi.com/sitemap.xml
+
+
