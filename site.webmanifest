@@ -1,7 +1,7 @@
 {
-    "name": "Moabi",
-    "short_name": "Moabi",
-	"description": "Preventive Software Security",
+    "name": "Endrazine",
+    "short_name": "Endrazine",
+	"description": "Blog of Jonathan Brossard",
 	"start_url": "/index.html",
     "icons": [
         {
