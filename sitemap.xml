@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>https://endrazine.com/index.html</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_defcon2012.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_WCC_internal_documentation.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_INTEL_iSEC_2016.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_2013_Sandboxing.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Bios_Information_Leakage_2005.txt</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2011.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_Breaking_Preboot_Authentication.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_24_Introduction-to-the-Witchcraft-Compiler-Collection.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_defcon2008.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_SYSCAN_2013.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_TELECOMX_2009.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Shakacon_2017_Silent_Protest.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_NULLCON_2012.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_24_Witchcraft_Compiler_Collection.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_2013.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2015_SMBv2_Sharing_More_Than_Just_Your_Files.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Kiwicon_2011.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_blackhat2012.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_2009.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HackitoErgoSum_2010_Breaking_Virtualization_8088_mode.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HackitoErgoSum_2010.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/kpatch</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/kpatch/Kbuild</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/kpatch/Makefile</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/kpatch/src</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/kpatch/src/kpatch.c</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/kpatch/src/Makefile</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/kpatch/src/.tmp_versions</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/ksploit-proc</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/ksploit-proc/Kbuild</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/ksploit-proc/Makefile</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/ksploit-proc/src</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/ksploit-proc/src/Makefile</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/ksploit-proc/src/ksploit.c</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/ksploit-proc/src/.tmp_versions</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/bibliography</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/bibliography/ref.bib</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/invisible-man</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/invisible-man/invisible_man_MBR.S</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/invisible-man/invisible_man.c</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/bootloader-fix</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/bootloader-fix/zero_BDA.S</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/userland-unix</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/userland-unix/generic.unix.sploit.c</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/README.txt.asc</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/msdos-exploits</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/msdos-exploits/shellcode.BIOS.S</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/sploit-os</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/tools/sploit-os/sploitos.S</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_TELECOMX_2009.WP.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_RUXCON_2013.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_BSides_San_Francisco_2016_Witchcraft_Compiler_Collection.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Auscert_2013_Hardware_Backdooring.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_USA_2011_Post_Memory_Corruption_Memory_Analysis_PMCMA.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_NoSuchCon_Hardware_Backdooring_Is_Practical.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2010_Amsterdam.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_16_tools.zip</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_CCC_2012.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/index.html</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_Europe_2016_Witchcraft_Compiler_Collection-Towards_Self_Aware_Computer_Programs-wp.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_ClubHack_2008.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_2010.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2011_Post_Memory_Corruption_Memory_Analysis_Whitepaper.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_RUXCON_2010.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Ruxcon_2011_PMCMA.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2015_XXE_Defenseless_JDK_XML_Parsers_JAVA.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_INTEL_iSEC_2012.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2015_Filecry_the_new_age_of_xxe.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_16_Bitlocker.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2010_KualaLumpur.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Syscan_2013_Sandboxing.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HackitoErgoSum_2012.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2011_Breaking_Virtualization_8088_mode.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2011_PMCMA.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_USA_2012_Hardware_Backdooring_is_Practical.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_28c3_Chaos_Computer_Conference.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2015_SMB_Sharing_More_than_your_files.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Ruxmon_2012_Reverse_Engineering_Proprietary_Protocols.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2016_Witchcraft-Compiler-Collection_User_Manual.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2011.WP.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_NULLCON_2019.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_RUXCON_2012.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_20_Hardware_Backdooring_is_Practical.pdf</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/windows10-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/documentation_thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/wikipedia-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/remote-1600.jpg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/package_thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/Forbes-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/Blackhat-2016.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/codebase_thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/ccc.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/wcc-1600.jpg.1</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/wcc-thumb.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/bios2.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/RE.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/MIT-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/moabi_paris-1600.jpg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/java-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/defcon-20-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/wcc-1600.jpg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/rakshasa-thumb.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/logo-white.png</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/Jonathan_Brossard_2.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/Blackhat_2015-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/filecry-thumbnail3.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/edge-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/virtualization-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/blackhat-2012-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/ie-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/bios1.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/pmcma_min.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/blackhat-2015-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/rakshasa-blackhat-2012-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/bios3.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/edge.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/rakshasa-1600.jpg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/truecrypt.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/SHM.png</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/filecry-thumbnail2.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/java-thumb2.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/reverse-1600.jpg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/rakshasa_min.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/forbes.png</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/bios_min.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/User_Manual.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/pmcma-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/WP.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/smb.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/defcon_24.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/bios-1600.jpg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/salesforce-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/bitlocker.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/defcon24.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/MIT.png</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/blackhat-2011-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/BlackhatUSA2015.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/ruxcon-2010-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/blank.jpg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/pmcma-1600.jpg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/hitb_2010-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/jonathan_brossard.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/ccc-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/pmcma-thumb.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/BSides_2017.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/bios-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/reverse_min.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/defcon-16-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/hitb-KL-2010-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/smb_min.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/windows10.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+<url>
+  <loc>https://endrazine.com/images/rakshasa-thumbnail.jpeg</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2019-05-27</lastmod>
+</url>
+</urlset>
