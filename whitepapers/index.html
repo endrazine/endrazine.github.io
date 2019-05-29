@@ -1,7 +1,140 @@
-<!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta charset="UTF-8">
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Endrazine.com Information Security Research blog of Jonathan Brossard.">
+    <meta name="keywords" content="Reverse Engineering, Firmware Security, Binary analysis, Witchcraft Compiler Collection, Ppost Memory Corruption Memory Analysis, BIOS Security, Preboot Authentication Passwords Bypass">
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://endrazine.com https://www.slideshare.net https://github.com; script-src 'self' https://endrazine.com https://www.slideshare.net https://github.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-analytics.net https://track.hubspot.com 'unsafe-inline'; connect-src 'self' https://endrazine.com https://www.slideshare.net https://github.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-analytics.net https://track.hubspot.com ; img-src 'self' data: https://endrazine.com https://www.slideshare.net https://github.com https://www.google-analytics.com https://track.hubspot.com https://www.googletagmanager.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://endrazine.com https://www.slideshare.net https://github.com https://tagmanager.google.com/ https://fonts.googleapis.com/ 'unsafe-inline' ; font-src 'self' https://endrazine.com https://fonts.googleapis.com https://fonts.gstatic.com/ ; frame-src https://www.youtube.com/ https://youtube.com/ https://www.slideshare.net https://github.com https://endrazine.com ; base-uri 'self' https://endrazine.com https://www.slideshare.net https://github.com;" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.86">
+
+    <!-- Json-ld information -->
+    <script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@id": "https://endrazine.com/index.html#top",
+		"@type": "Organization",
+		"name": "Moabi",
+		"url": "https://endrazine.com/",
+		"logo": "https://moabi.com/moabi.png",
+		"email": "info(at)endrazine.com",
+		"description": "Endrazine.com Information Security Research blog of Jonathan Brossard.",
+		"address": [
+			{
+				"@type": "PostalAddress",
+				"addressLocality": "Paris, France",
+				"postalCode":"75015",
+				"streetAddress": "33 Avenue du Maine"
+			},
+			{
+				"@type": "PostalAddress",
+				"addressLocality": "San Francisco",
+				"addressRegion": "CA",
+				"postalCode":"94133",
+				"streetAddress": "1640 Stockton Street",
+				"postOfficeBoxNumber": "330143"
+			}
+		],
+		"contactPoint": [
+			{
+				"@type": "ContactPoint",
+				"telephone": "+33188335053",
+				"email": "info(at)moabi.com",
+				"contactType": "sales"
+			},
+			{
+				"@type": "ContactPoint",
+				"email": "jb(at)endrazine.com",
+				"contactType": "customer service",
+				"url": "https://endrazine.com"
+			}
+		],
+		"sameAs": [
+			"https://moabi.com",
+			"https://blog.moabi.com"
+		]
+	}
+    </script>
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Endrazine - Reverse Engineering - Research blog of Jonathan Brossard" />
+    <meta property="og:url" content="https://endrazine.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://endrazine.com/moabi_card.png" />
+    <meta property="og:description" content="Endrazine.com Information Security Research blog of Jonathan Brossard." />
+    <meta property="og:site_name" content="Endrazine.com : Information Security Research blog of Jonathan Brossard">
+
+    <!-- Twitter card integration (works with Open Graph data above) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Endrazine.com - Jonathan Brossard low level Information Security blog">
+    <meta name="twitter:site" content="@endrazine">
+
+    <!-- Yandex indexation -->
+    <meta name="yandex-verification" content="e477bac9aff66624" />
+
+    <!-- Bing Indexing -->
+    <meta name="msvalidate.01" content="E6F45B72576D2C71AD0A5B162DF8117D" />
+
+    <!-- Preconnect optimization -->
+    <link rel="preconnect" href="https://js.hs-scripts.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+
+    <!-- Preload optimization -->
+   <link rel="preload" href="./fonts/1Ptrg8zYS_SKggPNwIouWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="./fonts/1Ptrg8zYS_SKggPNwN4rWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="./fonts/1Ptug8zYS_SKggPNyC0ISg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="./fonts/1Ptrg8zYS_SKggPNwJYtWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="./js/modernizr.js" as="script">
+   <link rel="preload" href="./js/jquery-3.3.1.min.js" as="script">
+   <link rel="preload" href="./js/lazyload.js" as="script">
+   <link rel="preload" href="./js/main.js" as="script">
+   <link rel="preload" href="./js/rev.js" as="script">
+   <link rel="preload" href="./js/custom.js" as="script">
+   <link rel="preload" href="./js/site.js" as="script">
+
+    <link rel="preload" href="./fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <!-- Canonical name -->
+    <link rel="canonical" href="https://moabi.com/research/jbrossard/index.html" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />  
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />  
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />  
+
+    <!-- Apple icons -->
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-152.png" />  
+    <link rel="apple-touch-icon" sizes="167x167" href="apple-167.png" />  
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-180.png" />  
+
+    <!-- Apple Safari -->
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#446CDE" />
+
+    <!-- Microsoft Windows/IE11 Start Screen Tile-->
+    <meta name="application-name" content="endrazine.com"/>
+    <meta name="msapplication-square70x70logo" content="small.jpg"/>
+    <meta name="msapplication-square150x150logo" content="medium.jpg"/>
+    <meta name="msapplication-wide310x150logo" content="wide.jpg"/>
+    <meta name="msapplication-square310x310logo" content="large.jpg"/>
+    <meta name="msapplication-TileColor" content="#446CDE">
+    <meta name="theme-color" content="#446CDE">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129423028-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129423028-1');
+    </script>
+
 <style type="text/css">
 :root {
   font-family: sans-serif;
