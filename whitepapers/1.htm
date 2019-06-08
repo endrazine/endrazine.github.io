@@ -84,25 +84,25 @@
     <link rel="preconnect" href="https://www.google-analytics.com">
 
     <!-- Preload optimization -->
-   <link rel="preload" href="/fonts/1Ptrg8zYS_SKggPNwIouWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-   <link rel="preload" href="/fonts/1Ptrg8zYS_SKggPNwN4rWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-   <link rel="preload" href="/fonts/1Ptug8zYS_SKggPNyC0ISg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-   <link rel="preload" href="/fonts/1Ptrg8zYS_SKggPNwJYtWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-   <link rel="preload" href="/js/modernizr.js" as="script">
-   <link rel="preload" href="/js/jquery-3.3.1.min.js" as="script">
-   <link rel="preload" href="/js/lazyload.js" as="script">
-   <link rel="preload" href="/js/main.js" as="script">
-   <link rel="preload" href="/js/rev.js" as="script">
-   <link rel="preload" href="/js/custom.js" as="script">
-   <link rel="preload" href="/js/site.js" as="script">
+   <link rel="preload" href="../fonts/1Ptrg8zYS_SKggPNwIouWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="../fonts/1Ptrg8zYS_SKggPNwN4rWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="../fonts/1Ptug8zYS_SKggPNyC0ISg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="../fonts/1Ptrg8zYS_SKggPNwJYtWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="../js/modernizr.js" as="script">
+   <link rel="preload" href="../js/jquery-3.3.1.min.js" as="script">
+   <link rel="preload" href="../js/lazyload.js" as="script">
+   <link rel="preload" href="../js/main.js" as="script">
+   <link rel="preload" href="../js/rev.js" as="script">
+   <link rel="preload" href="../js/custom.js" as="script">
+   <link rel="preload" href="../js/site.js" as="script">
 
-    <link rel="preload" href="/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous">
 
     <!-- Canonical name -->
     <link rel="canonical" href="https://moabi.com/research/jbrossard/index.html" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />  
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />  
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />  
@@ -114,8 +114,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-180.png" />  
 
     <!-- Apple Safari -->
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#446CDE" />
+    <link rel="manifest" href="../site.webmanifest" />
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#446CDE" />
 
     <!-- Microsoft Windows/IE11 Start Screen Tile-->
     <meta name="application-name" content="endrazine.com"/>
@@ -138,12 +138,12 @@
 
     <!-- Note: stylesheets are loaded twice to make up for the lack of preloading in Firefox. See https://stackoverflow.com/questions/45321043/preload-css-file-not-supported-on-firefox-and-safari-mac -->
     <!-- CSS  Fonts -->
-    <link rel="preload" href="/css/font-awesome.min.css" as="style" />
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="preload" href="../css/font-awesome.min.css" as="style" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
 
     <!-- CSS  -->
-    <link rel="preload" href="/css/site.css" as="style" />
-    <link rel="stylesheet" href="/css/site.css">
+    <link rel="preload" href="../css/site.css" as="style" />
+    <link rel="stylesheet" href="../css/site.css">
 
 
 </head>
@@ -152,9 +152,55 @@
     <!-- Noscript tag -->
     <noscript>Your browser does not support javascript : some elements may not be displayed as intended.<br /><br /></noscript>
 
+<br /><br /><br /><br />
+
     <!-- Page Wrapper Starts -->
     <div class="wrapper">
-
+        <!-- Header Starts -->
+        <header id="header" class="header">
+            <div class="header-inner">
+                <!-- Navbar Starts -->
+                <nav class="navbar navbar-expand-lg p-0" id="singlepage-nav">
+					<!-- Logo Starts -->
+                    <div class="logo">
+                        <a data-toggle="collapse" data-target=".navbar-collapse.show" class="navbar-brand link-menu scroll-to-target" alt="main slider" href="#mainslider">
+                            <!-- Logo White Starts -->
+                            <img id="logo-light" class="logo-light" src="../images/logo-white.png" alt="Blog of Jonathan Brossard" title="Moabi white logo" decoding="async" />
+                            <!-- Logo White Ends -->
+                            <!-- Logo Black Starts -->
+                            <img id="logo-dark" class="logo-dark" src="../images/logo-white.png" alt="Analytics" title="Moabi logo" decoding="async" />
+                            <!-- Logo Black Ends -->
+                        </a>
+                    </div>
+					<!-- Logo Ends -->
+					<!-- Hamburger Icon Starts -->
+                    <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span id="icon-toggler">
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						</span>
+					</button>
+					<!-- Hamburger Icon Ends -->
+					<!-- Navigation Menu Starts -->
+                    <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
+                        <ul class="nav-menu-inner ml-auto">
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="home" href="#mainslider"><i class="fa fa-home"></i> home</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="profile" href="#profile"><i class="fa fa-handshake-o"></i> profile</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="research" href="#wcc"><i class="fa fa-cogs"></i> research</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="consulting" href="../whitepapers/" onclick="window.location=$(this).attr('href')"><i class="fa fa-file-pdf-o"></i> Whitepapers</a>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="consulting" href="https://toucan-system.com" onclick="window.location=$(this).attr('href')"><i class="fa fa-play"></i> Consulting</a>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="moabi" href="https://moabi.com" onclick="window.location=$(this).attr('href')"><i class="fa fa-cloud"></i> Moabi</a>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="blog" href="https://blog.moabi.com/" onclick="window.location=$(this).attr('href')"><i class="fa fa-wordpress"></i> Moabi blog</a>
+                        </ul>
+                    </div>
+					<!-- Navigation Menu Ends -->
+                </nav>
+                <!-- Navbar Ends -->
+            </div>
+        </header>
+	<!-- Header Ends -->
 
         <!-- About Section Starts -->
         <section id="wcc" class="about">
@@ -162,7 +208,8 @@
             <div class="container">
                 <!-- Main Heading Starts -->
                 <div class="text-center top-text">
-                    <h1>CANARI</h1>
+                    <h1>The <span>Witchcraft</span> Compiler Collection (<span>WCC</span>)</h1>
+                    <h4>Towards Self Aware Computer Programs<br>(World class reverse engineering framework)</h4>
                 </div>
                 <!-- Main Heading Ends -->
                 <!-- Divider Starts -->
@@ -173,21 +220,17 @@
                 </div>
                 <!-- Divider Ends -->
 
-                <!-- Whitepaper start -->
-		<iframe srcdoc="./Jonathan_Brossard_blackhat2012.html" width="100%" height="800"></iframe>
-                <!-- Whitepaper Ends -->
+<br /><br /><br /><br />
 
 
-            </div>
-            <!-- Container Ends -->
+        <!-- Whitepaper starts -->
+	<iframe src="./Jonathan_Brossard_H2HC_2013_Sandboxing.html" height="800" width="98%"></iframe>
+        <!-- Whitepaper ends -->
+
+
         </section>
-        <!-- Portfolio Section Ends -->
-
-
-
-<!-- WCC end -->
-
-	<!-- Footer Section Starts -->
+        <!-- Testimonials Section Ends -->
+        <!-- Footer Section Starts -->
         <footer class="footer text-center">
             <!-- Container Starts -->
             <div class="container">
@@ -245,16 +288,16 @@
     <!-- Wrapper Ends -->
 
     <!-- Template JS Files -->
-    <script type="text/javascript" src="/js/modernizr.js"></script>
-    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="/js/main.js"></script>
-    <script type="text/javascript" src="/js/lazyload.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/lazyload.js"></script>
     <!-- Revolution Slider Main JS Files -->
-    <script defer type="text/javascript" src="/js/rev.js"></script>
+    <script defer type="text/javascript" src="js/rev.js"></script>
     <!-- Revolution Slider Extensions -->
-    <script defer type="text/javascript" src="/js/site.js"></script>
+    <script defer type="text/javascript" src="js/site.js"></script>
     <!-- Main JS Initialization File -->
-    <script defer type="text/javascript" src="/js/custom.js"></script>
+    <script defer type="text/javascript" src="js/custom.js"></script>
 
     <!-- Add javascript listener -->
     <script type="text/javascript">
