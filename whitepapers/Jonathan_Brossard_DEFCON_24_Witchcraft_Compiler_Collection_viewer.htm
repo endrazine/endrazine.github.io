@@ -99,7 +99,7 @@
     <link rel="preload" href="../fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous">
 
     <!-- Canonical name -->
-    <link rel="canonical" href="https://moabi.com/research/jbrossard/Jonathan_Brossard_DEFCON_24_Witchcraft_Compiler_Collection_viewer.htm" />
+    <link rel="canonical" href="https://moabi.com/research/jbrossard/whitepapers/Jonathan_Brossard_DEFCON_24_Witchcraft_Compiler_Collection_viewer.htm" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
@@ -325,21 +325,6 @@
 	window.addEventListener("load", function(event) {
 	    lazyload();
 	});
-    </script>
-
-    <!-- Add Service Worker -->
-    <script type="text/javascript">
-	if ('serviceWorker' in navigator) {
-	  // Register a service worker hosted at the root of the
-	  // site using the default scope.
-	  navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-	    console.log('Service worker registration succeeded:', registration);
-	  }, /*catch*/ function(error) {
-	    console.log('Service worker registration failed:', error);
-	  });
-	} else {
-	  console.log('Service workers are not supported.');
-	}
     </script>
 
     <!-- Revolution Slider Initialization Starts -->

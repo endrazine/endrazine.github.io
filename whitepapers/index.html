@@ -1,0 +1,1627 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Endrazine - Information Security Research blog of Jonathan Brossard.">
+    <meta name="keywords" content="Reverse Engineering, Firmware Security, Binary analysis, Witchcraft Compiler Collection, Ppost Memory Corruption Memory Analysis, BIOS Security, Preboot Authentication Passwords Bypass">
+    <title>Endrazine - Whitepapers index</title>
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://endrazine.com https://www.slideshare.net https://github.com; script-src 'self' https://endrazine.com https://www.slideshare.net https://github.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-analytics.net https://track.hubspot.com 'unsafe-inline'; connect-src 'self' https://endrazine.com https://www.slideshare.net https://github.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-analytics.net https://track.hubspot.com ; img-src 'self' data: https://endrazine.com https://www.slideshare.net https://github.com https://www.google-analytics.com https://track.hubspot.com https://www.googletagmanager.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://endrazine.com https://www.slideshare.net https://github.com https://tagmanager.google.com/ https://fonts.googleapis.com/ 'unsafe-inline' ; font-src 'self' https://endrazine.com https://fonts.googleapis.com https://fonts.gstatic.com/ ; frame-src https://www.youtube.com/ https://youtube.com/ https://www.slideshare.net https://github.com https://endrazine.com ; base-uri 'self' https://endrazine.com https://www.slideshare.net https://github.com;" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.86">
+
+    <!-- Json-ld information -->
+    <script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@id": "https://endrazine.com/index.html#top",
+		"@type": "Organization",
+		"name": "Endrazine",
+		"url": "https://endrazine.com/",
+		"logo": "https://moabi.com/moabi.png",
+		"email": "info(at)endrazine.com",
+		"description": "Endrazine - Information Security Research blog of Jonathan Brossard.",
+		"address": [
+			{
+				"@type": "PostalAddress",
+				"addressLocality": "Paris, France",
+				"postalCode":"75015",
+				"streetAddress": "33 Avenue du Maine"
+			},
+			{
+				"@type": "PostalAddress",
+				"addressLocality": "San Francisco",
+				"addressRegion": "CA",
+				"postalCode":"94133",
+				"streetAddress": "1640 Stockton Street",
+				"postOfficeBoxNumber": "330143"
+			}
+		],
+		"contactPoint": [
+			{
+				"@type": "ContactPoint",
+				"telephone": "+33188335053",
+				"email": "info(at)moabi.com",
+				"contactType": "sales"
+			},
+			{
+				"@type": "ContactPoint",
+				"email": "jb(at)endrazine.com",
+				"contactType": "customer service",
+				"url": "https://endrazine.com"
+			}
+		],
+		"sameAs": [
+			"https://moabi.com",
+			"https://blog.moabi.com"
+		]
+	}
+    </script>
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Endrazine - Reverse Engineering - Research blog of Jonathan Brossard" />
+    <meta property="og:url" content="https://endrazine.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://endrazine.com/moabi_card.png" />
+    <meta property="og:description" content="Endrazine - Information Security Research blog of Jonathan Brossard." />
+    <meta property="og:site_name" content="Endrazine - Information Security Research blog of Jonathan Brossard">
+
+    <!-- Twitter card integration (works with Open Graph data above) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Endrazine - Information Security Research blog of Jonathan Brossard">
+    <meta name="twitter:site" content="@endrazine">
+
+    <!-- Yandex indexation -->
+    <meta name="yandex-verification" content="e477bac9aff66624" />
+
+    <!-- Bing Indexing -->
+    <meta name="msvalidate.01" content="E6F45B72576D2C71AD0A5B162DF8117D" />
+
+    <!-- Preconnect optimization -->
+    <link rel="preconnect" href="https://js.hs-scripts.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+
+    <!-- Preload optimization -->
+   <link rel="preload" href="../fonts/1Ptrg8zYS_SKggPNwIouWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="../fonts/1Ptrg8zYS_SKggPNwN4rWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="../fonts/1Ptug8zYS_SKggPNyC0ISg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="../fonts/1Ptrg8zYS_SKggPNwJYtWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="../js/modernizr.js" as="script">
+   <link rel="preload" href="../js/jquery-3.3.1.min.js" as="script">
+   <link rel="preload" href="../js/lazyload.js" as="script">
+   <link rel="preload" href="../js/main.js" as="script">
+   <link rel="preload" href="../js/rev.js" as="script">
+   <link rel="preload" href="../js/custom.js" as="script">
+   <link rel="preload" href="../js/site.js" as="script">
+
+    <link rel="preload" href="../fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <!-- Canonical name -->
+    <link rel="canonical" href="https://moabi.com/research/jbrossard/whitepapers/index.html" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />  
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />  
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />  
+
+    <!-- Apple icons -->
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-152.png" />  
+    <link rel="apple-touch-icon" sizes="167x167" href="apple-167.png" />  
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-180.png" />  
+
+    <!-- Apple Safari -->
+    <link rel="manifest" href="../site.webmanifest" />
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#446CDE" />
+
+    <!-- Microsoft Windows/IE11 Start Screen Tile-->
+    <meta name="application-name" content="endrazine.com"/>
+    <meta name="msapplication-square70x70logo" content="small.jpg"/>
+    <meta name="msapplication-square150x150logo" content="medium.jpg"/>
+    <meta name="msapplication-wide310x150logo" content="wide.jpg"/>
+    <meta name="msapplication-square310x310logo" content="large.jpg"/>
+    <meta name="msapplication-TileColor" content="#446CDE">
+    <meta name="theme-color" content="#446CDE">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129423028-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129423028-1');
+    </script>
+
+    <!-- Note: stylesheets are loaded twice to make up for the lack of preloading in Firefox. See https://stackoverflow.com/questions/45321043/preload-css-file-not-supported-on-firefox-and-safari-mac -->
+    <!-- CSS  Fonts -->
+    <link rel="preload" href="../css/font-awesome.min.css" as="style" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+    <!-- CSS  -->
+    <link rel="preload" href="../css/site.css" as="style" />
+    <link rel="stylesheet" href="../css/site.css">
+
+
+</head>
+<body class="skew">
+
+    <!-- Noscript tag -->
+    <noscript>Your browser does not support javascript : some elements may not be displayed as intended.<br /><br /></noscript>
+
+    <!-- Page Wrapper Starts -->
+    <div class="wrapper">
+        <!-- Header Starts -->
+        <header id="header" class="header">
+            <div class="header-inner">
+                <!-- Navbar Starts -->
+                <nav class="navbar navbar-expand-lg p-0" id="singlepage-nav">
+					<!-- Logo Starts -->
+                    <div class="logo">
+                        <a data-toggle="collapse" data-target=".navbar-collapse.show" class="navbar-brand link-menu scroll-to-target" alt="main slider" href="#mainslider">
+                            <!-- Logo White Starts -->
+                            <img id="logo-light" class="logo-light" src="../images/logo-white.png" alt="Blog of Jonathan Brossard" title="Moabi white logo" decoding="async" />
+                            <!-- Logo White Ends -->
+                            <!-- Logo Black Starts -->
+                            <img id="logo-dark" class="logo-dark" src="../images/logo-white.png" alt="Analytics" title="Moabi logo" decoding="async" />
+                            <!-- Logo Black Ends -->
+                        </a>
+                    </div>
+					<!-- Logo Ends -->
+					<!-- Hamburger Icon Starts -->
+                    <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span id="icon-toggler">
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						</span>
+					</button>
+					<!-- Hamburger Icon Ends -->
+					<!-- Navigation Menu Starts -->
+                    <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
+                        <ul class="nav-menu-inner ml-auto">
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="whitepapers" href="../" onclick="window.location=$(this).attr('href')"><i class="fa fa-home"></i> Home</a>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="home" href="#blog"><i class="fa fa-file-pdf-o"></i> Whitepapers</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="consulting" href="https://toucan-system.com" onclick="window.location=$(this).attr('href')"><i class="fa fa-play"></i> Consulting</a>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="moabi" href="https://moabi.com" onclick="window.location=$(this).attr('href')"><i class="fa fa-cloud"></i> Moabi</a>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="blog" href="https://blog.moabi.com/" onclick="window.location=$(this).attr('href')"><i class="fa fa-wordpress"></i> Moabi blog</a>
+                        </ul>
+                    </div>
+					<!-- Navigation Menu Ends -->
+                </nav>
+                <!-- Navbar Ends -->
+            </div>
+        </header>
+	<!-- Header Ends -->
+
+<br /><br /><br /><br />
+
+        <!-- Blog Section Starts -->
+        <section class="blog" id="preboot-resources">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>Publications</span></h1>
+                </div>
+                <!-- Main Heading Starts -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cogs" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+                <div class="row latest-posts-content">
+
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_DEFCON_24_Witchcraft_Compiler_Collection_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_DEFCON_24_Witchcraft_Compiler_Collection.png" alt="DEFCON 24 Witchcraft Compiler Collection"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_DEFCON_24_Witchcraft_Compiler_Collection_viewer.htm">DEFCON 24 Witchcraft Compiler Collection</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>DEFCON 24 Witchcraft Compiler Collection</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2016</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="./Jonathan_Brossard_DEFCON_16_BIOS_whitepaper_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_DEFCON_16_BIOS_whitepaper.png" alt="Bypassing Preboot Authentication Passwords"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="./Jonathan_Brossard_DEFCON_16_BIOS_whitepaper_viewer.htm">DEFCON 16 - BIOS: Bypassing Preboot Authentication Passwords</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>DEFCON 16 - BIOS: Bypassing Preboot Authentication Passwords</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2008</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_28c3_Chaos_Computer_Conference_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_28c3_Chaos_Computer_Conference.png" alt="28c3 Chaos Computer Conference"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_28c3_Chaos_Computer_Conference_viewer.htm">28c3 Chaos Computer Conference</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>28c3 Chaos Computer Conference</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>DEC</span>
+                                <span>2011</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_Bios_Information_Leakage_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_Bios_Information_Leakage.png" alt="BIOS Information leakage"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_Bios_Information_Leakage_viewer.htm">BIOS Information leakage</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>BIOS Information leakage</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>SEP</span>
+                                <span>2005</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_Blackhat_2015_SMB_Sharing_More_than_your_files_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_Blackhat_2015_SMB_Sharing_More_than_your_files.png" alt="Blackhat 2015 SMB Sharing More than your files"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_Blackhat_2015_SMB_Sharing_More_than_your_files_viewer.htm">Blackhat 2015 SMB Sharing More than your files</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Blackhat 2015 SMB Sharing More than your files</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2015</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_INTEL_iSEC_2016_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_INTEL_iSEC_2016.png" alt="INTEL iSEC 2016"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_INTEL_iSEC_2016_viewer.htm">INTEL iSEC 2016</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>INTEL iSEC 2016</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>NOV</span>
+                                <span>2016</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_Blackhat_2015_SMBv2_Sharing_More_Than_Just_Your_Files_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_Blackhat_2015_SMBv2_Sharing_More_Than_Just_Your_Files.png" alt="Blackhat 2015 SMBv2 Sharing More Than Just Your Files"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_Blackhat_2015_SMBv2_Sharing_More_Than_Just_Your_Files_viewer.htm">Blackhat 2015 SMBv2 Sharing More Than Just Your Files</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Blackhat 2015 SMBv2 Sharing More Than Just Your Files</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2015</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_INTEL_iSEC_2012_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_INTEL_iSEC_2012.png" alt="INTEL iSEC 2012"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_INTEL_iSEC_2012_viewer.htm">INTEL iSEC 2012</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>INTEL iSEC 2012</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>NOV</span>
+                                <span>2012</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_Ruxmon_2012_Reverse_Engineering_Proprietary_Protocols_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_Ruxmon_2012_Reverse_Engineering_Proprietary_Protocols.png" alt="Ruxmon 2012 Reverse Engineering Proprietary Protocols"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_Ruxmon_2012_Reverse_Engineering_Proprietary_Protocols_viewer.htm">Ruxmon 2012 Reverse Engineering Proprietary Protocols</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Ruxmon 2012 Reverse Engineering Proprietary Protocols</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>JUN</span>
+                                <span>2012</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_SYSCAN_2013_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_SYSCAN_2013.png" alt="SYSCAN 2013"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_SYSCAN_2013_viewer.htm">SYSCAN 2013</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>SYSCAN 2013</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>JUN</span>
+                                <span>2013</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_Shakacon_2017_Silent_Protest_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_Shakacon_2017_Silent_Protest.png" alt="Shakacon 2017 Silent Protest"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_Shakacon_2017_Silent_Protest_viewer.htm">Shakacon 2017 Silent Protest</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Shakacon 2017 Silent Protest</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>JUN</span>
+                                <span>2017</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_Blackhat_2015_XXE_Defenseless_JDK_XML_Parsers_JAVA_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_Blackhat_2015_XXE_Defenseless_JDK_XML_Parsers_JAVA.png" alt="Blackhat 2015 XXE Defenseless JDK XML Parsers JAVA"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_Blackhat_2015_XXE_Defenseless_JDK_XML_Parsers_JAVA_viewer.htm">Blackhat 2015 XXE Defenseless JDK XML Parsers JAVA</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Blackhat 2015 XXE Defenseless JDK XML Parsers JAVA</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2015</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_Blackhat_Europe_2016_Witchcraft_Compiler_Collection-Towards_Self_Aware_Computer_Programs-wp_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_Blackhat_Europe_2016_Witchcraft_Compiler_Collection-Towards_Self_Aware_Computer_Programs-wp.png" alt="Blackhat Europe 2016 Witchcraft Compiler Collection-Towards Self Aware Computer Programs-wp"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_Blackhat_Europe_2016_Witchcraft_Compiler_Collection-Towards_Self_Aware_Computer_Programs-wp_viewer.htm">Blackhat Europe 2016 Witchcraft Compiler Collection-Towards Self Aware Computer Programs-wp</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Blackhat Europe 2016 Witchcraft Compiler Collection-Towards Self Aware Computer Programs-wp</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>OCT</span>
+                                <span>2016</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_Blackhat_USA_2011_Post_Memory_Corruption_Memory_Analysis_PMCMA_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_Blackhat_USA_2011_Post_Memory_Corruption_Memory_Analysis_PMCMA.png" alt="Blackhat USA 2011 Post Memory Corruption Memory Analysis PMCMA"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_Blackhat_USA_2011_Post_Memory_Corruption_Memory_Analysis_PMCMA_viewer.htm">Blackhat USA 2011 Post Memory Corruption Memory Analysis PMCMA</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Blackhat USA 2011 Post Memory Corruption Memory Analysis PMCMA</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2011</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_Blackhat_USA_2012_Hardware_Backdooring_is_Practical_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_Blackhat_USA_2012_Hardware_Backdooring_is_Practical.png" alt="Blackhat USA 2012 Hardware Backdooring is Practical"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_Blackhat_USA_2012_Hardware_Backdooring_is_Practical_viewer.htm">Blackhat USA 2012 Hardware Backdooring is Practical</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Blackhat USA 2012 Hardware Backdooring is Practical</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2012</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_CCC_2012_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_CCC_2012.png" alt="CCC 2012"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_CCC_2012_viewer.htm">CCC 2012</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>CCC 2012</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>DEC</span>
+                                <span>2012</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_Blackhat_2011_Post_Memory_Corruption_Memory_Analysis_Whitepaper_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_Blackhat_2011_Post_Memory_Corruption_Memory_Analysis_Whitepaper.png" alt="Blackhat 2011 Post Memory Corruption Memory Analysis Whitepaper"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_Blackhat_2011_Post_Memory_Corruption_Memory_Analysis_Whitepaper_viewer.htm">Blackhat 2011 Post Memory Corruption Memory Analysis Whitepaper</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Blackhat 2011 Post Memory Corruption Memory Analysis Whitepaper</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2011</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_Blackhat_2015_Filecry_the_new_age_of_xxe_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_Blackhat_2015_Filecry_the_new_age_of_xxe.png" alt="Blackhat 2015 Filecry the new age of xxe"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_Blackhat_2015_Filecry_the_new_age_of_xxe_viewer.htm">Blackhat 2015 Filecry the new age of xxe</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Blackhat 2015 Filecry the new age of xxe</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2015</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_DEFCON_16_Bitlocker_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_DEFCON_16_Bitlocker.png" alt="DEFCON 16 Bitlocker"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_DEFCON_16_Bitlocker_viewer.htm">DEFCON 16 Bitlocker</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>DEFCON 16 Bitlocker</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2008</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_DEFCON_20_Hardware_Backdooring_is_Practical_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_DEFCON_20_Hardware_Backdooring_is_Practical.png" alt="DEFCON 20 Hardware Backdooring is Practical"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_DEFCON_20_Hardware_Backdooring_is_Practical_viewer.htm">DEFCON 20 Hardware Backdooring is Practical</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>DEFCON 20 Hardware Backdooring is Practical</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2012</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_DEFCON_24_Introduction-to-the-Witchcraft-Compiler-Collection_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_DEFCON_24_Introduction-to-the-Witchcraft-Compiler-Collection.png" alt="DEFCON 24 Introduction-to-the-Witchcraft-Compiler-Collection"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_DEFCON_24_Introduction-to-the-Witchcraft-Compiler-Collection_viewer.htm">DEFCON 24 Introduction-to-the-Witchcraft-Compiler-Collection</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>DEFCON 24 Introduction-to-the-Witchcraft-Compiler-Collection</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2016</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_Blackhat_2011.WP_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_Blackhat_2011.WP.png" alt="Blackhat 2011.WP"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_Blackhat_2011.WP_viewer.htm">Blackhat 2011.WP</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Blackhat 2011.WP</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2011</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_H2HC_2009_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_H2HC_2009.png" alt="H2HC 2009"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_H2HC_2009_viewer.htm">H2HC 2009</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>H2HC 2009</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>NOV</span>
+                                <span>2009</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_HackitoErgoSum_2010_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_HackitoErgoSum_2010.png" alt="HackitoErgoSum 2010"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_HackitoErgoSum_2010_viewer.htm">HackitoErgoSum 2010</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>HackitoErgoSum 2010</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>APR</span>
+                                <span>2010</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_H2HC_2010_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_H2HC_2010.png" alt="H2HC 2010"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_H2HC_2010_viewer.htm">H2HC 2010</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>H2HC 2010</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>NOV</span>
+                                <span>2010</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_H2HC_2013_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_H2HC_2013.png" alt="H2HC 2013"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_H2HC_2013_viewer.htm">H2HC 2013</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>H2HC 2013</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>NOV</span>
+                                <span>2013</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_HITB_2010_Amsterdam_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_HITB_2010_Amsterdam.png" alt="HITB 2010 Amsterdam"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_HITB_2010_Amsterdam_viewer.htm">HITB 2010 Amsterdam</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>HITB 2010 Amsterdam</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>MAR</span>
+                                <span>2010</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_TELECOMX_2009_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_TELECOMX_2009.png" alt="TELECOMX 2009"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_TELECOMX_2009_viewer.htm">TELECOMX 2009</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>TELECOMX 2009</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>JUN</span>
+                                <span>2009</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_HITB_2010_KualaLumpur_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_HITB_2010_KualaLumpur.png" alt="HITB 2010 KualaLumpur"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_HITB_2010_KualaLumpur_viewer.htm">HITB 2010 KualaLumpur</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>HITB 2010 KualaLumpur</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>OCT</span>
+                                <span>2010</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_Auscert_2013_Hardware_Backdooring_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_Auscert_2013_Hardware_Backdooring.png" alt="Auscert 2013 Hardware Backdooring"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_Auscert_2013_Hardware_Backdooring_viewer.htm">Auscert 2013 Hardware Backdooring</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Auscert 2013 Hardware Backdooring</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>OCT</span>
+                                <span>2013</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_BSides_San_Francisco_2016_Witchcraft_Compiler_Collection_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_BSides_San_Francisco_2016_Witchcraft_Compiler_Collection.png" alt="BSides San Francisco 2016 Witchcraft Compiler Collection"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_BSides_San_Francisco_2016_Witchcraft_Compiler_Collection_viewer.htm">BSides San Francisco 2016 Witchcraft Compiler Collection</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>BSides San Francisco 2016 Witchcraft Compiler Collection</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>MAR</span>
+                                <span>2016</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_HITB_2011_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_HITB_2011.png" alt="HITB 2011"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_HITB_2011_viewer.htm">HITB 2011</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>HITB 2011</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>APR</span>
+                                <span>2011</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_HITB_2011_Breaking_Virtualization_8088_mode_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_HITB_2011_Breaking_Virtualization_8088_mode.png" alt="HITB 2011 Breaking Virtualization 8088 mode"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_HITB_2011_Breaking_Virtualization_8088_mode_viewer.htm">HITB 2011 Breaking Virtualization 8088 mode</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>HITB 2011 Breaking Virtualization 8088 mode</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>OCT</span>
+                                <span>2011</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_HackitoErgoSum_2010_Breaking_Virtualization_8088_mode_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_HackitoErgoSum_2010_Breaking_Virtualization_8088_mode.png" alt="HackitoErgoSum 2010 Breaking Virtualization 8088 mode"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_HackitoErgoSum_2010_Breaking_Virtualization_8088_mode_viewer.htm">HackitoErgoSum 2010 Breaking Virtualization 8088 mode</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>HackitoErgoSum 2010 Breaking Virtualization 8088 mode</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>APR</span>
+                                <span>2010</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_H2HC_2013_Sandboxing_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_H2HC_2013_Sandboxing.png" alt="H2HC 2013 Sandboxing"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_H2HC_2013_Sandboxing_viewer.htm">H2HC 2013 Sandboxing</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>H2HC 2013 Sandboxing</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>NOV</span>
+                                <span>2013</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_H2HC_Breaking_Preboot_Authentication_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_H2HC_Breaking_Preboot_Authentication.png" alt="H2HC Breaking Preboot Authentication"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_H2HC_Breaking_Preboot_Authentication_viewer.htm">H2HC Breaking Preboot Authentication</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>H2HC Breaking Preboot Authentication</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>NOV</span>
+                                <span>2009</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_Kiwicon_2011_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_Kiwicon_2011.png" alt="Kiwicon 2011"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_Kiwicon_2011_viewer.htm">Kiwicon 2011</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Kiwicon 2011</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>OCT</span>
+                                <span>2011</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_NULLCON_2012_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_NULLCON_2012.png" alt="NULLCON 2012"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_NULLCON_2012_viewer.htm">NULLCON 2012</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>NULLCON 2012</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>MAY</span>
+                                <span>2012</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_HITB_2011_PMCMA_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_HITB_2011_PMCMA.png" alt="HITB 2011 PMCMA"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_HITB_2011_PMCMA_viewer.htm">HITB 2011 PMCMA</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>HITB 2011 PMCMA</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>NOV</span>
+                                <span>2011</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_NULLCON_2019_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_NULLCON_2019.png" alt="NULLCON 2019"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_NULLCON_2019_viewer.htm">NULLCON 2019</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>NULLCON 2019</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>MAY</span>
+                                <span>2019</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_NoSuchCon_Hardware_Backdooring_Is_Practical_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_NoSuchCon_Hardware_Backdooring_Is_Practical.png" alt="NoSuchCon Hardware Backdooring Is Practical"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_NoSuchCon_Hardware_Backdooring_Is_Practical_viewer.htm">NoSuchCon Hardware Backdooring Is Practical</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>NoSuchCon Hardware Backdooring Is Practical</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>APR</span>
+                                <span>2013</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_RUXCON_2010_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_RUXCON_2010.png" alt="RUXCON 2010"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_RUXCON_2010_viewer.htm">RUXCON 2010</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>RUXCON 2010</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>OCT</span>
+                                <span>2010</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_Blackhat_2016_Witchcraft-Compiler-Collection_User_Manual_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_Blackhat_2016_Witchcraft-Compiler-Collection_User_Manual.png" alt="Blackhat 2016 Witchcraft-Compiler-Collection User Manual"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_Blackhat_2016_Witchcraft-Compiler-Collection_User_Manual_viewer.htm">Blackhat 2016 Witchcraft-Compiler-Collection User Manual</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Blackhat 2016 Witchcraft-Compiler-Collection User Manual</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2016</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_RUXCON_2011_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_RUXCON_2011.png" alt="RUXCON 2011"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_RUXCON_2011_viewer.htm">RUXCON 2011</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>RUXCON 2011</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>OCT</span>
+                                <span>2011</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_HackitoErgoSum_2012_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_HackitoErgoSum_2012.png" alt="HackitoErgoSum 2012"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_HackitoErgoSum_2012_viewer.htm">HackitoErgoSum 2012</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>HackitoErgoSum 2012</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>APR</span>
+                                <span>2012</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_RUXCON_2012_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_RUXCON_2012.png" alt="RUXCON 2012"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_RUXCON_2012_viewer.htm">RUXCON 2012</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>RUXCON 2012</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>APR</span>
+                                <span>2012</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_RUXCON_2013_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_RUXCON_2013.png" alt="RUXCON 2013"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_RUXCON_2013_viewer.htm">RUXCON 2013</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>RUXCON 2013</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>APR</span>
+                                <span>2013</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_ClubHack_2008_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_ClubHack_2008.png" alt="ClubHack 2008"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_ClubHack_2008_viewer.htm">ClubHack 2008</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>ClubHack 2008</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>OCT</span>
+                                <span>2008</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_Syscan_2013_Sandboxing_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_Syscan_2013_Sandboxing.png" alt="Syscan 2013 Sandboxing"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_Syscan_2013_Sandboxing_viewer.htm">Syscan 2013 Sandboxing</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>Syscan 2013 Sandboxing</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>NOV</span>
+                                <span>2013</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_WCC_internal_documentation_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_WCC_internal_documentation.png" alt="WCC internal documentation"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_WCC_internal_documentation_viewer.htm">WCC internal documentation</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>WCC internal documentation</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2016</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+                    <!-- Article Starts -->
+                    <div class="col-sm-12 col-md-4 col-xs-12">
+                        <div class="latest-post">
+                            <!-- Featured Image Starts -->
+                            <a class="img-thumb" href="Jonathan_Brossard_blackhat2012_viewer.htm"><img class="img-fluid" src="Jonathan_Brossard_blackhat2012.png" alt="blackhat2012"></a>
+                            <!-- Featured Image Ends -->
+                            <!-- Article Content Starts -->
+                            <div class="post-body">
+                                <h4 class="post-title">
+                                    <a href="Jonathan_Brossard_blackhat2012_viewer.htm">blackhat2012</a>
+                                </h4>
+                                <div class="post-text">
+                                    <p>blackhat2012</p>
+                                </div>
+                            </div>
+                            <!-- Post Date Starts -->
+                            <div class="post-date">
+                                <span>AUG</span>
+                                <span>2012</span>
+                            </div>
+                            <!-- Post Date Ends -->
+                            <!-- Article Content Ends -->
+                        </div>
+                    </div>
+                    <!-- Article Ends -->
+
+					<div class="mx-auto">
+                    </div>
+                </div>
+                <!-- Latest Blog Posts Ends -->
+            </div>
+        </section>
+        <!-- Blog Section Ends -->
+
+
+
+        <!-- Footer Section Starts -->
+        <footer class="footer text-center">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Copyright Text Starts -->
+                    &copy; Copyright 2010-2019 <a href="https://endrazine.com" alt="endrazine.com">Jonathan Brossard</a>
+                </p>
+                <!-- Copyright Text Ends -->
+                <!-- Social Media Links Starts -->
+                <div class="social-icons">
+                    <ul class="social">
+                        <li>
+                            <a class="linkedin" rel=nofollow href="https://www.linkedin.com/in/endrazine" title="linkedin" alt="Jonathan Brossard Linkedin page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="twitter" rel=nofollow href="https://twitter.com/endrazine" title="twitter" alt="Jonathan Brossard Twitter page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="facebook" rel=nofollow href="https://www.facebook.com/endrazine" title="facebook" alt="Jonathan Brossard Facebook page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="youtube" rel=nofollow href="https://www.youtube.com/moabi" title="youtube" alt="Moabi Youtube page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="github" rel=nofollow href="https://github.com/endrazine" title="github" alt="Jonathan Brossard Github page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="slideshare" rel=nofollow href="http://slideshare.net/endrazine/" title="slideshare" alt="Jonathan Brossard Slideshare" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="wordpress" rel=nofollow href="https://blog.moabi.com" title="wordpress" alt="Moabi blog" crossorigin="anonymous" ></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Social Media Links Ends -->
+
+	    <!-- Legal disclaimers -->
+
+		<a rel=nofollow href="https://sway.office.com/s/ZGZJ9H4Acjpmeiv1/embed" crossorigin="anonymous" alt="Moabi Statement of privacy" >Statement of Privacy and Data Protection</a><p />
+		<a rel=nofollow href="https://sway.office.com/s/77E2E35BSeGykIj0/embed" crossorigin="anonymous" alt="Moabi terms of use" >Website Terms of Use</a>
+
+	    <!-- End of Legal disclaimers -->
+
+            </div>
+            <!-- Container Ends -->
+        </footer>
+        <!-- Footer Section Starts -->
+        <!-- Back To Top Starts -->
+        <div id="back-top-wrapper" class="d-none d-sm-block">
+            <p id="back-top">
+                <a href="index.html#top" alt="back to top"><span> </span></a>
+            </p>
+        </div>
+        <!-- Back To Top Ends -->
+    </div>
+    <!-- Wrapper Ends -->
+
+    <!-- Template JS Files -->
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/lazyload.js"></script>
+    <!-- Revolution Slider Main JS Files -->
+    <script defer type="text/javascript" src="js/rev.js"></script>
+    <!-- Revolution Slider Extensions -->
+    <script defer type="text/javascript" src="js/site.js"></script>
+    <!-- Main JS Initialization File -->
+    <script defer type="text/javascript" src="js/custom.js"></script>
+
+    <!-- Add javascript listener -->
+    <script type="text/javascript">
+	jQuery.event.special.touchstart = {
+	  setup: function( _, ns, handle ){
+	   if ( ns.includes("noPreventDefault") ) {
+	     this.addEventListener("touchstart", handle, { passive: false });
+	   } else {
+	     this.addEventListener("touchstart", handle, { passive: true });
+	  }
+	 }
+	};
+	jQuery.event.special.touchmove = {
+	   setup: function( _, ns, handle ){
+	      if ( ns.includes("noPreventDefault") ) {
+		 this.addEventListener("touchmove ", handle, { passive: false });
+	      } else {
+		 this.addEventListener("touchmove ", handle, { passive: true });
+	      }
+	   }
+	};
+    </script>
+
+    <!-- Lazy loading of images handler -->
+    <script type="text/javascript">
+	window.addEventListener("load", function(event) {
+	    lazyload();
+	});
+    </script>
+
+    <!-- Revolution Slider Initialization Starts -->
+    <script type="text/javascript">
+!function(){"use strict";var e=jQuery;e(document).ready(function(){null==e("#rev_slider").revolution?revslider_showDoubleJqueryError("#rev_slider"):e("#rev_slider").show().revolution({sliderType:"standard",jsFileLocation:"js/plugins/revolution/js/",dottedOverlay:"none",sliderLayout:"fullscreen",delay:9e3,navigation:{keyboardNavigation:"off",keyboard_direction:"horizontal",mouseScrollNavigation:"off",onHoverStop:"off",touch:{touchenabled:"on",swipe_threshold:75,swipe_min_touches:1,swipe_direction:"horizontal",drag_block_vertical:!1},arrows:{style:"zeus",enable:!0,hide_onmobile:!0,hide_under:600,hide_onleave:!0,hide_delay:200,hide_delay_mobile:1200,tmp:'<div class="tp-title-wrap">  \t<div class="tp-arr-imgholder"></div> </div>',left:{h_align:"left",v_align:"center",h_offset:90,v_offset:0},right:{h_align:"right",v_align:"center",h_offset:90,v_offset:0}},bullets:{enable:!1,hide_onmobile:!0,hide_under:600,style:"metis",hide_onleave:!0,hide_delay:200,hide_delay_mobile:1200,direction:"horizontal",h_align:"center",v_align:"bottom",h_offset:0,v_offset:30,space:5,tmp:'<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span>'}},viewPort:{enable:!0,outof:"pause",visible_area:"80%"},responsiveLevels:[1240,1024,778,480],gridwidth:[1240,1024,778,480],gridheight:[600,600,500,400],lazyType:"none",parallax:{type:"mouse",origo:"slidercenter",speed:2e3,levels:[2,3,4,5,6,7,12,16,10,50]},shadow:0,spinner:"off",stopLoop:"off",stopAfterLoops:-1,stopAtSlide:-1,shuffle:"off",hideThumbsOnMobile:"off",autoHeight:"off",hideSliderAtLimit:0,hideCaptionAtLimit:0,hideAllCaptionAtLilmit:0,debugMode:!1,fallbacks:{simplifyAll:"off",nextSlideOnWindowFocus:"off",disableFocusListener:!1}})})}(jQuery);
+    </script>
+    <!-- Revolution Slider Initialization Ends -->
+
+    <!-- HubSpot Embed Code -->
+    <script async defer type="text/javascript" id="hs-script-loader" src="https://js.hs-scripts.com/5554324.js"></script>
+
+</body>
+</html>
