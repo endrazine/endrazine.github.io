@@ -5,7 +5,7 @@
 ; Generic rebooting attack against pre-boot authentication MBRs
 ; that do not initialize BIOS keyboard memory.
 ;
-;  Jonathan Brossard -- jonathan@ivizindia.com // endrazine@gmail.com
+;  Jonathan Brossard -- jb@endrazine.com // endrazine@gmail.com
 ;
 ;
 ;

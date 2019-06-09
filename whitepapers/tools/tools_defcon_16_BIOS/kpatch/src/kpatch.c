@@ -2,7 +2,7 @@
 *
 * Simple patch against 2.6 kernels, to prevent BIOS keyboard buffer attacks
 *
-* // Jonathan Brossard - jonathan@ivizindia.com - endrazine@gmail.com
+* // Jonathan Brossard - jb@endrazine.com - endrazine@gmail.com
 *
 */
 

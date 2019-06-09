@@ -1,4 +1,7 @@
- ; zero 36 bytes, starting at address 0x40:0x1a
+;
+; Endrazine // Jonathan Brossard // jb@endrazine.com
+;
+; zero 36 bytes, starting at address 0x40:0x1a
 
        xor ah, ah
        mov al, 0x40

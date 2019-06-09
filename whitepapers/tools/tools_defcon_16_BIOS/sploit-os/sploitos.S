@@ -4,7 +4,7 @@
 ; plain text under REAL MODE.
 ;
 ; // Jonathan Brossard
-; jonathan@ivizindia.com
+; jb@endrazine.com
 ; endrazine@gmail.com
 ;
 ;----------------------------------------------------------------------------------------------

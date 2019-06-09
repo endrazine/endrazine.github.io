@@ -1,6 +1,6 @@
 /*
 *
-* Jonathan Brossard - jonathan@ivizindia.com // endrazine@gmail.com
+* Jonathan Brossard - jb@endrazine.com // endrazine@gmail.com
 *
 *    "Invisible Man" attack against pre-boot authentication bootloaders
 *
@@ -250,7 +250,9 @@ int main (int argc, char * argv[]) {
 	* Open device and read DISK_OFFSET first bytes
 	*/
 	fd = open(DISK_NAME, O_RDWR);
-	if (fd == -1) {		perror("Fatal error while opening disk: ");		exit(-1);
+	if (fd == -1) {
+		perror("Fatal error while opening disk: ");
+		exit(-1);
 	}
 
 	int PageSize = (int)sysconf(_SC_PAGESIZE);

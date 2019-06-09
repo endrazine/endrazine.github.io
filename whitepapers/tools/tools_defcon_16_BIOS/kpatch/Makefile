@@ -2,7 +2,7 @@
 # Simple Makefile for 2.6.x kernels
 # copied from the ivtv project
 #
-# // jonathan@ivizindia.com
+# // jb@endrazine.com
 #
 #
 
