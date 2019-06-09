@@ -119,10 +119,10 @@
 
     <!-- Microsoft Windows/IE11 Start Screen Tile-->
     <meta name="application-name" content="endrazine.com"/>
-    <meta name="msapplication-square70x70logo" content="small.jpg"/>
-    <meta name="msapplication-square150x150logo" content="medium.jpg"/>
-    <meta name="msapplication-wide310x150logo" content="wide.jpg"/>
-    <meta name="msapplication-square310x310logo" content="large.jpg"/>
+    <meta name="msapplication-square70x70logo" content="../small.jpg"/>
+    <meta name="msapplication-square150x150logo" content="../medium.jpg"/>
+    <meta name="msapplication-wide310x150logo" content="../wide.jpg"/>
+    <meta name="msapplication-square310x310logo" content="../large.jpg"/>
     <meta name="msapplication-TileColor" content="#446CDE">
     <meta name="theme-color" content="#446CDE">
 
@@ -184,7 +184,7 @@
 					<!-- Navigation Menu Starts -->
                     <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
                         <ul class="nav-menu-inner ml-auto">
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="home" href="../" onclick="window.location=$(this).attr('href')"><i class="fa fa-home"></i> Home</a>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="home" href=".." onclick="window.location=$(this).attr('href')"><i class="fa fa-home"></i> Home</a>
                             <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="whitepapers" href="#blog"><i class="fa fa-file-pdf-o"></i> whitepapers</a></li>
                             <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="consulting" href="https://toucan-system.com" onclick="window.location=$(this).attr('href')"><i class="fa fa-play"></i> Consulting</a>
                             <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="moabi" href="https://moabi.com" onclick="window.location=$(this).attr('href')"><i class="fa fa-cloud"></i> Moabi</a>
@@ -198,20 +198,26 @@
         </header>
 	<!-- Header Ends -->
 
-<br /><br /><br /><br />
-
         <!-- Main Slider Section Starts -->
         <section class="mainslider" id="mainslider">
             <!-- Slider Hero Starts -->
             <div class="rev_slider_wrapper fullwidthbanner-container dark-slider" data-alias="vimeo-hero" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
                 <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
                 <div id="rev_slider" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
-		</div>
+                    <div class="tp-static-layers"></div>
+                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                </div>
             </div>
+            <!-- END REVOLUTION SLIDER -->
+            <!-- Slider Hero Ends -->
         </section>
+        <!-- Main Slider Section Ends -->
+
+<br /><br /><br /><br />
+
 
         <!-- Blog Section Starts -->
-        <section class="blog" id="preboot-resources">
+        <section class="about" id="blog">
             <!-- Container Starts -->
             <div class="container">
                 <!-- Main Heading Starts -->
