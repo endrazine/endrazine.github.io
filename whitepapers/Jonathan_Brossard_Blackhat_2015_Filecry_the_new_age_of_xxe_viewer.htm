@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Endrazine -  FileCry the new age of XXE - Information Security Research blog of Jonathan Brossard.">
+    <meta name="keywords" content=" FileCry the new age of XXE, Reverse Engineering, Firmware Security, Binary analysis, Witchcraft Compiler Collection, Ppost Memory Corruption Memory Analysis, BIOS Security, Preboot Authentication Passwords Bypass">
+    <title>Endrazine - FileCry the new age of XXE - Blackhat 2015</title>
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://endrazine.com https://www.slideshare.net https://github.com; script-src 'self' https://endrazine.com https://www.slideshare.net https://github.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-analytics.net https://track.hubspot.com 'unsafe-inline'; connect-src 'self' https://endrazine.com https://www.slideshare.net https://github.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-analytics.net https://track.hubspot.com ; img-src 'self' data: https://endrazine.com https://www.slideshare.net https://github.com https://www.google-analytics.com https://track.hubspot.com https://www.googletagmanager.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://endrazine.com https://www.slideshare.net https://github.com https://tagmanager.google.com/ https://fonts.googleapis.com/ 'unsafe-inline' ; font-src 'self' https://endrazine.com https://fonts.googleapis.com https://fonts.gstatic.com/ ; frame-src https://www.youtube.com/ https://youtube.com/ https://www.slideshare.net https://github.com https://endrazine.com ; base-uri 'self' https://endrazine.com https://www.slideshare.net https://github.com;" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.86">
+
+    <!-- Json-ld information -->
+    <script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@id": "https://endrazine.com/index.html#top",
+		"@type": "Organization",
+		"name": "Endrazine",
+		"url": "https://endrazine.com/",
+		"logo": "https://moabi.com/moabi.png",
+		"email": "info(at)endrazine.com",
+		"description": "Endrazine - Information Security Research blog of Jonathan Brossard.",
+		"address": [
+			{
+				"@type": "PostalAddress",
+				"addressLocality": "Paris, France",
+				"postalCode":"75015",
+				"streetAddress": "33 Avenue du Maine"
+			},
+			{
+				"@type": "PostalAddress",
+				"addressLocality": "San Francisco",
+				"addressRegion": "CA",
+				"postalCode":"94133",
+				"streetAddress": "1640 Stockton Street",
+				"postOfficeBoxNumber": "330143"
+			}
+		],
+		"contactPoint": [
+			{
+				"@type": "ContactPoint",
+				"telephone": "+33188335053",
+				"email": "info(at)moabi.com",
+				"contactType": "sales"
+			},
+			{
+				"@type": "ContactPoint",
+				"email": "jb(at)endrazine.com",
+				"contactType": "customer service",
+				"url": "https://endrazine.com"
+			}
+		],
+		"sameAs": [
+			"https://moabi.com",
+			"https://blog.moabi.com"
+		]
+	}
+    </script>
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Endrazine - Reverse Engineering - Research blog of Jonathan Brossard" />
+    <meta property="og:url" content="https://endrazine.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://endrazine.com/moabi_card.png" />
+    <meta property="og:description" content="Endrazine - Information Security Research blog of Jonathan Brossard." />
+    <meta property="og:site_name" content="Endrazine - Information Security Research blog of Jonathan Brossard">
+
+    <!-- Twitter card integration (works with Open Graph data above) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Endrazine - Information Security Research blog of Jonathan Brossard">
+    <meta name="twitter:site" content="@endrazine">
+
+    <!-- Yandex indexation -->
+    <meta name="yandex-verification" content="e477bac9aff66624" />
+
+    <!-- Bing Indexing -->
+    <meta name="msvalidate.01" content="E6F45B72576D2C71AD0A5B162DF8117D" />
+
+    <!-- Preconnect optimization -->
+    <link rel="preconnect" href="https://js.hs-scripts.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+
+    <!-- Preload optimization -->
+   <link rel="preload" href="../fonts/1Ptrg8zYS_SKggPNwIouWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="../fonts/1Ptrg8zYS_SKggPNwN4rWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="../fonts/1Ptug8zYS_SKggPNyC0ISg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="../fonts/1Ptrg8zYS_SKggPNwJYtWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="../js/modernizr.js" as="script">
+   <link rel="preload" href="../js/jquery-3.3.1.min.js" as="script">
+   <link rel="preload" href="../js/lazyload.js" as="script">
+   <link rel="preload" href="../js/main.js" as="script">
+   <link rel="preload" href="../js/rev.js" as="script">
+   <link rel="preload" href="../js/custom.js" as="script">
+   <link rel="preload" href="../js/site.js" as="script">
+
+    <link rel="preload" href="../fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <!-- Canonical name -->
+    <link rel="canonical" href="https://moabi.com/research/jbrossard/whitepapers/Jonathan_Brossard_Blackhat_2015_Filecry_the_new_age_of_xxe_viewer.htm" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />  
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />  
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />  
+
+    <!-- Apple icons -->
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-152.png" />  
+    <link rel="apple-touch-icon" sizes="167x167" href="apple-167.png" />  
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-180.png" />  
+
+    <!-- Apple Safari -->
+    <link rel="manifest" href="../site.webmanifest" />
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#446CDE" />
+
+    <!-- Microsoft Windows/IE11 Start Screen Tile-->
+    <meta name="application-name" content="endrazine.com"/>
+    <meta name="msapplication-square70x70logo" content="small.jpg"/>
+    <meta name="msapplication-square150x150logo" content="medium.jpg"/>
+    <meta name="msapplication-wide310x150logo" content="wide.jpg"/>
+    <meta name="msapplication-square310x310logo" content="large.jpg"/>
+    <meta name="msapplication-TileColor" content="#446CDE">
+    <meta name="theme-color" content="#446CDE">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129423028-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129423028-1');
+    </script>
+
+    <!-- Note: stylesheets are loaded twice to make up for the lack of preloading in Firefox. See https://stackoverflow.com/questions/45321043/preload-css-file-not-supported-on-firefox-and-safari-mac -->
+    <!-- CSS  Fonts -->
+    <link rel="preload" href="../css/font-awesome.min.css" as="style" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+    <!-- CSS  -->
+    <link rel="preload" href="../css/site.css" as="style" />
+    <link rel="stylesheet" href="../css/site.css">
+
+
+</head>
+<body class="skew">
+
+    <!-- Noscript tag -->
+    <noscript>Your browser does not support javascript : some elements may not be displayed as intended.<br /><br /></noscript>
+
+<br /><br /><br /><br />
+
+    <!-- Page Wrapper Starts -->
+    <div class="wrapper">
+        <!-- Header Starts -->
+        <header id="header" class="header">
+            <div class="header-inner">
+                <!-- Navbar Starts -->
+                <nav class="navbar navbar-expand-lg p-0" id="singlepage-nav">
+					<!-- Logo Starts -->
+                    <div class="logo">
+                        <a data-toggle="collapse" data-target=".navbar-collapse.show" class="navbar-brand link-menu scroll-to-target" alt="main slider" href="#mainslider">
+                            <!-- Logo White Starts -->
+                            <img id="logo-light" class="logo-light" src="../images/logo-white.png" alt="Blog of Jonathan Brossard" title="Moabi white logo" decoding="async" />
+                            <!-- Logo White Ends -->
+                            <!-- Logo Black Starts -->
+                            <img id="logo-dark" class="logo-dark" src="../images/logo-white.png" alt="Analytics" title="Moabi logo" decoding="async" />
+                            <!-- Logo Black Ends -->
+                        </a>
+                    </div>
+					<!-- Logo Ends -->
+					<!-- Hamburger Icon Starts -->
+                    <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span id="icon-toggler">
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						</span>
+					</button>
+					<!-- Hamburger Icon Ends -->
+					<!-- Navigation Menu Starts -->
+                    <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
+                        <ul class="nav-menu-inner ml-auto">
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="consulting" href="../whitepapers/" onclick="window.location=$(this).attr('href')"><i class="fa fa-file-pdf-o"></i> Whitepapers</a>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="consulting" href="https://toucan-system.com" onclick="window.location=$(this).attr('href')"><i class="fa fa-play"></i> Consulting</a>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="moabi" href="https://moabi.com" onclick="window.location=$(this).attr('href')"><i class="fa fa-cloud"></i> Moabi</a>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" alt="blog" href="https://blog.moabi.com/" onclick="window.location=$(this).attr('href')"><i class="fa fa-wordpress"></i> Moabi blog</a>
+                        </ul>
+                    </div>
+					<!-- Navigation Menu Ends -->
+                </nav>
+                <!-- Navbar Ends -->
+            </div>
+        </header>
+	<!-- Header Ends -->
+
+        <!-- About Section Starts -->
+        <section id="wcc" class="about">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="text-center top-text">
+                    <h1><span>FileCry the new age of XXE</span> (Blackhat 2015)</h1>
+                </div>
+                <!-- Main Heading Ends -->
+                <!-- Divider Starts -->
+                <div class="divider text-center">
+                    <span class="outer-line"></span>
+                    <span class="fa fa-cloud" aria-hidden="true"></span>
+                    <span class="outer-line"></span>
+                </div>
+                <!-- Divider Ends -->
+
+<br /><br /><br /><br />
+
+
+        <!-- Whitepaper starts -->
+	<iframe src="./Jonathan_Brossard_Blackhat_2015_Filecry_the_new_age_of_xxe.html" height="800" width="98%"></iframe>
+        <!-- Whitepaper ends -->
+
+<br /><br />
+<center>
+<a class="custom-button scroll-to-target" alt="WCC Resources" href="./Jonathan_Brossard_Blackhat_2015_Filecry_the_new_age_of_xxe.pdf" onclick="window.location=$(this).attr('href')" >Download PDF</a>
+</center>
+        </section>
+        <!-- Testimonials Section Ends -->
+        <!-- Footer Section Starts -->
+        <footer class="footer text-center">
+            <!-- Container Starts -->
+            <div class="container">
+                <!-- Copyright Text Starts -->
+                    &copy; Copyright 2010-2019 <a href="https://endrazine.com" alt="endrazine.com">Jonathan Brossard</a>
+                </p>
+                <!-- Copyright Text Ends -->
+                <!-- Social Media Links Starts -->
+                <div class="social-icons">
+                    <ul class="social">
+                        <li>
+                            <a class="linkedin" rel=nofollow href="https://www.linkedin.com/in/endrazine" title="linkedin" alt="Jonathan Brossard Linkedin page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="twitter" rel=nofollow href="https://twitter.com/endrazine" title="twitter" alt="Jonathan Brossard Twitter page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="facebook" rel=nofollow href="https://www.facebook.com/endrazine" title="facebook" alt="Jonathan Brossard Facebook page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="youtube" rel=nofollow href="https://www.youtube.com/moabi" title="youtube" alt="Moabi Youtube page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="github" rel=nofollow href="https://github.com/endrazine" title="github" alt="Jonathan Brossard Github page" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="slideshare" rel=nofollow href="http://slideshare.net/endrazine/" title="slideshare" alt="Jonathan Brossard Slideshare" crossorigin="anonymous" ></a>
+                        </li>
+                        <li>
+                            <a class="wordpress" rel=nofollow href="https://blog.moabi.com" title="wordpress" alt="Moabi blog" crossorigin="anonymous" ></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Social Media Links Ends -->
+
+	    <!-- Legal disclaimers -->
+
+		<a rel=nofollow href="https://sway.office.com/s/ZGZJ9H4Acjpmeiv1/embed" crossorigin="anonymous" alt="Moabi Statement of privacy" >Statement of Privacy and Data Protection</a><p />
+		<a rel=nofollow href="https://sway.office.com/s/77E2E35BSeGykIj0/embed" crossorigin="anonymous" alt="Moabi terms of use" >Website Terms of Use</a>
+
+	    <!-- End of Legal disclaimers -->
+
+            </div>
+            <!-- Container Ends -->
+        </footer>
+        <!-- Footer Section Starts -->
+        <!-- Back To Top Starts -->
+        <div id="back-top-wrapper" class="d-none d-sm-block">
+            <p id="back-top">
+                <a href="index.html#top" alt="back to top"><span> </span></a>
+            </p>
+        </div>
+        <!-- Back To Top Ends -->
+    </div>
+    <!-- Wrapper Ends -->
+
+    <!-- Template JS Files -->
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/lazyload.js"></script>
+    <!-- Revolution Slider Main JS Files -->
+    <script defer type="text/javascript" src="js/rev.js"></script>
+    <!-- Revolution Slider Extensions -->
+    <script defer type="text/javascript" src="js/site.js"></script>
+    <!-- Main JS Initialization File -->
+    <script defer type="text/javascript" src="js/custom.js"></script>
+
+    <!-- Add javascript listener -->
+    <script type="text/javascript">
+	jQuery.event.special.touchstart = {
+	  setup: function( _, ns, handle ){
+	   if ( ns.includes("noPreventDefault") ) {
+	     this.addEventListener("touchstart", handle, { passive: false });
+	   } else {
+	     this.addEventListener("touchstart", handle, { passive: true });
+	  }
+	 }
+	};
+	jQuery.event.special.touchmove = {
+	   setup: function( _, ns, handle ){
+	      if ( ns.includes("noPreventDefault") ) {
+		 this.addEventListener("touchmove ", handle, { passive: false });
+	      } else {
+		 this.addEventListener("touchmove ", handle, { passive: true });
+	      }
+	   }
+	};
+    </script>
+
+    <!-- Lazy loading of images handler -->
+    <script type="text/javascript">
+	window.addEventListener("load", function(event) {
+	    lazyload();
+	});
+    </script>
+
+    <!-- Revolution Slider Initialization Starts -->
+    <script type="text/javascript">
+!function(){"use strict";var e=jQuery;e(document).ready(function(){null==e("#rev_slider").revolution?revslider_showDoubleJqueryError("#rev_slider"):e("#rev_slider").show().revolution({sliderType:"standard",jsFileLocation:"js/plugins/revolution/js/",dottedOverlay:"none",sliderLayout:"fullscreen",delay:9e3,navigation:{keyboardNavigation:"off",keyboard_direction:"horizontal",mouseScrollNavigation:"off",onHoverStop:"off",touch:{touchenabled:"on",swipe_threshold:75,swipe_min_touches:1,swipe_direction:"horizontal",drag_block_vertical:!1},arrows:{style:"zeus",enable:!0,hide_onmobile:!0,hide_under:600,hide_onleave:!0,hide_delay:200,hide_delay_mobile:1200,tmp:'<div class="tp-title-wrap">  \t<div class="tp-arr-imgholder"></div> </div>',left:{h_align:"left",v_align:"center",h_offset:90,v_offset:0},right:{h_align:"right",v_align:"center",h_offset:90,v_offset:0}},bullets:{enable:!1,hide_onmobile:!0,hide_under:600,style:"metis",hide_onleave:!0,hide_delay:200,hide_delay_mobile:1200,direction:"horizontal",h_align:"center",v_align:"bottom",h_offset:0,v_offset:30,space:5,tmp:'<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span>'}},viewPort:{enable:!0,outof:"pause",visible_area:"80%"},responsiveLevels:[1240,1024,778,480],gridwidth:[1240,1024,778,480],gridheight:[600,600,500,400],lazyType:"none",parallax:{type:"mouse",origo:"slidercenter",speed:2e3,levels:[2,3,4,5,6,7,12,16,10,50]},shadow:0,spinner:"off",stopLoop:"off",stopAfterLoops:-1,stopAtSlide:-1,shuffle:"off",hideThumbsOnMobile:"off",autoHeight:"off",hideSliderAtLimit:0,hideCaptionAtLimit:0,hideAllCaptionAtLilmit:0,debugMode:!1,fallbacks:{simplifyAll:"off",nextSlideOnWindowFocus:"off",disableFocusListener:!1}})})}(jQuery);
+    </script>
+    <!-- Revolution Slider Initialization Ends -->
+
+    <!-- HubSpot Embed Code -->
+    <script async defer type="text/javascript" id="hs-script-loader" src="https://js.hs-scripts.com/5554324.js"></script>
+
+</body>
+</html>
