@@ -1005,4 +1005,1771 @@
   <changefreq>daily</changefreq>
   <lastmod>2019-06-08</lastmod>
 </url>
+<url>
+<loc>https://endrazine.com/whitepapers/</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_DEFCON_24_Witchcraft_Compiler_Collection.png</image:loc>
+<image:title>DEFCON 24 Witchcraft Compiler Collection</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_DEFCON_16_BIOS_whitepaper.png</image:loc>
+<image:title>Bypassing Preboot Authentication Passwords</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_28c3_Chaos_Computer_Conference.png</image:loc>
+<image:title>28c3 Chaos Computer Conference</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_Bios_Information_Leakage.png</image:loc>
+<image:title>BIOS Information leakage</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_Blackhat_2015_SMB_Sharing_More_than_your_files.png</image:loc>
+<image:title>Blackhat 2015 SMB Sharing More than your files</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_INTEL_iSEC_2016.png</image:loc>
+<image:title>INTEL iSEC 2016</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_Blackhat_2015_SMBv2_Sharing_More_Than_Just_Your_Files.png</image:loc>
+<image:title>Blackhat 2015 SMBv2 Sharing More Than Just Your Files</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_INTEL_iSEC_2012.png</image:loc>
+<image:title>INTEL iSEC 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_Ruxmon_2012_Reverse_Engineering_Proprietary_Protocols.png</image:loc>
+<image:title>Ruxmon 2012 Reverse Engineering Proprietary Protocols</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_SYSCAN_2013.png</image:loc>
+<image:title>SYSCAN 2013</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_Shakacon_2017_Silent_Protest.png</image:loc>
+<image:title>Shakacon 2017 Silent Protest</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_Blackhat_2015_XXE_Defenseless_JDK_XML_Parsers_JAVA.png</image:loc>
+<image:title>Blackhat 2015 XXE Defenseless JDK XML Parsers JAVA</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_Blackhat_Europe_2016_Witchcraft_Compiler_Collection-Towards_Self_Aware_Computer_Programs-wp.png</image:loc>
+<image:title>Blackhat Europe 2016 Witchcraft Compiler Collection-Towards Self Aware Computer Programs-wp</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_Blackhat_USA_2011_Post_Memory_Corruption_Memory_Analysis_PMCMA.png</image:loc>
+<image:title>Blackhat USA 2011 Post Memory Corruption Memory Analysis PMCMA</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_Blackhat_USA_2012_Hardware_Backdooring_is_Practical.png</image:loc>
+<image:title>Blackhat USA 2012 Hardware Backdooring is Practical</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_CCC_2012.png</image:loc>
+<image:title>CCC 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_Blackhat_2011_Post_Memory_Corruption_Memory_Analysis_Whitepaper.png</image:loc>
+<image:title>Blackhat 2011 Post Memory Corruption Memory Analysis Whitepaper</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_Blackhat_2015_Filecry_the_new_age_of_xxe.png</image:loc>
+<image:title>Blackhat 2015 Filecry the new age of xxe</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_DEFCON_16_Bitlocker.png</image:loc>
+<image:title>DEFCON 16 Bitlocker</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_DEFCON_20_Hardware_Backdooring_is_Practical.png</image:loc>
+<image:title>DEFCON 20 Hardware Backdooring is Practical</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_DEFCON_24_Introduction-to-the-Witchcraft-Compiler-Collection.png</image:loc>
+<image:title>DEFCON 24 Introduction-to-the-Witchcraft-Compiler-Collection</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_Blackhat_2011.WP.png</image:loc>
+<image:title>Blackhat 2011.WP</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_H2HC_2009.png</image:loc>
+<image:title>H2HC 2009</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_HackitoErgoSum_2010.png</image:loc>
+<image:title>HackitoErgoSum 2010</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_H2HC_2010.png</image:loc>
+<image:title>H2HC 2010</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_H2HC_2013.png</image:loc>
+<image:title>H2HC 2013</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_HITB_2010_Amsterdam.png</image:loc>
+<image:title>HITB 2010 Amsterdam</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_TELECOMX_2009.png</image:loc>
+<image:title>TELECOMX 2009</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_HITB_2010_KualaLumpur.png</image:loc>
+<image:title>HITB 2010 KualaLumpur</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_Auscert_2013_Hardware_Backdooring.png</image:loc>
+<image:title>Auscert 2013 Hardware Backdooring</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_BSides_San_Francisco_2016_Witchcraft_Compiler_Collection.png</image:loc>
+<image:title>BSides San Francisco 2016 Witchcraft Compiler Collection</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_HITB_2011.png</image:loc>
+<image:title>HITB 2011</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_HITB_2011_Breaking_Virtualization_8088_mode.png</image:loc>
+<image:title>HITB 2011 Breaking Virtualization 8088 mode</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_HackitoErgoSum_2010_Breaking_Virtualization_8088_mode.png</image:loc>
+<image:title>HackitoErgoSum 2010 Breaking Virtualization 8088 mode</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_H2HC_2013_Sandboxing.png</image:loc>
+<image:title>H2HC 2013 Sandboxing</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_H2HC_Breaking_Preboot_Authentication.png</image:loc>
+<image:title>H2HC Breaking Preboot Authentication</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_Kiwicon_2011.png</image:loc>
+<image:title>Kiwicon 2011</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_NULLCON_2012.png</image:loc>
+<image:title>NULLCON 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_HITB_2011_PMCMA.png</image:loc>
+<image:title>HITB 2011 PMCMA</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_NULLCON_2019.png</image:loc>
+<image:title>NULLCON 2019</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_Syscan_2013_Sandboxing.png</image:loc>
+<image:title>Syscan 2013 Sandboxing</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_WCC_internal_documentation.png</image:loc>
+<image:title>WCC internal documentation</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_NoSuchCon_Hardware_Backdooring_Is_Practical.png</image:loc>
+<image:title>NoSuchCon Hardware Backdooring Is Practical</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_RUXCON_2010.png</image:loc>
+<image:title>RUXCON 2010</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_Blackhat_2016_Witchcraft-Compiler-Collection_User_Manual.png</image:loc>
+<image:title>Blackhat 2016 Witchcraft-Compiler-Collection User Manual</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_RUXCON_2011.png</image:loc>
+<image:title>RUXCON 2011</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_HackitoErgoSum_2012.png</image:loc>
+<image:title>HackitoErgoSum 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_RUXCON_2012.png</image:loc>
+<image:title>RUXCON 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_RUXCON_2013.png</image:loc>
+<image:title>RUXCON 2013</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_ClubHack_2008.png</image:loc>
+<image:title>ClubHack 2008</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/Jonathan_Brossard_blackhat2012.png</image:loc>
+<image:title>blackhat2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/bios1.jpeg</image:loc>
+<image:title>Tools index</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/bios2.jpeg</image:loc>
+<image:title>Witchcraft Compiler Collection (WCC) Repository</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/pmcma.jpeg</image:loc>
+<image:title>PMCMA Repository</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/wcc.jpeg</image:loc>
+<image:title>Witchcraft Compiler Collection (WCC) archive</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/code.jpeg</image:loc>
+<image:title>PMCMA archive</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/bios3.jpeg</image:loc>
+<image:title>DEFCON 16 archive</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_24_Witchcraft_Compiler_Collection_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_16_BIOS_whitepaper_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_28c3_Chaos_Computer_Conference_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Bios_Information_Leakage_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2015_SMB_Sharing_More_than_your_files_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_INTEL_iSEC_2016_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2015_SMBv2_Sharing_More_Than_Just_Your_Files_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_INTEL_iSEC_2012_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Ruxmon_2012_Reverse_Engineering_Proprietary_Protocols_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_SYSCAN_2013_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Shakacon_2017_Silent_Protest_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2015_XXE_Defenseless_JDK_XML_Parsers_JAVA_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_Europe_2016_Witchcraft_Compiler_Collection-Towards_Self_Aware_Computer_Programs-wp_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_USA_2011_Post_Memory_Corruption_Memory_Analysis_PMCMA_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_USA_2012_Hardware_Backdooring_is_Practical_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_CCC_2012_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2011_Post_Memory_Corruption_Memory_Analysis_Whitepaper_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2015_Filecry_the_new_age_of_xxe_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_16_Bitlocker_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_20_Hardware_Backdooring_is_Practical_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_24_Introduction-to-the-Witchcraft-Compiler-Collection_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2011.WP_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_2009_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HackitoErgoSum_2010_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_2010_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_2013_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2010_Amsterdam_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_TELECOMX_2009_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2010_KualaLumpur_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Auscert_2013_Hardware_Backdooring_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_BSides_San_Francisco_2016_Witchcraft_Compiler_Collection_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2011_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2011_Breaking_Virtualization_8088_mode_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HackitoErgoSum_2010_Breaking_Virtualization_8088_mode_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_2013_Sandboxing_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_Breaking_Preboot_Authentication_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Kiwicon_2011_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_NULLCON_2012_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2011_PMCMA_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_NULLCON_2019_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Syscan_2013_Sandboxing_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_WCC_internal_documentation_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_NoSuchCon_Hardware_Backdooring_Is_Practical_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_RUXCON_2010_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2016_Witchcraft-Compiler-Collection_User_Manual_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_RUXCON_2011_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HackitoErgoSum_2012_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_RUXCON_2012_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_RUXCON_2013_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_ClubHack_2008_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/whitepapers/Jonathan_Brossard_blackhat2012_viewer.htm</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/blank.jpg</image:loc>
+<image:title>Security Analytics</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/jonathan_brossard.jpeg</image:loc>
+<image:title>project manager</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/wcc-thumb.jpeg</image:loc>
+<image:title>Mission</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/codebase_thumbnail.jpeg</image:loc>
+<image:title>Wichcraft Compiler Collection source code</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/defcon_24.jpeg</image:loc>
+<image:title>Defcon 24 (Las Vegas) Video</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/documentation_thumbnail.jpeg</image:loc>
+<image:title>WCC online documentation</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/Blackhat-2016.jpeg</image:loc>
+<image:title>WCC Blackhat Europe 2016 Presentation</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/RE.jpeg</image:loc>
+<image:title>WCC Slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/User_Manual.jpeg</image:loc>
+<image:title>WCC user manual</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/package_thumbnail.jpeg</image:loc>
+<image:title>Wichcraft Compiler Collection package</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/BSides_2017.jpeg</image:loc>
+<image:title>WCC BSides San Francisco Video</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/WP.jpeg</image:loc>
+<image:title>WCC Slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/smb.jpeg</image:loc>
+<image:title>Mission</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/windows10-thumbnail.jpeg</image:loc>
+<image:title>First Windows 10 exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/edge-thumbnail.jpeg</image:loc>
+<image:title>First Edge exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/Blackhat_2015-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/filecry-thumbnail3.jpeg</image:loc>
+<image:title>FileCry Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/ie-thumbnail.jpeg</image:loc>
+<image:title>MS15-039/CVE-2015-1646</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/filecry-thumbnail2.jpeg</image:loc>
+<image:title>First Edge exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/blackhat-2015-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/java-thumb2.jpeg</image:loc>
+<image:title>XXE Java Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/java-thumbnail.jpeg</image:loc>
+<image:title>CVE-2017-18197</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/salesforce-thumbnail.jpeg</image:loc>
+<image:title>First Edge exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/rakshasa-thumb.jpeg</image:loc>
+<image:title>FileCry Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/wikipedia-thumbnail.jpeg</image:loc>
+<image:title>World&amp;apos;s first Firmware Backdoor</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/defcon-20-thumbnail.jpeg</image:loc>
+<image:title>First Edge exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/MIT-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/Forbes-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/blackhat-2012-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/rakshasa-blackhat-2012-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/pmcma-thumb.jpeg</image:loc>
+<image:title>PMCMA Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/ccc-thumbnail.jpeg</image:loc>
+<image:title>PMCMA source code</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/blackhat-2011-thumbnail.jpeg</image:loc>
+<image:title>First Edge exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/pmcma-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/virtualization-thumbnail.jpeg</image:loc>
+<image:title>Breaking Virtualization Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/hitb_2010-thumbnail.jpeg</image:loc>
+<image:title>HITB Amsterdam slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/ruxcon-2010-thumbnail.jpeg</image:loc>
+<image:title>HITB slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/hitb-KL-2010-thumbnail.jpeg</image:loc>
+<image:title>HITB Kuala Lumpur slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/bios-thumbnail.jpeg</image:loc>
+<image:title>PreBoot Authentication Bypass Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/defcon-16-thumbnail.jpeg</image:loc>
+<image:title>DEF CON 16 Audio</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/bios1.jpeg</image:loc>
+<image:title>HITB slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/bios2.jpeg</image:loc>
+<image:title>DEF CON 16 slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/bios3.jpeg</image:loc>
+<image:title>DEF CON 16 Whitepaper</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/bitlocker.jpeg</image:loc>
+<image:title>Bitlocker Advisory</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/truecrypt.jpeg</image:loc>
+<image:title>TrueCrypt Advisory</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_24_Witchcraft_Compiler_Collection.png</image:loc>
+<image:title>DEFCON 24 Witchcraft Compiler Collection</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_16_BIOS_whitepaper.png</image:loc>
+<image:title>Bypassing Preboot Authentication Passwords</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_28c3_Chaos_Computer_Conference.png</image:loc>
+<image:title>28c3 Chaos Computer Conference</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Bios_Information_Leakage.png</image:loc>
+<image:title>BIOS Information leakage</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2015_SMB_Sharing_More_than_your_files.png</image:loc>
+<image:title>Blackhat 2015 SMB Sharing More than your files</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_INTEL_iSEC_2016.png</image:loc>
+<image:title>INTEL iSEC 2016</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2015_SMBv2_Sharing_More_Than_Just_Your_Files.png</image:loc>
+<image:title>Blackhat 2015 SMBv2 Sharing More Than Just Your Files</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_INTEL_iSEC_2012.png</image:loc>
+<image:title>INTEL iSEC 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Ruxmon_2012_Reverse_Engineering_Proprietary_Protocols.png</image:loc>
+<image:title>Ruxmon 2012 Reverse Engineering Proprietary Protocols</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_SYSCAN_2013.png</image:loc>
+<image:title>SYSCAN 2013</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Shakacon_2017_Silent_Protest.png</image:loc>
+<image:title>Shakacon 2017 Silent Protest</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2015_XXE_Defenseless_JDK_XML_Parsers_JAVA.png</image:loc>
+<image:title>Blackhat 2015 XXE Defenseless JDK XML Parsers JAVA</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_Europe_2016_Witchcraft_Compiler_Collection-Towards_Self_Aware_Computer_Programs-wp.png</image:loc>
+<image:title>Blackhat Europe 2016 Witchcraft Compiler Collection-Towards Self Aware Computer Programs-wp</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_USA_2011_Post_Memory_Corruption_Memory_Analysis_PMCMA.png</image:loc>
+<image:title>Blackhat USA 2011 Post Memory Corruption Memory Analysis PMCMA</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_USA_2012_Hardware_Backdooring_is_Practical.png</image:loc>
+<image:title>Blackhat USA 2012 Hardware Backdooring is Practical</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_CCC_2012.png</image:loc>
+<image:title>CCC 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2011_Post_Memory_Corruption_Memory_Analysis_Whitepaper.png</image:loc>
+<image:title>Blackhat 2011 Post Memory Corruption Memory Analysis Whitepaper</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2015_Filecry_the_new_age_of_xxe.png</image:loc>
+<image:title>Blackhat 2015 Filecry the new age of xxe</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_16_Bitlocker.png</image:loc>
+<image:title>DEFCON 16 Bitlocker</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_20_Hardware_Backdooring_is_Practical.png</image:loc>
+<image:title>DEFCON 20 Hardware Backdooring is Practical</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_24_Introduction-to-the-Witchcraft-Compiler-Collection.png</image:loc>
+<image:title>DEFCON 24 Introduction-to-the-Witchcraft-Compiler-Collection</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2011.WP.png</image:loc>
+<image:title>Blackhat 2011.WP</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_2009.png</image:loc>
+<image:title>H2HC 2009</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HackitoErgoSum_2010.png</image:loc>
+<image:title>HackitoErgoSum 2010</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_2010.png</image:loc>
+<image:title>H2HC 2010</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_2013.png</image:loc>
+<image:title>H2HC 2013</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2010_Amsterdam.png</image:loc>
+<image:title>HITB 2010 Amsterdam</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_TELECOMX_2009.png</image:loc>
+<image:title>TELECOMX 2009</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2010_KualaLumpur.png</image:loc>
+<image:title>HITB 2010 KualaLumpur</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Auscert_2013_Hardware_Backdooring.png</image:loc>
+<image:title>Auscert 2013 Hardware Backdooring</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_BSides_San_Francisco_2016_Witchcraft_Compiler_Collection.png</image:loc>
+<image:title>BSides San Francisco 2016 Witchcraft Compiler Collection</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2011.png</image:loc>
+<image:title>HITB 2011</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2011_Breaking_Virtualization_8088_mode.png</image:loc>
+<image:title>HITB 2011 Breaking Virtualization 8088 mode</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HackitoErgoSum_2010_Breaking_Virtualization_8088_mode.png</image:loc>
+<image:title>HackitoErgoSum 2010 Breaking Virtualization 8088 mode</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_2013_Sandboxing.png</image:loc>
+<image:title>H2HC 2013 Sandboxing</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_Breaking_Preboot_Authentication.png</image:loc>
+<image:title>H2HC Breaking Preboot Authentication</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Kiwicon_2011.png</image:loc>
+<image:title>Kiwicon 2011</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_NULLCON_2012.png</image:loc>
+<image:title>NULLCON 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2011_PMCMA.png</image:loc>
+<image:title>HITB 2011 PMCMA</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_NULLCON_2019.png</image:loc>
+<image:title>NULLCON 2019</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Syscan_2013_Sandboxing.png</image:loc>
+<image:title>Syscan 2013 Sandboxing</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_WCC_internal_documentation.png</image:loc>
+<image:title>WCC internal documentation</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_NoSuchCon_Hardware_Backdooring_Is_Practical.png</image:loc>
+<image:title>NoSuchCon Hardware Backdooring Is Practical</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_RUXCON_2010.png</image:loc>
+<image:title>RUXCON 2010</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2016_Witchcraft-Compiler-Collection_User_Manual.png</image:loc>
+<image:title>Blackhat 2016 Witchcraft-Compiler-Collection User Manual</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_RUXCON_2011.png</image:loc>
+<image:title>RUXCON 2011</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HackitoErgoSum_2012.png</image:loc>
+<image:title>HackitoErgoSum 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_RUXCON_2012.png</image:loc>
+<image:title>RUXCON 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_RUXCON_2013.png</image:loc>
+<image:title>RUXCON 2013</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_ClubHack_2008.png</image:loc>
+<image:title>ClubHack 2008</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_blackhat2012.png</image:loc>
+<image:title>blackhat2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/bios1.jpeg</image:loc>
+<image:title>Tools index</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/bios2.jpeg</image:loc>
+<image:title>Witchcraft Compiler Collection (WCC) Repository</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/pmcma.jpeg</image:loc>
+<image:title>PMCMA Repository</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/wcc.jpeg</image:loc>
+<image:title>Witchcraft Compiler Collection (WCC) archive</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/code.jpeg</image:loc>
+<image:title>PMCMA archive</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/bios3.jpeg</image:loc>
+<image:title>DEFCON 16 archive</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/forbes.png</image:loc>
+<image:title>Toucan System - Forbes</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/MIT.png</image:loc>
+<image:title>Toucan System - MIT</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/SHM.png</image:loc>
+<image:title>client</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://endrazine.com/..</loc>
+<image:image>
+<image:loc>https://endrazine.com/images/logo-white.png</image:loc>
+<image:title>Blog of Jonathan Brossard</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/blank.jpg</image:loc>
+<image:title>Security Analytics</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/jonathan_brossard.jpeg</image:loc>
+<image:title>project manager</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/wcc-thumb.jpeg</image:loc>
+<image:title>Mission</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/codebase_thumbnail.jpeg</image:loc>
+<image:title>Wichcraft Compiler Collection source code</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/defcon_24.jpeg</image:loc>
+<image:title>Defcon 24 (Las Vegas) Video</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/documentation_thumbnail.jpeg</image:loc>
+<image:title>WCC online documentation</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/Blackhat-2016.jpeg</image:loc>
+<image:title>WCC Blackhat Europe 2016 Presentation</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/RE.jpeg</image:loc>
+<image:title>WCC Slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/User_Manual.jpeg</image:loc>
+<image:title>WCC user manual</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/package_thumbnail.jpeg</image:loc>
+<image:title>Wichcraft Compiler Collection package</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/BSides_2017.jpeg</image:loc>
+<image:title>WCC BSides San Francisco Video</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/WP.jpeg</image:loc>
+<image:title>WCC Slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/smb.jpeg</image:loc>
+<image:title>Mission</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/windows10-thumbnail.jpeg</image:loc>
+<image:title>First Windows 10 exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/edge-thumbnail.jpeg</image:loc>
+<image:title>First Edge exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/Blackhat_2015-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/filecry-thumbnail3.jpeg</image:loc>
+<image:title>FileCry Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/ie-thumbnail.jpeg</image:loc>
+<image:title>MS15-039/CVE-2015-1646</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/filecry-thumbnail2.jpeg</image:loc>
+<image:title>First Edge exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/blackhat-2015-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/java-thumb2.jpeg</image:loc>
+<image:title>XXE Java Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/java-thumbnail.jpeg</image:loc>
+<image:title>CVE-2017-18197</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/salesforce-thumbnail.jpeg</image:loc>
+<image:title>First Edge exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/rakshasa-thumb.jpeg</image:loc>
+<image:title>FileCry Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/wikipedia-thumbnail.jpeg</image:loc>
+<image:title>World&amp;apos;s first Firmware Backdoor</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/defcon-20-thumbnail.jpeg</image:loc>
+<image:title>First Edge exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/MIT-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/Forbes-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/blackhat-2012-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/rakshasa-blackhat-2012-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/pmcma-thumb.jpeg</image:loc>
+<image:title>PMCMA Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/ccc-thumbnail.jpeg</image:loc>
+<image:title>PMCMA source code</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/blackhat-2011-thumbnail.jpeg</image:loc>
+<image:title>First Edge exploit</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/pmcma-thumbnail.jpeg</image:loc>
+<image:title>Blackhat slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/virtualization-thumbnail.jpeg</image:loc>
+<image:title>Breaking Virtualization Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/hitb_2010-thumbnail.jpeg</image:loc>
+<image:title>HITB Amsterdam slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/ruxcon-2010-thumbnail.jpeg</image:loc>
+<image:title>HITB slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/hitb-KL-2010-thumbnail.jpeg</image:loc>
+<image:title>HITB Kuala Lumpur slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/bios-thumbnail.jpeg</image:loc>
+<image:title>PreBoot Authentication Bypass Resources</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/defcon-16-thumbnail.jpeg</image:loc>
+<image:title>DEF CON 16 Audio</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/bios1.jpeg</image:loc>
+<image:title>HITB slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/bios2.jpeg</image:loc>
+<image:title>DEF CON 16 slides</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/bios3.jpeg</image:loc>
+<image:title>DEF CON 16 Whitepaper</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/bitlocker.jpeg</image:loc>
+<image:title>Bitlocker Advisory</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/truecrypt.jpeg</image:loc>
+<image:title>TrueCrypt Advisory</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_24_Witchcraft_Compiler_Collection.png</image:loc>
+<image:title>DEFCON 24 Witchcraft Compiler Collection</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_16_BIOS_whitepaper.png</image:loc>
+<image:title>Bypassing Preboot Authentication Passwords</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_28c3_Chaos_Computer_Conference.png</image:loc>
+<image:title>28c3 Chaos Computer Conference</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Bios_Information_Leakage.png</image:loc>
+<image:title>BIOS Information leakage</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2015_SMB_Sharing_More_than_your_files.png</image:loc>
+<image:title>Blackhat 2015 SMB Sharing More than your files</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_INTEL_iSEC_2016.png</image:loc>
+<image:title>INTEL iSEC 2016</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2015_SMBv2_Sharing_More_Than_Just_Your_Files.png</image:loc>
+<image:title>Blackhat 2015 SMBv2 Sharing More Than Just Your Files</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_INTEL_iSEC_2012.png</image:loc>
+<image:title>INTEL iSEC 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Ruxmon_2012_Reverse_Engineering_Proprietary_Protocols.png</image:loc>
+<image:title>Ruxmon 2012 Reverse Engineering Proprietary Protocols</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_SYSCAN_2013.png</image:loc>
+<image:title>SYSCAN 2013</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Shakacon_2017_Silent_Protest.png</image:loc>
+<image:title>Shakacon 2017 Silent Protest</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2015_XXE_Defenseless_JDK_XML_Parsers_JAVA.png</image:loc>
+<image:title>Blackhat 2015 XXE Defenseless JDK XML Parsers JAVA</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_Europe_2016_Witchcraft_Compiler_Collection-Towards_Self_Aware_Computer_Programs-wp.png</image:loc>
+<image:title>Blackhat Europe 2016 Witchcraft Compiler Collection-Towards Self Aware Computer Programs-wp</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_USA_2011_Post_Memory_Corruption_Memory_Analysis_PMCMA.png</image:loc>
+<image:title>Blackhat USA 2011 Post Memory Corruption Memory Analysis PMCMA</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_USA_2012_Hardware_Backdooring_is_Practical.png</image:loc>
+<image:title>Blackhat USA 2012 Hardware Backdooring is Practical</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_CCC_2012.png</image:loc>
+<image:title>CCC 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2011_Post_Memory_Corruption_Memory_Analysis_Whitepaper.png</image:loc>
+<image:title>Blackhat 2011 Post Memory Corruption Memory Analysis Whitepaper</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2015_Filecry_the_new_age_of_xxe.png</image:loc>
+<image:title>Blackhat 2015 Filecry the new age of xxe</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_16_Bitlocker.png</image:loc>
+<image:title>DEFCON 16 Bitlocker</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_20_Hardware_Backdooring_is_Practical.png</image:loc>
+<image:title>DEFCON 20 Hardware Backdooring is Practical</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_DEFCON_24_Introduction-to-the-Witchcraft-Compiler-Collection.png</image:loc>
+<image:title>DEFCON 24 Introduction-to-the-Witchcraft-Compiler-Collection</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2011.WP.png</image:loc>
+<image:title>Blackhat 2011.WP</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_2009.png</image:loc>
+<image:title>H2HC 2009</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HackitoErgoSum_2010.png</image:loc>
+<image:title>HackitoErgoSum 2010</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_2010.png</image:loc>
+<image:title>H2HC 2010</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_2013.png</image:loc>
+<image:title>H2HC 2013</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2010_Amsterdam.png</image:loc>
+<image:title>HITB 2010 Amsterdam</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_TELECOMX_2009.png</image:loc>
+<image:title>TELECOMX 2009</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2010_KualaLumpur.png</image:loc>
+<image:title>HITB 2010 KualaLumpur</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Auscert_2013_Hardware_Backdooring.png</image:loc>
+<image:title>Auscert 2013 Hardware Backdooring</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_BSides_San_Francisco_2016_Witchcraft_Compiler_Collection.png</image:loc>
+<image:title>BSides San Francisco 2016 Witchcraft Compiler Collection</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2011.png</image:loc>
+<image:title>HITB 2011</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2011_Breaking_Virtualization_8088_mode.png</image:loc>
+<image:title>HITB 2011 Breaking Virtualization 8088 mode</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HackitoErgoSum_2010_Breaking_Virtualization_8088_mode.png</image:loc>
+<image:title>HackitoErgoSum 2010 Breaking Virtualization 8088 mode</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_2013_Sandboxing.png</image:loc>
+<image:title>H2HC 2013 Sandboxing</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_H2HC_Breaking_Preboot_Authentication.png</image:loc>
+<image:title>H2HC Breaking Preboot Authentication</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Kiwicon_2011.png</image:loc>
+<image:title>Kiwicon 2011</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_NULLCON_2012.png</image:loc>
+<image:title>NULLCON 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HITB_2011_PMCMA.png</image:loc>
+<image:title>HITB 2011 PMCMA</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_NULLCON_2019.png</image:loc>
+<image:title>NULLCON 2019</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Syscan_2013_Sandboxing.png</image:loc>
+<image:title>Syscan 2013 Sandboxing</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_WCC_internal_documentation.png</image:loc>
+<image:title>WCC internal documentation</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_NoSuchCon_Hardware_Backdooring_Is_Practical.png</image:loc>
+<image:title>NoSuchCon Hardware Backdooring Is Practical</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_RUXCON_2010.png</image:loc>
+<image:title>RUXCON 2010</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_Blackhat_2016_Witchcraft-Compiler-Collection_User_Manual.png</image:loc>
+<image:title>Blackhat 2016 Witchcraft-Compiler-Collection User Manual</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_RUXCON_2011.png</image:loc>
+<image:title>RUXCON 2011</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_HackitoErgoSum_2012.png</image:loc>
+<image:title>HackitoErgoSum 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_RUXCON_2012.png</image:loc>
+<image:title>RUXCON 2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_RUXCON_2013.png</image:loc>
+<image:title>RUXCON 2013</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_ClubHack_2008.png</image:loc>
+<image:title>ClubHack 2008</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/Jonathan_Brossard_blackhat2012.png</image:loc>
+<image:title>blackhat2012</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/bios1.jpeg</image:loc>
+<image:title>Tools index</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/bios2.jpeg</image:loc>
+<image:title>Witchcraft Compiler Collection (WCC) Repository</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/pmcma.jpeg</image:loc>
+<image:title>PMCMA Repository</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/wcc.jpeg</image:loc>
+<image:title>Witchcraft Compiler Collection (WCC) archive</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/code.jpeg</image:loc>
+<image:title>PMCMA archive</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/whitepapers/bios3.jpeg</image:loc>
+<image:title>DEFCON 16 archive</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/forbes.png</image:loc>
+<image:title>Toucan System - Forbes</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/MIT.png</image:loc>
+<image:title>Toucan System - MIT</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://endrazine.com/images/SHM.png</image:loc>
+<image:title>client</image:title>
+<image:geo_location>Paris, France</image:geo_location>
+</image:image>
+</url>
 </urlset>
