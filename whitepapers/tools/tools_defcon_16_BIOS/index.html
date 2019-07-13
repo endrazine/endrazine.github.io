@@ -1,11 +1,104 @@
-<html><html><title>Index of tools/tools_defcon_BIOS</title></head><body>
-
-
-<html><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <title>Index of tools/tools_defcon_BIOS</title>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Moabi : IoT Firmware Security. Moabi SaaS platform is a pro-active security solution to audit software, firmware, binaries and their dependencies.">
+    <meta name="keywords" content="Binary analysis, Preventive Software analytics, IoT security, security analytics, preventive security, IIot security, Saas security, scalable security">
+
+    <link rel="amphtml" href="https://moabi.com/research/jbrossard/whitepapers/tools/tools_defcon_16_BIOS/index.mobile.html">
+    <!-- Canonical name -->
+    <link rel="canonical" href="https://moabi.com/research/jbrossard/whitepapers/tools/tools_defcon_16_BIOS/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.86">
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://moabi.com https://m.moabi.com ; script-src 'self' https://moabi.com https://m.moabi.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-analytics.net https://track.hubspot.com 'unsafe-inline'; connect-src 'self' https://moabi.com https://m.moabi.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-analytics.net https://track.hubspot.com ; img-src 'self' data: https://moabi.com https://m.moabi.com https://www.google-analytics.com https://track.hubspot.com https://www.googletagmanager.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://moabi.com https://m.moabi.com https://tagmanager.google.com/ https://fonts.googleapis.com/ 'unsafe-inline' ; font-src 'self' https://moabi.com https://m.moabi.com https://fonts.googleapis.com https://fonts.gstatic.com/ ; frame-src https://www.youtube.com/ https://youtube.com/ ; base-uri 'self' https://moabi.com https://m.moabi.com ;" />
+
+    <!-- Json-ld information -->
+    <script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@id": "https://moabi.com/index.html#top",
+"@type": "Organization",
+"name": "Moabi",
+"url": "https://moabi.com/",
+"logo": "https://moabi.com/moabi.png",
+"email": "info(at)moabi.com",
+"description": "Moabi : IoT Firmware Security. Moabi SaaS platform is a pro-active security solution to audit software, firmware, binaries and their dependencies.",
+"address": [
+{
+"@type": "PostalAddress",
+"addressLocality": "Paris, France",
+"postalCode":"75015",
+"streetAddress": "33 Avenue du Maine"
+},
+{
+"@type": "PostalAddress",
+"addressLocality": "San Francisco",
+"addressRegion": "CA",
+"postalCode":"94133",
+"streetAddress": "1640 Stockton Street",
+"postOfficeBoxNumber": "330143"
+}
+],
+"contactPoint": [
+{
+"@type": "ContactPoint",
+"telephone": "+33188335053",
+"email": "info(at)moabi.com",
+"contactType": "sales"
+},
+{
+"@type": "ContactPoint",
+"email": "moabi(at)moabi.com",
+"contactType": "customer service",
+"url": "https://moabi.com"
+}
+],
+"sameAs": [
+"https://blog.moabi.com",
+"https://www.facebook.com/Moabi.info/",
+"https://twitter.com/moabi_com"
+]
+}
+    </script>
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Moabi" />
+    <meta property="og:url" content="https://moabi.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://moabi.com/moabi_card.png" />
+    <meta property="og:description" content="Moabi : IoT Firmware Security. Moabi SaaS platform is a pro-active security solution to audit software, firmware, binaries and their dependencies." />
+    <meta property="og:site_name" content="Moabi">
+
+    <!-- Twitter card integration (works with Open Graph data above) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Moabi Saas platform : binary analysis">
+    <meta name="twitter:site" content="@moabi_com">
+
+    <!-- Yandex indexation -->
+    <meta name="yandex-verification" content="e477bac9aff66624" />
+
+    <!-- Bing Indexing -->
+    <meta name="msvalidate.01" content="E6F45B72576D2C71AD0A5B162DF8117D" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129423028-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129423028-1');
+    </script>
+
 </head><body>
 
 <h1>Index of tools/tools_defcon_BIOS</h1>
+
+<font size=+2>
 
 <a href="..">Parent directory</a><br />
 
@@ -22,15 +115,15 @@
 <pre>
 
 
-                [ Jonathan Brossard --  endrazine@gmail.com ]
+    [ Jonathan Brossard --  endrazine@gmail.com ]
 
-	This archive contains the companion source code of our article :
+This archive contains the companion source code of our article :
 
 
 
-	"Bypassing pre-boot authentication passwords by instrumenting the BIOS
-				     keyboard buffer
-	(practical low level attacks against x86 pre-boot authentication software)"
+"Bypassing pre-boot authentication passwords by instrumenting the BIOS
+     keyboard buffer
+(practical low level attacks against x86 pre-boot authentication software)"
 
 
 
@@ -38,91 +131,93 @@
 
 - - --[ Disclamer :
 
-	This archive contains source code to experiment with your computer at low
-	level. Indeed, this is risky and you should not do it. Neither me or my
-	employer can be held responsible for the wrong usage you may do of this
-	code.
+This archive contains source code to experiment with your computer at low
+level. Indeed, this is risky and you should not do it. Neither me or my
+employer can be held responsible for the wrong usage you may do of this
+code.
 
 
 - - --[ Checksums :
 
-		MD5 checksum				File
-	--------------------------------  --------------------------------------
-	0b275123c45682d46f0ef397c1d48cef  ./sploit-os/sploitos.S
-	ed5470cc4461648bafcf32b4e62f2576  ./msdos-exploits/shellcode.BIOS.S
-	56c5de6f4c91d5979283daf31d7ea126  ./userland-unix/generic.unix.sploit.c
-	b65d5511be2a5701606730da06c750ed  ./ksploit-proc/Kbuild
-	32113f4f369d1231dd15aaaf9fac408c  ./ksploit-proc/src/ksploit.c
-	b333ba3698218ed3bbe9917601790239  ./ksploit-proc/src/Makefile
-	f9ced51ab7d8b18c94a2783cd979a9a6  ./ksploit-proc/Makefile
-	1f1da381c75ef8005e5d890162d0229f  ./invisible-man/invisible_man_MBR.S
-	f501579620cb2c68dc4d400da60d2fb6  ./invisible-man/invisible_man.c
-	b65d5511be2a5701606730da06c750ed  ./kpatch/Kbuild
-	0124940d954448d6047424cc1e46def3  ./kpatch/src/kpatch.c
-	8761611d8855f47c002f72ce13c5033c  ./kpatch/src/Makefile
-	f9ced51ab7d8b18c94a2783cd979a9a6  ./kpatch/Makefile
-	f8532004fc33ba05bccdf759a8f79558  ./bootloader-fix/zero_BDA.S
-	--------------------------------  --------------------------------------
+MD5 checksumFile
+--------------------------------  --------------------------------------
+0b275123c45682d46f0ef397c1d48cef  ./sploit-os/sploitos.S
+ed5470cc4461648bafcf32b4e62f2576  ./msdos-exploits/shellcode.BIOS.S
+56c5de6f4c91d5979283daf31d7ea126  ./userland-unix/generic.unix.sploit.c
+b65d5511be2a5701606730da06c750ed  ./ksploit-proc/Kbuild
+32113f4f369d1231dd15aaaf9fac408c  ./ksploit-proc/src/ksploit.c
+b333ba3698218ed3bbe9917601790239  ./ksploit-proc/src/Makefile
+f9ced51ab7d8b18c94a2783cd979a9a6  ./ksploit-proc/Makefile
+1f1da381c75ef8005e5d890162d0229f  ./invisible-man/invisible_man_MBR.S
+f501579620cb2c68dc4d400da60d2fb6  ./invisible-man/invisible_man.c
+b65d5511be2a5701606730da06c750ed  ./kpatch/Kbuild
+0124940d954448d6047424cc1e46def3  ./kpatch/src/kpatch.c
+8761611d8855f47c002f72ce13c5033c  ./kpatch/src/Makefile
+f9ced51ab7d8b18c94a2783cd979a9a6  ./kpatch/Makefile
+f8532004fc33ba05bccdf759a8f79558  ./bootloader-fix/zero_BDA.S
+--------------------------------  --------------------------------------
 
 
 - - --[ Compiling :
 
-	The asm snippets are aimed to be compiled using nasm.
+The asm snippets are aimed to be compiled using nasm.
 
-	The c snippets should compile fine using gcc >= 4.1.2  .
+The c snippets should compile fine using gcc >= 4.1.2  .
 
-	You will need your kernel sources/headers to compile
-	kernel modules.
+You will need your kernel sources/headers to compile
+kernel modules.
 
 
 - - --[ Content :
 
-	./sploit-os
+./sploit-os
 
-	This directory contains the source code for a simple USB bootable
-	OS that will display the content of the BIOS keyboard buffer.
-	It is mainly usefull to verify if a given BIOS password is vulnerable.
+This directory contains the source code for a simple USB bootable
+OS that will display the content of the BIOS keyboard buffer.
+It is mainly usefull to verify if a given BIOS password is vulnerable.
 
-	./msdos-exploits
+./msdos-exploits
 
-	This directory contains a generic exploitation shellcode using only
-	BIOS interruptions, to be run in real or virtual modes. It can
-	for instance be used under (any) Microsoft Windows if compiled as
-	an MS-DOS COM file.
+This directory contains a generic exploitation shellcode using only
+BIOS interruptions, to be run in real or virtual modes. It can
+for instance be used under (any) Microsoft Windows if compiled as
+an MS-DOS COM file.
 
-	./userland-unix
+./userland-unix
 
-	This directory contains a generis userland exploit to retrieve the
-	content of the BIOS keyboard buffer. It has been tested under
-	GNU/Linux, Solaris, OpenBSD and FreeBSD.
+This directory contains a generis userland exploit to retrieve the
+content of the BIOS keyboard buffer. It has been tested under
+GNU/Linux, Solaris, OpenBSD and FreeBSD.
 
-	./ksploit-proc
+./ksploit-proc
 
-	This directory contains the LKM sources for a Linux kernel based
-	exploit against pre-boot authentication softwares not flushing the
-	BIOS keyboard buffer.
+This directory contains the LKM sources for a Linux kernel based
+exploit against pre-boot authentication softwares not flushing the
+BIOS keyboard buffer.
 
-	./invisible-man
+./invisible-man
 
-	This directory contains the sources for "Invisible Man", a rogue
-	bootloader to perform "bootloader in the middle" attacks.
+This directory contains the sources for "Invisible Man", a rogue
+bootloader to perform "bootloader in the middle" attacks.
 
-	./kpatch
-	
-	This directory contains the sources for a partial kernel fix against
-	BIOS keyboard buffer plain text password leakage under GNU/Linux in
-	the form of a Linux Kernel Module.
+./kpatch
 
-	./bootloader-fix/
+This directory contains the sources for a partial kernel fix against
+BIOS keyboard buffer plain text password leakage under GNU/Linux in
+the form of a Linux Kernel Module.
 
-	This directory contains a suggested 16b assembly routine to zero out
-	the parts of the BIOS Data Area relevant to keyboard handling. It can
-	be used to initialize or flush the BDA in a bootloader and fix the two
-	potential vulnerabilities detailed in the article.
+./bootloader-fix/
+
+This directory contains a suggested 16b assembly routine to zero out
+the parts of the BIOS Data Area relevant to keyboard handling. It can
+be used to initialize or flush the BDA in a bootloader and fix the two
+potential vulnerabilities detailed in the article.
 
 
 </pre>
 
+    <!-- HubSpot Embed Code -->
+    <script async defer type="text/javascript" id="hs-script-loader" src="https://js.hs-scripts.com/5554324.js"></script>
 
 </body></html>
 
