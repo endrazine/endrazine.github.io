@@ -842,7 +842,7 @@
   <lastmod>2019-07-04</lastmod>
 </url>
 <url>
-  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/kpatch/Kbuild</loc>
+  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/kpatch/Kbuild.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-04</lastmod>
 </url>
@@ -852,7 +852,7 @@
   <lastmod>2019-07-04</lastmod>
 </url>
 <url>
-  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/kpatch/Makefile</loc>
+  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/kpatch/Makefile.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-04</lastmod>
 </url>
@@ -867,7 +867,7 @@
   <lastmod>2019-07-04</lastmod>
 </url>
 <url>
-  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/kpatch/src/Makefile</loc>
+  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/kpatch/src/Makefile.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-04</lastmod>
 </url>
@@ -877,7 +877,7 @@
   <lastmod>2019-07-04</lastmod>
 </url>
 <url>
-  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/ksploit-proc/Kbuild</loc>
+  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/ksploit-proc/Kbuild.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-04</lastmod>
 </url>
@@ -887,7 +887,7 @@
   <lastmod>2019-07-04</lastmod>
 </url>
 <url>
-  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/ksploit-proc/Makefile</loc>
+  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/ksploit-proc/Makefile.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-04</lastmod>
 </url>
@@ -897,7 +897,7 @@
   <lastmod>2019-07-04</lastmod>
 </url>
 <url>
-  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/ksploit-proc/src/Makefile</loc>
+  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/ksploit-proc/src/Makefile.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-04</lastmod>
 </url>
@@ -907,7 +907,7 @@
   <lastmod>2019-07-04</lastmod>
 </url>
 <url>
-  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/invisible-man/invisible_man_MBR.S</loc>
+  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/invisible-man/invisible_man_MBR.S.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-04</lastmod>
 </url>
@@ -922,7 +922,7 @@
   <lastmod>2019-07-04</lastmod>
 </url>
 <url>
-  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/bootloader-fix/zero_BDA.S</loc>
+  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/bootloader-fix/zero_BDA.S.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-04</lastmod>
 </url>
@@ -942,7 +942,7 @@
   <lastmod>2019-07-04</lastmod>
 </url>
 <url>
-  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/msdos-exploits/shellcode.BIOS.S</loc>
+  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/msdos-exploits/shellcode.BIOS.S.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-04</lastmod>
 </url>
@@ -952,7 +952,7 @@
   <lastmod>2019-07-04</lastmod>
 </url>
 <url>
-  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/sploit-os/sploitos.S</loc>
+  <loc>https://endrazine.com/whitepapers/tools/tools_defcon_16_BIOS/sploit-os/sploitos.S.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-04</lastmod>
 </url>
@@ -982,7 +982,7 @@
   <lastmod>2019-07-04</lastmod>
 </url>
 <url>
-  <loc>https://endrazine.com/whitepapers/tools/BIOS/wbios.asm</loc>
+  <loc>https://endrazine.com/whitepapers/tools/BIOS/wbios.asm.html</loc>
   <changefreq>daily</changefreq>
   <lastmod>2019-07-04</lastmod>
 </url>
